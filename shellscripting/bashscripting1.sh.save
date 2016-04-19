@@ -1,0 +1,15 @@
+#!/bin/bash
+# Dhr Blaauwgeers
+# >
+
+if [ -f "$HOME/20160415/shellscripting/test1" ]
+	then
+	echo x
+	elif [ -f mkdir 01-Networking
+mkdir 02-Unix
+mkdir 03-Algebra
+mkdir 04-Discrete_Mathematics
+mkdir 05-Python
+mkdir 06-Shell_Scripting_Bash
+mkdir 07-Writing_skills
+fi
