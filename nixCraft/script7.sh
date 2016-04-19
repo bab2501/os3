@@ -1,9 +1,8 @@
 #!/bin/bash
 #Auteur: Dhr. ing. B.A. Blaauwgeers
-#Script nr 6: run command a number of times in a row
+#Script nr 7: Bash for loop explicit file list syntax
 
-for now in {1..5}
+for file in *.zip
 do 
-	echo "Current time: $(date +'%T')"
-	sleep 1
+	echo "stripon" >> "$i"
 done
