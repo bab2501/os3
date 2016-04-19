@@ -13,11 +13,14 @@ for studentid in {2000..2050}
 do
 	#set var
 	studentdir="/home/klaas/os3/studentdir/share/$studentid"
+	umask 0022
 	mkdir $studentdir
+	usedadd -m -g users -s /bin/shell -C "$studentid" $studentid
 	#cd $studentdir
 	if [ $studentid -gt 2010 ]
 	then
 		cp -r /home/klaas/os3/studentdir/vak/math $studentdir
 	#cd ..
 	fi
+	sudo chown $studentid:users $studentdir
 done
