@@ -8,3 +8,10 @@ for a in {a..e}
 do 
 	echo "Letter : $a"
 done
+
+echo "======="
+
+for c in Tom Jerry Spike Tyke
+do
+	echo "$c"
+done
