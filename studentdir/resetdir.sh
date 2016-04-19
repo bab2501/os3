@@ -12,10 +12,10 @@ chmod 700 /home/klaas/os3/studentdir/share
 for studentid in {2000..2050}
 do
 	#set var
-	studentdir="/home/klaas/os3/studentdir/share/$studentid"
+	studentdir="/home/$studentid"
 	umask 0022
 	mkdir $studentdir
-	usedadd -m -g users -s /bin/shell -C "$studentid" $studentid
+	sudo userdel -r $studentid
 	#cd $studentdir
 	if [ $studentid -gt 2010 ]
 	then
