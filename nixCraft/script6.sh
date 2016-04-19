@@ -4,6 +4,6 @@
 
 for now in {1..5}
 do 
-	date
+	echo "Current time: $(date +'%T')"
 	sleep 1
 done
