@@ -4,5 +4,5 @@
 
 for file in *.zip
 do 
-	echo "stripon" >> "$i"
+	echo "stripon" >> "$file"
 done
