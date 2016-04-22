@@ -1,0 +1,38 @@
+#!/bin/bash
+#Auteur: Dhr. ing. B.A. Blaauwgeers
+#Scriptnaam: Map Maker v0.1
+
+#for mapid in {1,2,3,4,5,6,7,8,9}
+#do
+#	#mkdir $mapid
+#	#chmod 777 $mapid
+#done
+
+mkdir rangedir
+
+for mapidr in {1..200}
+do
+	dir="/home/klaas/20160419/rangedir/$mapidr"
+	mkdir $dir
+	if [ $mapidr -gt 100 ]
+	then
+		chmod 777 $dir
+	elif [ $mapidr -gt 50 ]
+		chmod 555 $dir
+
+	else chmod 700 $dir
+	fi
+done
+
+
+
+
+#for x in {"jan","jaap","klaas","dijkhuizen","alexander"}
+#do
+#	if [ $x = "klaas" ]
+#	then
+#		echo "Heey jij daar $x , wegwezen !!! "
+#	else
+#		echo "Welkom $x"
+#	fi
+#done
