@@ -14,7 +14,7 @@ then
 	echo "The domain $surname .nl is registered and we are able to nslookup"
 elif [ $result -eq 1 ]
 then
-	echo "The domain $surname might be free or inactive because we are unable to nslookup"
+	echo "The domain $surname .nl might be free or inactive according to nslookup"
 fi
 
 
