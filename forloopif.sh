@@ -5,7 +5,7 @@
 #Func: Script without a function
 
 echo "========[ 01 ]==========="
-if [ $UID > 0]; then echo "01: Always true"; fi
+if [ $UID > 0 ]; then echo "01: Always true"; fi
 
 echo "========[ 02 ]==========="
 if [[ $UID > 0 ]]; then echo "02: You are not root"; fi
