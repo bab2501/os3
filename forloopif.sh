@@ -22,3 +22,7 @@ if [ $(id -u) -eq 0 ]; then echo "05: You are root"; fi
 echo "========[ 06 ]=========== "
 if [ $(id -u) -gt 0 ]; then echo "06: You aren't root"; fi
 
+
+#remove the created 0-file
+rm 0
+
