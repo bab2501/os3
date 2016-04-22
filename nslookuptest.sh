@@ -1,6 +1,6 @@
 #!/bin/bash
 #Auteur: Dhr. ing. B.A. Blaauwgeers
-#Script-Naam: nslookuptest v0.2.4
+#Script-Naam: nslookuptest v0.2.5
 #Functie: Controleer of de achternaam van de gebruiker is geregistreerd in de .nl dns-zone op basis van NSLOOKUP
 
 echo "Please enter your surname?"
