@@ -16,26 +16,11 @@ clear;
 bashtrap()
 {
 	echo "CTRL+C Detected !... executing bash trap!"
-	echo "Nog 10 seconden slapen"
-        sleep 1
-        echo "Nog 9 seconden slapen"
-        sleep 1
-        echo "Nog 8 seconden slapen"
-        sleep 1
-        echo "Nog 7 seconden slapen"
-        sleep 1
-        echo "Nog 6 seconden slapen"
-        sleep 1
-        echo "Nog 5 seconden slapen"
-        sleep 1
-        echo "Nog 4 seconden slapen"
-        sleep 1
-        echo "Nog 3 seconden slapen"
-        sleep 1
-        echo "Nog 2 seconden slapen"
-        sleep 1
-        echo "Nog 1 seconden slapen"
-        sleep 1
+	for b in `seq 1 5`; do
+		count=$(echo 5 - $b | bc)
+		echo "Nog $count seconden slapen"
+		sleep 1
+	done
 }
 
 #for loop from 1/10 all the way up to 10/10
