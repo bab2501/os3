@@ -1,0 +1,29 @@
+#!/bin/bash
+#Auteur: Dhr. ing. B.A. Blaauwgeers
+#Datum: 22.04.2016
+#Scriptname: For Loop Test Script Met IF v1
+#Func: Script without a function.
+
+echo "========= [ 01 ] ==========="
+echo "========= [ 01 ] ==========="
+if [ $UID > 0 ]
+then
+	echo "01: This IF clause is always true. Because 'is  sending comand'"
+fi
+if [[ $UID > 0 ]]
+then
+	echo "02: you are root"
+fi
+if [ $UID -gt 0 ]
+then
+	echo "03: you are root"
+fi
+if [ $(id -u) -gt 0 ]
+then
+	echo "04: you are not root"
+fi
+if [ $(id -u) -eq 0 ]
+then
+	echo "05: you are root"
+
+
