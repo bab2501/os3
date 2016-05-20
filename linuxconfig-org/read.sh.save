@@ -1,0 +1,14 @@
+#!/bin/bash
+# Author: Dhr. ing. B.A. Blaauwgeers
+# Date: 29.04.2016
+# Version: v0.1
+# C: linuxconfig.org
+# T: 6) Reading User Input
+
+echo -e "Hi , please type the word: \c "
+read word
+echo "The word that the darklord entered is: $word"
+echo -e "Hi Klaas, can you please enter two words, I'd like that, ..?"
+read word1 word2
+echo "Here you are...: \"$word1\" \"$word2\""
+
