@@ -7,9 +7,9 @@
 #!/bin/bash 
  
 LOG=/tmp/mylog.log 
-SECONDS=3600 
+SECONDS=1800 
 
-EMAIL=my@email.address 
+EMAIL=b.a.blaauwgeers@xs4all.nl 
  
 for i in $@; do 
 	echo "$i-UP!" > $LOG.$i 
