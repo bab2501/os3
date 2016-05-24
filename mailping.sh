@@ -32,8 +32,7 @@ if [ $? -ne 0 ]; then
 else 
 	STATUS=$(cat $LOG.$i)
  		if [ $STATUS != "$i-UP!" ]; then 
- 			echo "`date`: ping OK, $i host is up!" | 
-			mail -s "$i host is up!" $EMAIL
+ 			echo "`date`: ping OK, $i host is up!" | mail -s "$i host is up!" $EMAIL
 
  		fi 
 	echo "$i-UP!" > $LOG.$i 
