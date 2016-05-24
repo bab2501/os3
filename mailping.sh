@@ -7,9 +7,9 @@
 #!/bin/bash 
  
 LOG=/tmp/mylog.log 
-SECONDS=1800 
+SECONDS=1800 #elke 1800 seconden = 30min
 
-EMAIL=b.a.blaauwgeers@xs4all.nl 
+EMAIL=alexander.blaauwgeers@example.test
  
 for i in $@; do 
 	echo "$i-UP!" > $LOG.$i 
