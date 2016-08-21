@@ -11,19 +11,20 @@
 opdr=$1
 item=$2
 
-if [ -z $1 ]
+if [ -z $opdr ]
 	then
 	echo "Please use the syntax {add|list|remove} followed by a message"
 	exit
 else
 
-case $1 in
+case $opdr in
 	add)
-		echo $2 >> todo.lst
-		echo added $2
+		echo $item >> todo.lst
+		echo added $item
 	;;
 	remove)
-		echo removed $2
+		sed '/xxs/d' todo.lst > todo.lst
+		echo removed $item
 	;;
 	list)
 		cat todo.lst
