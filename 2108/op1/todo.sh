@@ -23,7 +23,8 @@ case $opdr in
 		echo added $item
 	;;
 	remove)
-		sed '/xxs/d' todo.lst > todo.lst
+		grep -v $item todo.lst > todo.lst.tmp
+		mv todo.lst.tmp todo.lst
 		echo removed $item
 	;;
 	list)
