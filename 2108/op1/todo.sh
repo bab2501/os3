@@ -3,10 +3,6 @@
 #Script-Naam: Todolijst 
 #Functie: Maak een todo lijstje met de functie toevoegen uitlezen en verw. 
 
-#echo "Please enter your surname?"
-#read surname
-#echo "We are going to lookup your surname domain with the tld .NL"
-#echo "please wait..."
 
 opdr=$1
 item=$2
