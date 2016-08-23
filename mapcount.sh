@@ -11,7 +11,7 @@ mapcount=$(ls -l $path | wc -l)
 echo $mapcount
 
 for q in (a .. r)
+do
 echo q
-
-
+done
 
