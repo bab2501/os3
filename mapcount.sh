@@ -12,6 +12,8 @@ echo $mapcount
 
 for q in {a..r}
 do
-echo $q
+mapcountd=$(ls -l1 $path | grep -c ^$q)
+((mapcountd = mapcountd - 1))
+echo $q : $mapcountd
 done
 
