@@ -10,7 +10,7 @@ mapcount=$(ls -l $path | wc -l)
 ((mapcount = mapcount - 1))
 echo $mapcount
 
-for q in (a .. r)
+for q in {a .. r}
 do
 echo q
 done
