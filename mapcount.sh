@@ -5,7 +5,7 @@
 
 echo "Please enter path?"
 read path
-mapcount=$(ls -l $path | wc -l)
+mapcount=$(ls -l $path | tail +2 | wc -l)
 echo $mapcount
 
 
