@@ -10,10 +10,9 @@ mapcount=$(ls -l $path | wc -l)
 ((mapcount = mapcount - 1))
 echo $mapcount
 
-for q in {a..r}
+for q in {a..z}
 do
 mapcountd=$(ls -l1 $path | grep -c ^$q)
-((mapcountd = mapcountd - 1))
 echo $q : $mapcountd
 done
 
