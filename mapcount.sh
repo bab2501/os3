@@ -12,7 +12,7 @@ echo $mapcount
 
 for q in {a..z}
 do
-mapcountd=$(ls -l1 $path | grep -c ^$q)
+mapcountd=$(ls -1 $path | grep -c ^$q)
 echo $q : $mapcountd
 done
 
