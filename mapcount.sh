@@ -4,7 +4,8 @@
 #Functie: count a map
 
 echo "Please enter path?"
-path=/root/scripting
+path=/root/scripting/os3
+echo $path
 mapcount=$(ls -l $path | wc -l)
 ((mapcount = mapcount - 1))
 echo $mapcount
