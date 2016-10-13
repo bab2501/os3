@@ -51,4 +51,4 @@ api.add_resource(CalcDMm, '/calc/multiplication/<string:fa>/<string:fb>/')
 api.add_resource(CalcDMd, '/calc/division/<string:fa>/<string:fb>/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
