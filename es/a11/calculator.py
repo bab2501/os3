@@ -26,26 +26,25 @@ def divide(x, y):
 
 class CalcDMa(Resource):
     def get(self, fa, fb):
-	fc = add(float(fa),float(fb))
-	result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
-	return result
+        fc = add(float(fa),float(fb))
+        result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
+        return result
 class CalcDMs(Resource):
     def get(self, fa, fb):
-	fc = subtract(float(fa),float(fb))
+        fc = subtract(float(fa),float(fb))
         result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
         return result
 class CalcDMm(Resource):
     def get(self, fa, fb):
-	fc = multiply(float(fa),float(fb))
+        fc = multiply(float(fa),float(fb))
         result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
         return result
 class CalcDMd(Resource):
     def get(self, fa, fb):
-	fc = divide(float(fa),float(fb))
+        fc = divide(float(fa),float(fb))
         result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
         return result
 
-       
 api.add_resource(CalcDMa, '/calc/addition/<string:fa>/<string:fb>/')
 api.add_resource(CalcDMs, '/calc/subtraction/<string:fa>/<string:fb>/')
 api.add_resource(CalcDMm, '/calc/multiplication/<string:fa>/<string:fb>/')
