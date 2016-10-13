@@ -27,8 +27,8 @@ def divide(x, y):
 class CalcDMa(Resource):
     def get(self, fa, fb):
 	fc = add(float(fa),float(fb))
-        result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
-        return result
+	result = {'input A': [fa], 'input B': [fb], 'output C': [fc]}
+	return result
 class CalcDMs(Resource):
     def get(self, fa, fb):
 	fc = subtract(float(fa),float(fb))
