@@ -22,7 +22,10 @@ def multiply(x, y):
 
 def divide(x, y):
    """This function divides two numbers"""
-   return x / y
+   if x==0 and y==0:
+        return 'got you 0/0 = error :P'
+   else:
+        return x / y
 
 class CalcDMa(Resource):
     def get(self, fa, fb):
