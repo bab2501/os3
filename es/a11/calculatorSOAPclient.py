@@ -27,7 +27,7 @@ print "           3 : server.mul(va,vb),"
 print "           4 : server.div(va,vb)"
 print "}"
 print "---------------------------------"
-vf = raw_input("Please enter a number (0-4): ")
+vf = int(raw_input("Please enter a number (0-4): "))
 print "================================="
 print " "
 
