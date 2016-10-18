@@ -7,8 +7,8 @@ print "You are welcome"
 print "================================="
 
 # Input the varia
-va = int(raw_input("Please enter variable A: "))
-vb = int(raw_input("Please enter variable B: "))
+va = float(raw_input("Please enter variable A: "))
+vb = float(raw_input("Please enter variable B: "))
 
 #input to the function readline
 vo = {0 : server.hello(),
