@@ -1,5 +1,5 @@
 import SOAPpy
-server = SOAPpy.SOAPProxy("http://boktor.blaauwgeers.net:6000/")
+server = SOAPpy.SOAPProxy("http://boktor.blaauwgeers.net:7000")
 
 # You are welcome
 print "SOAPpy Calculator v0.01)"

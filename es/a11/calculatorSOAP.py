@@ -25,7 +25,7 @@ def div(x, y):
 
 def hello():
     return "Hello Mick"
-server = SOAPpy.SOAPServer(("boktor.blaauwgeers.net", 6000))
+server = SOAPpy.SOAPServer(("boktor.blaauwgeers.net", 7000))
 server.registerFunction(hello)
 server.registerFunction(add)
 server.registerFunction(sub)
