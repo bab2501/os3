@@ -31,7 +31,8 @@ vf = raw_input("Please enter a number (0-4): ")
 print "================================="
 print " "
 
-print 'hello'
-print server.hello()
-print 'add 1 and 2'
-print server.add(1,2)
+print "Responce:"
+print vo[vf]
+print "Thank you for using my calculator"
+print "================================="
+
