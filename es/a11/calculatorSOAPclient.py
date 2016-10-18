@@ -8,7 +8,7 @@ print "================================="
 
 # Input the varia
 va = raw_input("Please enter variable A: ")
-vb = raw_input"Please enter variable B: ")
+vb = raw_input("Please enter variable B: ")
 
 #input to the function readline
 vo = {0 : server.hello(),
