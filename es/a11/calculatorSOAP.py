@@ -25,7 +25,7 @@ def divide(x, y):
 
 def hello():
     return "Hello World"
-server = SOAPpy.SOAPServer(("localhost", 8080))
+server = SOAPpy.SOAPServer(("boktor.blaauwgeers.net", 6000))
 server.registerFunction(hello)
 server.serve_forever()
 
