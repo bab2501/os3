@@ -1,0 +1,25 @@
+#Generated assembly code Pipelined architecture
+@include "Mips.wasm"
+
+.data MyRegisters : REGISTERS
+0x00 : WORD 0x00 # put $0 to zero (default assumption)
+
+.data MyMemory : DATAMEM
+0x00 : WORD 0x00
+
+# Instruction codes are stored in the program memory. 
+.code MyCode: MIPS, MyMemory
+
+LUI 	$1, 0x1 
+NOP
+NOP
+NOP
+LUI 	$2, 0x2
+NOP
+NOP
+NOP
+LUI 	$3, 0x3 
+NOP
+NOP
+NOP  
+ADD	$1, $2, $3
