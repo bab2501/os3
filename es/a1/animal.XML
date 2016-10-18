@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="animal.XSL" ?>
+<animals>
+	<animal>
+		<name>dog</name>
+		<color>black</color>
+		<noise>true</noise>
+		<eye>2</eye>
+	</animal>
+	<animal>
+		<name>cat</name>
+		<color>black</color>
+		<noise>true</noise>
+		<eye></eye>
+	</animal>
+	<animal>
+		<name>fish</name>
+		<color>black</color>
+		<noise>false</noise>
+		<eye></eye>
+	</animal>
+</animals>

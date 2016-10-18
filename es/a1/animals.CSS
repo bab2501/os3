@@ -1,0 +1,24 @@
+html {background:#005286;}
+body {
+	background-color:#007eff;
+	margin:0;
+	padding:0;}
+table {
+	border-collapse: separate;
+	empty-cells: hide;
+}
+th {
+	background-color:#FF0000;
+	padding: 0 25px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+td {
+	background-color:#00FFFF;
+	padding: 0 25px;
+	font-size: 25px;
+}
+td:hover {
+	background-color:#00FF00;
+}

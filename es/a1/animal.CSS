@@ -1,0 +1,52 @@
+html {background:#005286;}
+body {
+	background-color:#007eff;
+	margin:0;
+	padding:0;}
+table {
+	border-collapse: separate;
+	empty-cells: hide;
+}
+th {
+	background-color:#FF0000;
+	padding: 0 25px;
+	font-size: 25px;
+	font-weight: bold; 
+}
+
+td {
+	background-color:#FFFFFF;
+	padding: 0 25px;
+	font-size: 25px;
+}
+td:hover {
+	background-color:#00FF00;
+}
+
+td.eename {
+	color:#00FFFF;
+}
+td.eecolor{
+	color:#00FF00;
+}
+td.eenoise{
+	color:#0000FF;
+}
+td.eeneye{
+	color:#000000;
+}
+
+th.eename {
+	color:#00AAAA;
+}
+th.eecolor{
+	color:#00AA00;
+}
+th.eenoise{
+	color:#0000AA;
+}
+th.eeneye{
+	color:#AAAAAA;
+}
+
+

@@ -1,0 +1,6 @@
+<!ELEMENT animals (animal)>
+<!ELEMENT animal (name, color, noise, eye?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT noise (#PCDATA)>
+<!ELEMENT eye (#PCDATA)> 
