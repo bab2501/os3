@@ -7,15 +7,15 @@ def add(x, y):
    """This function adds two numbers"""
    return x + y
 
-def subtract(x, y):
+def sub(x, y):
    """This function subtracts two numbers"""
    return x - y
 
-def multiply(x, y):
+def mul(x, y):
    """This function multiplies two numbers"""
    return x * y
 
-def divide(x, y):
+def div(x, y):
    """This function divides two numbers"""
    if x==0 and y==0:
         return 'got you 0/0 = error :P'
