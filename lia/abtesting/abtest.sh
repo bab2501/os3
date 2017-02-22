@@ -1,13 +1,12 @@
 #!/bin/bash
 clear
-echo "The script starts now."
+echo "The script starts soon."
 for i in {1..5}
 do
-        echo "$i Write" >> result.txt
-        dd if=/dev/zero of=/test bs=1024 count=102400 2>> result.txt
-        sh -c "sync && echo 3 > /proc/sys/vm/drop_caches"
-        echo "$i Read" >> result.txt
-        dd if=/test of=/dev/null bs=1024 2>> result.txt
-        rm -rf /test
+	echo "Round $i"
+        echo "<h1>Round $i</hi>" >> result.html
+	ab -n 100000 -c 100 -w "http://145.100.106.20/" >> result.html
+	echo "<hr />" >> result.html
+	sleep 1
 done
 echo "The script is finished"
