@@ -7,7 +7,7 @@ echo "The script starts soon."
 for i in {1..20}
 do
 	echo "Round $i"
-        curl -s -w %{time_connect}\\n -o /dev/null http://ec2-34-250-34-238.eu-west-1.compute.amazonaws.com/index.html >> $filename
+        curl -s -w %{time_total}\\n -o /dev/null http://ec2-34-250-34-238.eu-west-1.compute.amazonaws.com/index.html >> $filename
 	sleep 1
 done
 echo "Stage 1 finished"

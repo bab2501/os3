@@ -7,7 +7,7 @@ echo "The script starts soon."
 for i in {1..20}
 do
 	echo "Round $i"
-        timeo=$(curl -s -w %{time_connect}\\n -o koop.html http://blaauwgeers123-985675008.eu-west-1.elb.amazonaws.com/index.html)
+        timeo=$(curl -s -w %{time_total}\\n -o koop.html http://blaauwgeers123-985675008.eu-west-1.elb.amazonaws.com/index.html)
 	echo "$i $(grep instance koop.html | grep -o -e '#...................') $timeo" >> $filename
 	sleep 1
 done
