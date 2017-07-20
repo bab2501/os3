@@ -1,6 +1,6 @@
 package org.axis.wssample;
 
-public class SimpleCalculator{
+public class Topcalcs{
 	public int add(int a, int b) {
 		return a + b;
 	}
