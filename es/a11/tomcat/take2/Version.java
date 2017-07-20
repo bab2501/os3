@@ -1,6 +1,4 @@
-package topcalc.service;
- 
-public class TopCalc {
+public class Version {
  
     public String SayHello(String name) {
         if(name != null){
