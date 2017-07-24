@@ -10,17 +10,17 @@ package org.axis.wssample.ws.generated;
 import org.axis.wssample.Topcalcs;
 
 public class TopcalcSoapBindingImpl implements org.axis.wssample.ws.generated.Topcalc{
-    Topcalcs bab= new Topcalcs();
+    Topcalcs simple= new Topcalcs();
     public int sub(int in0, int in1) throws java.rmi.RemoteException {
-        return bab.sub(in0, in1);
+        return simple.sub(in0, in1);
     }
 
     public int mul(int in0, int in1) throws java.rmi.RemoteException {
-        return bab.mul(in0, in1);
+        return simple.mul(in0, in1);
     }
 
     public int add(int in0, int in1) throws java.rmi.RemoteException {
-        return bab.add(in0, in1);
+        return simple.add(in0, in1);
     }
 
 }
