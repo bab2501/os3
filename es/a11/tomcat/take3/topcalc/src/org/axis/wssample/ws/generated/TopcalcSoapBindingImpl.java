@@ -6,7 +6,8 @@
  */
 
 package org.axis.wssample.ws.generated;
-package org.axis.wssample.Topcalcs;
+
+import org.axis.wssample.Topcalcs;
 
 public class TopcalcSoapBindingImpl implements org.axis.wssample.ws.generated.Topcalc{
     Topcalcs bab= new Topcalcs();
