@@ -1,0 +1,4 @@
+iface eno1 inet6 static
+    address 2001:610:158:2600::2501:1991
+    netmask 64
+    gateway 2001:610:158:2600::1
