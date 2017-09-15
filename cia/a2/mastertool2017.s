@@ -17,7 +17,8 @@ main:
 	movl	%edi, -4(%rbp)
 	movq	%rsi, -16(%rbp)
 	leaq	.LC0(%rip), %rdi
-	call	puts@PLT
+	movl	$0, %eax
+	call	printf@PLT
 	movl	$2017, %eax
 	leave
 	.cfi_def_cfa 7, 8

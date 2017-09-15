@@ -851,6 +851,6 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 3 "mastertool2017.c"
 int main(int argc, char *argv[])
 {
-  printf("Hello Mick, How are you?\n");
+  printf("Hello Mick, How are you?");
   return 2017;
 }
