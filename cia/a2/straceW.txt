@@ -1,3 +1,2350 @@
- 09:17:36 up 13 days, 17:20,  1 user,  load average: 0.00, 0.00, 0.00
+execve("/usr/bin/zsh", ["zsh", "-c", "w"], [/* 23 vars */]) = 0
+brk(NULL)                               = 0x5622046a8000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f03e7ad7000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f03e7ad1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \30\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=22768, ...}) = 0
+mmap(NULL, 2117976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f03e76af000
+mprotect(0x7f03e76b3000, 2097152, PROT_NONE) = 0
+mmap(0x7f03e78b3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f03e78b3000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f03e74ab000
+mprotect(0x7f03e74ae000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e76ad000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f03e76ad000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\306\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=166680, ...}) = 0
+mmap(NULL, 2263840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f03e7282000
+mprotect(0x7f03e72a7000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e74a6000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f03e74a6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f03e6f79000
+mprotect(0x7f03e7081000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e7280000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7f03e7280000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\5\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1856752, ...}) = 0
+mmap(NULL, 3959200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f03e6bb2000
+mprotect(0x7f03e6d70000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e6f6f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f03e6f6f000
+mmap(0x7f03e6f75000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f03e6f75000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f03e7acf000
+arch_prctl(ARCH_SET_FS, 0x7f03e7ad0440) = 0
+mprotect(0x7f03e6f6f000, 16384, PROT_READ) = 0
+mprotect(0x7f03e7280000, 4096, PROT_READ) = 0
+mprotect(0x7f03e74a6000, 16384, PROT_READ) = 0
+mprotect(0x7f03e76ad000, 4096, PROT_READ) = 0
+mprotect(0x7f03e78b3000, 4096, PROT_READ) = 0
+mprotect(0x5622041e0000, 8192, PROT_READ) = 0
+mprotect(0x7f03e7ada000, 4096, PROT_READ) = 0
+munmap(0x7f03e7ad1000, 20611)           = 0
+brk(NULL)                               = 0x5622046a8000
+brk(0x5622046c9000)                     = 0x5622046c9000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2993552, ...}) = 0
+mmap(NULL, 2993552, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f03e68d7000
+close(3)                                = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+readlink("/proc/self/fd/0", "/dev/pts/0", 4095) = 10
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+open("/dev/pts/0", O_RDWR|O_NOCTTY)     = 3
+fcntl(3, F_DUPFD, 10)                   = 10
+close(3)                                = 0
+fcntl(10, F_GETFD)                      = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+getpid()                                = 26069
+pipe([3, 4])                            = 0
+dup(0)                                  = 5
+dup(0)                                  = 6
+dup(0)                                  = 7
+dup(0)                                  = 8
+dup(0)                                  = 9
+getppid()                               = 26067
+getuid()                                = 1000
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11
+connect(11, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(11)                               = 0
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11
+connect(11, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(11)                               = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=497, ...}) = 0
+read(11, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 497
+read(11, "", 4096)                      = 0
+close(11)                               = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f03e7ad1000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\22\0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=35688, ...}) = 0
+mmap(NULL, 2131040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f03e66ce000
+mprotect(0x7f03e66d6000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e68d5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x7000) = 0x7f03e68d5000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320?\0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=93128, ...}) = 0
+mmap(NULL, 2198104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f03e64b5000
+mprotect(0x7f03e64cb000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e66ca000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x15000) = 0x7f03e66ca000
+mmap(0x7f03e66cc000, 6744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f03e66cc000
+close(11)                               = 0
+mprotect(0x7f03e66ca000, 4096, PROT_READ) = 0
+mprotect(0x7f03e68d5000, 4096, PROT_READ) = 0
+munmap(0x7f03e7ad1000, 20611)           = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f03e7ad1000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340 \0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=47656, ...}) = 0
+mmap(NULL, 2143656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f03e62a9000
+mprotect(0x7f03e62b4000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e64b3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0xa000) = 0x7f03e64b3000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320!\0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=47608, ...}) = 0
+mmap(NULL, 2168600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f03e6097000
+mprotect(0x7f03e60a2000, 2093056, PROT_NONE) = 0
+mmap(0x7f03e62a1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0xa000) = 0x7f03e62a1000
+mmap(0x7f03e62a3000, 22296, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f03e62a3000
+close(11)                               = 0
+mprotect(0x7f03e62a1000, 4096, PROT_READ) = 0
+mprotect(0x7f03e64b3000, 4096, PROT_READ) = 0
+munmap(0x7f03e7ad1000, 20611)           = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 11
+lseek(11, 0, SEEK_CUR)                  = 0
+fstat(11, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 11, 0) = 0x7f03e7ad6000
+lseek(11, 1526, SEEK_SET)               = 1526
+munmap(0x7f03e7ad6000, 1526)            = 0
+close(11)                               = 0
+stat("/home/ablaauwgeers", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ablaauwgeers/os3/cia/a2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f03e7ad3000
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 11, 0) = 0x7f03e7ac8000
+close(11)                               = 0
+uname({sysname="Linux", nodename="nevers", ...}) = 0
+open("/proc/self/loginuid", O_RDONLY)   = 11
+read(11, "1000", 12)                    = 4
+close(11)                               = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 11
+lseek(11, 0, SEEK_CUR)                  = 0
+fstat(11, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 11, 0) = 0x7f03e7ad2000
+lseek(11, 1526, SEEK_SET)               = 1526
+munmap(0x7f03e7ad2000, 1526)            = 0
+close(11)                               = 0
+uname({sysname="Linux", nodename="nevers", ...}) = 0
+ioctl(10, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+getrlimit(RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_NPROC, {rlim_cur=63851, rlim_max=63851}) = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+getrlimit(RLIMIT_MEMLOCK, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_LOCKS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_SIGPENDING, {rlim_cur=63851, rlim_max=63851}) = 0
+getrlimit(RLIMIT_MSGQUEUE, {rlim_cur=800*1024, rlim_max=800*1024}) = 0
+getrlimit(RLIMIT_NICE, {rlim_cur=0, rlim_max=0}) = 0
+getrlimit(RLIMIT_RTPRIO, {rlim_cur=0, rlim_max=0}) = 0
+getrlimit(RLIMIT_RTTIME, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+close(3)                                = 0
+close(4)                                = 0
+close(5)                                = 0
+close(6)                                = 0
+close(7)                                = 0
+close(8)                                = 0
+close(9)                                = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [QUIT], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, {SIG_IGN, [HUP], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, {0x562203fa50b0, [], SA_RESTORER, 0x7f03e6be77f0}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x562203fa50b0, [], SA_RESTORER, 0x7f03e6be77f0}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {0x562203fa50b0, [], SA_RESTORER, 0x7f03e6be77f0}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+stat("/etc/zsh/zshenv.zwc", 0x7fff51fb0110) = -1 ENOENT (No such file or directory)
+stat("/etc/zsh/zshenv", {st_mode=S_IFREG|0644, st_size=623, ...}) = 0
+open("/etc/zsh/zshenv", O_RDONLY|O_NOCTTY) = 3
+fcntl(3, F_DUPFD, 10)                   = 11
+close(3)                                = 0
+fcntl(11, F_GETFL)                      = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+fstat(11, {st_mode=S_IFREG|0644, st_size=623, ...}) = 0
+read(11, "# /etc/zsh/zshenv: system-wide ."..., 4096) = 623
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [WINCH], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [CHLD], [CHLD WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+read(11, "", 4096)                      = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+close(11)                               = 0
+stat("/home/ablaauwgeers/.zshenv.zwc", 0x7fff51fb0110) = -1 ENOENT (No such file or directory)
+stat("/home/ablaauwgeers/.zshenv", 0x7fff51fb01a0) = -1 ENOENT (No such file or directory)
+open("/home/ablaauwgeers/.zshenv", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+open("/dev/null", O_RDONLY|O_NOCTTY)    = 3
+fcntl(3, F_DUPFD, 10)                   = 11
+close(3)                                = 0
+fcntl(11, F_GETFL)                      = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+rt_sigprocmask(SIG_BLOCK, [CHLD], [WINCH], 8) = 0
+access("/usr/local/sbin/w", X_OK)       = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/w", X_OK)        = -1 ENOENT (No such file or directory)
+access("/usr/sbin/w", X_OK)             = -1 ENOENT (No such file or directory)
+access("/usr/bin/w", X_OK)              = 0
+stat("/usr/bin/w", {st_mode=S_IFREG|0755, st_size=18504, ...}) = 0
+rt_sigaction(SIGTTOU, {SIG_DFL, [TTOU], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTIN, {SIG_DFL, [TTIN], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_DFL, [TSTP], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [QUIT], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, {SIG_IGN, [QUIT], SA_RESTORER|SA_RESTART, 0x7f03e6be77f0}, 8) = 0
+getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+close(10)                               = 0
+close(11)                               = 0
+rt_sigprocmask(SIG_UNBLOCK, [CHLD], [CHLD WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+execve("/usr/bin/w", ["w"], [/* 23 vars */]) = 0
+brk(NULL)                               = 0x55e4b533d000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2b9303f000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2b93039000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libprocps.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320>\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=71712, ...}) = 0
+mmap(NULL, 2244440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b92bf9000
+mprotect(0x7f2b92c09000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b92e08000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f2b92e08000
+mmap(0x7f2b92e0b000, 73560, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b92e0b000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\5\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1856752, ...}) = 0
+mmap(NULL, 3959200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b92832000
+mprotect(0x7f2b929f0000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b92bef000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f2b92bef000
+mmap(0x7f2b92bf5000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b92bf5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=549360, ...}) = 0
+mmap(NULL, 553617, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b92fb1000
+mmap(0x7f2b93034000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x82000) = 0x7f2b93034000
+mmap(0x7f2b93038000, 657, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b93038000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0pa\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=154904, ...}) = 0
+mmap(NULL, 2259152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b9260a000
+mprotect(0x7f2b9262f000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b9282e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f2b9282e000
+mmap(0x7f2b92830000, 6352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b92830000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340 \0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=31712, ...}) = 0
+mmap(NULL, 2128832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b92402000
+mprotect(0x7f2b92409000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b92608000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f2b92608000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340(\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=153984, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2b92faf000
+mmap(NULL, 2248968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b921dc000
+mprotect(0x7f2b92200000, 2097152, PROT_NONE) = 0
+mmap(0x7f2b92400000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f2b92400000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\36\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96360, ...}) = 0
+mmap(NULL, 2191456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b91fc4000
+mprotect(0x7f2b91fdb000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b921da000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f2b921da000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\254\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1108088, ...}) = 0
+mmap(NULL, 3204352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b91cb5000
+mprotect(0x7f2b91dbc000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b91fbb000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x106000) = 0x7f2b91fbb000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=142400, ...}) = 0
+mmap(NULL, 2217000, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b91a97000
+mprotect(0x7f2b91aaf000, 2097152, PROT_NONE) = 0
+mmap(0x7f2b91caf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f2b91caf000
+mmap(0x7f2b91cb1000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b91cb1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\24\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=468920, ...}) = 0
+mmap(NULL, 2564360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b91824000
+mprotect(0x7f2b91896000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b91a95000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x71000) = 0x7f2b91a95000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b91620000
+mprotect(0x7f2b91623000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b91822000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f2b91822000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20(\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=79936, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2b92fad000
+mmap(NULL, 2175160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2b9140c000
+mprotect(0x7f2b9141f000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b9161e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7f2b9161e000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2b92faa000
+arch_prctl(ARCH_SET_FS, 0x7f2b92faa880) = 0
+mprotect(0x7f2b92bef000, 16384, PROT_READ) = 0
+mprotect(0x7f2b9161e000, 4096, PROT_READ) = 0
+mprotect(0x7f2b91822000, 4096, PROT_READ) = 0
+mprotect(0x7f2b91caf000, 4096, PROT_READ) = 0
+mprotect(0x7f2b91a95000, 4096, PROT_READ) = 0
+mprotect(0x7f2b91fbb000, 8192, PROT_READ) = 0
+mprotect(0x7f2b921da000, 4096, PROT_READ) = 0
+mprotect(0x7f2b92400000, 4096, PROT_READ) = 0
+mprotect(0x7f2b92608000, 4096, PROT_READ) = 0
+mprotect(0x7f2b9282e000, 4096, PROT_READ) = 0
+mprotect(0x7f2b93034000, 12288, PROT_READ) = 0
+mprotect(0x7f2b92e08000, 8192, PROT_READ) = 0
+mprotect(0x55e4b4df1000, 4096, PROT_READ) = 0
+mprotect(0x7f2b93042000, 4096, PROT_READ) = 0
+munmap(0x7f2b93039000, 20611)           = 0
+set_tid_address(0x7f2b92faab50)         = 26069
+set_robust_list(0x7f2b92faab60, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7f2b91a9cb40, [], SA_RESTORER|SA_SIGINFO, 0x7f2b91aa8670}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f2b91a9cbd0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f2b91aa8670}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x55e4b533d000
+brk(0x55e4b535e000)                     = 0x55e4b535e000
+statfs("/sys/fs/selinux", 0x7ffee445c490) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7ffee445c490)      = -1 ENOENT (No such file or directory)
+open("/proc/filesystems", O_RDONLY)     = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "nodev\tsysfs\nnodev\trootfs\nnodev\tr"..., 1024) = 358
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+access("/etc/selinux/config", F_OK)     = -1 ENOENT (No such file or directory)
+open("/proc/sys/kernel/osrelease", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "4.10.0-33-generic\n", 1024)    = 18
+close(3)                                = 0
+open("/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+read(3, "0-7\n", 8192)                  = 4
+close(3)                                = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2993552, ...}) = 0
+mmap(NULL, 2993552, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2b91131000
+close(3)                                = 0
+ioctl(1, TIOCGWINSZ, 0x7ffee445c4f0)    = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/proc/self/task", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2b92f89000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2b92f68000
+getdents(3, /* 212 entries */, 32768)   = 5648
+stat("/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/1/stat", O_RDONLY)          = 4
+read(4, "1 (systemd) S 0 1 1 0 -1 4194560"..., 1024) = 191
+close(4)                                = 0
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=497, ...}) = 0
+read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 497
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f2b93039000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\22\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=35688, ...}) = 0
+mmap(NULL, 2131040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2b90f28000
+mprotect(0x7f2b90f30000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b9112f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x7000) = 0x7f2b9112f000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320?\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=93128, ...}) = 0
+mmap(NULL, 2198104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2b90d0f000
+mprotect(0x7f2b90d25000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b90f24000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x15000) = 0x7f2b90f24000
+mmap(0x7f2b90f26000, 6744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b90f26000
+close(4)                                = 0
+mprotect(0x7f2b90f24000, 4096, PROT_READ) = 0
+mprotect(0x7f2b9112f000, 4096, PROT_READ) = 0
+munmap(0x7f2b93039000, 20611)           = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f2b93039000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340 \0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=47656, ...}) = 0
+mmap(NULL, 2143656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2b90b03000
+mprotect(0x7f2b90b0e000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b90d0d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f2b90d0d000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320!\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=47608, ...}) = 0
+mmap(NULL, 2168600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f2b908f1000
+mprotect(0x7f2b908fc000, 2093056, PROT_NONE) = 0
+mmap(0x7f2b90afb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f2b90afb000
+mmap(0x7f2b90afd000, 22296, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2b90afd000
+close(4)                                = 0
+mprotect(0x7f2b90afb000, 4096, PROT_READ) = 0
+mprotect(0x7f2b90d0d000, 4096, PROT_READ) = 0
+munmap(0x7f2b93039000, 20611)           = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f2b9303e000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303e000, 1526)            = 0
+close(4)                                = 0
+open("/proc/1/cmdline", O_RDONLY)       = 4
+read(4, "/sbin/init\0splash\0", 2047)   = 18
+close(4)                                = 0
+stat("/proc/2", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/2/stat", O_RDONLY)          = 4
+read(4, "2 (kthreadd) S 0 0 0 0 -1 212998"..., 1024) = 149
+close(4)                                = 0
+open("/proc/2/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/4", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/4/stat", O_RDONLY)          = 4
+read(4, "4 (kworker/0:0H) S 2 0 0 0 -1 69"..., 1024) = 156
+close(4)                                = 0
+open("/proc/4/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/6", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/6/stat", O_RDONLY)          = 4
+read(4, "6 (ksoftirqd/0) S 2 0 0 0 -1 692"..., 1024) = 156
+close(4)                                = 0
+open("/proc/6/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/7", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/7/stat", O_RDONLY)          = 4
+read(4, "7 (rcu_sched) S 2 0 0 0 -1 21299"..., 1024) = 155
+close(4)                                = 0
+open("/proc/7/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/8", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/8/stat", O_RDONLY)          = 4
+read(4, "8 (rcu_bh) S 2 0 0 0 -1 2129984 "..., 1024) = 148
+close(4)                                = 0
+open("/proc/8/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/9", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/9/stat", O_RDONLY)          = 4
+read(4, "9 (migration/0) S 2 0 0 0 -1 692"..., 1024) = 157
+close(4)                                = 0
+open("/proc/9/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/10", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/10/stat", O_RDONLY)         = 4
+read(4, "10 (lru-add-drain) S 2 0 0 0 -1 "..., 1024) = 158
+close(4)                                = 0
+open("/proc/10/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/11", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/11/stat", O_RDONLY)         = 4
+read(4, "11 (watchdog/0) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/11/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/12", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/12/stat", O_RDONLY)         = 4
+read(4, "12 (cpuhp/0) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/12/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/13", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/13/stat", O_RDONLY)         = 4
+read(4, "13 (cpuhp/1) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/13/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/14", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/14/stat", O_RDONLY)         = 4
+read(4, "14 (watchdog/1) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/14/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/15", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/15/stat", O_RDONLY)         = 4
+read(4, "15 (migration/1) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/15/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/16", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/16/stat", O_RDONLY)         = 4
+read(4, "16 (ksoftirqd/1) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/16/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/18", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/18/stat", O_RDONLY)         = 4
+read(4, "18 (kworker/1:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/18/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/19", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/19/stat", O_RDONLY)         = 4
+read(4, "19 (cpuhp/2) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/19/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/20", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/20/stat", O_RDONLY)         = 4
+read(4, "20 (watchdog/2) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/20/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/21", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/21/stat", O_RDONLY)         = 4
+read(4, "21 (migration/2) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/21/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/22", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/22/stat", O_RDONLY)         = 4
+read(4, "22 (ksoftirqd/2) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/22/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/24", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24/stat", O_RDONLY)         = 4
+read(4, "24 (kworker/2:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/24/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25/stat", O_RDONLY)         = 4
+read(4, "25 (cpuhp/3) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/25/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/26", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26/stat", O_RDONLY)         = 4
+read(4, "26 (watchdog/3) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/26/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/27", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/27/stat", O_RDONLY)         = 4
+read(4, "27 (migration/3) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/27/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/28", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/28/stat", O_RDONLY)         = 4
+read(4, "28 (ksoftirqd/3) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/28/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/30", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/30/stat", O_RDONLY)         = 4
+read(4, "30 (kworker/3:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/30/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/31", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/31/stat", O_RDONLY)         = 4
+read(4, "31 (cpuhp/4) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/31/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/32", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/32/stat", O_RDONLY)         = 4
+read(4, "32 (watchdog/4) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/32/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/33", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/33/stat", O_RDONLY)         = 4
+read(4, "33 (migration/4) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/33/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/34", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/34/stat", O_RDONLY)         = 4
+read(4, "34 (ksoftirqd/4) S 2 0 0 0 -1 69"..., 1024) = 156
+close(4)                                = 0
+open("/proc/34/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/36", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/36/stat", O_RDONLY)         = 4
+read(4, "36 (kworker/4:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/36/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/37", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/37/stat", O_RDONLY)         = 4
+read(4, "37 (cpuhp/5) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/37/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/38", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/38/stat", O_RDONLY)         = 4
+read(4, "38 (watchdog/5) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/38/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/39", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/39/stat", O_RDONLY)         = 4
+read(4, "39 (migration/5) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/39/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/40", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/40/stat", O_RDONLY)         = 4
+read(4, "40 (ksoftirqd/5) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/40/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/42", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/42/stat", O_RDONLY)         = 4
+read(4, "42 (kworker/5:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/42/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/43", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/43/stat", O_RDONLY)         = 4
+read(4, "43 (cpuhp/6) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/43/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/44", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/44/stat", O_RDONLY)         = 4
+read(4, "44 (watchdog/6) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/44/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/45", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/45/stat", O_RDONLY)         = 4
+read(4, "45 (migration/6) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/45/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/46", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/46/stat", O_RDONLY)         = 4
+read(4, "46 (ksoftirqd/6) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/46/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/48", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/48/stat", O_RDONLY)         = 4
+read(4, "48 (kworker/6:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/48/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/49", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/49/stat", O_RDONLY)         = 4
+read(4, "49 (cpuhp/7) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/49/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/50", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/50/stat", O_RDONLY)         = 4
+read(4, "50 (watchdog/7) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/50/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/51", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/51/stat", O_RDONLY)         = 4
+read(4, "51 (migration/7) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/51/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/52", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/52/stat", O_RDONLY)         = 4
+read(4, "52 (ksoftirqd/7) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/52/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/54", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/54/stat", O_RDONLY)         = 4
+read(4, "54 (kworker/7:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/54/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/55", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/55/stat", O_RDONLY)         = 4
+read(4, "55 (kdevtmpfs) S 2 0 0 0 -1 2130"..., 1024) = 152
+close(4)                                = 0
+open("/proc/55/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/56", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/56/stat", O_RDONLY)         = 4
+read(4, "56 (netns) S 2 0 0 0 -1 69238880"..., 1024) = 150
+close(4)                                = 0
+open("/proc/56/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/58", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/58/stat", O_RDONLY)         = 4
+read(4, "58 (khungtaskd) S 2 0 0 0 -1 212"..., 1024) = 155
+close(4)                                = 0
+open("/proc/58/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/59", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/59/stat", O_RDONLY)         = 4
+read(4, "59 (oom_reaper) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/59/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/60", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/60/stat", O_RDONLY)         = 4
+read(4, "60 (writeback) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/60/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/61", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/61/stat", O_RDONLY)         = 4
+read(4, "61 (kcompactd0) S 2 0 0 0 -1 209"..., 1024) = 154
+close(4)                                = 0
+open("/proc/61/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/62", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/62/stat", O_RDONLY)         = 4
+read(4, "62 (ksmd) S 2 0 0 0 -1 2097216 0"..., 1024) = 148
+close(4)                                = 0
+open("/proc/62/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/63", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/63/stat", O_RDONLY)         = 4
+read(4, "63 (khugepaged) S 2 0 0 0 -1 209"..., 1024) = 157
+close(4)                                = 0
+open("/proc/63/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/64", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/64/stat", O_RDONLY)         = 4
+read(4, "64 (crypto) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/64/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/65", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/65/stat", O_RDONLY)         = 4
+read(4, "65 (kintegrityd) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/65/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/66", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/66/stat", O_RDONLY)         = 4
+read(4, "66 (bioset) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/66/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/67", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/67/stat", O_RDONLY)         = 4
+read(4, "67 (kblockd) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/67/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/75", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/75/stat", O_RDONLY)         = 4
+read(4, "75 (ata_sff) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/75/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/76", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/76/stat", O_RDONLY)         = 4
+read(4, "76 (md) S 2 0 0 0 -1 69238880 0 "..., 1024) = 148
+close(4)                                = 0
+open("/proc/76/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/77", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/77/stat", O_RDONLY)         = 4
+read(4, "77 (devfreq_wq) S 2 0 0 0 -1 692"..., 1024) = 156
+close(4)                                = 0
+open("/proc/77/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/78", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/78/stat", O_RDONLY)         = 4
+read(4, "78 (watchdogd) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/78/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/81", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/81/stat", O_RDONLY)         = 4
+read(4, "81 (kauditd) S 2 0 0 0 -1 209721"..., 1024) = 151
+close(4)                                = 0
+open("/proc/81/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/82", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/82/stat", O_RDONLY)         = 4
+read(4, "82 (kswapd0) S 2 0 0 0 -1 107500"..., 1024) = 152
+close(4)                                = 0
+open("/proc/82/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/83", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/83/stat", O_RDONLY)         = 4
+read(4, "83 (vmstat) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/83/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/84", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/84/stat", O_RDONLY)         = 4
+read(4, "84 (bioset) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/84/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/85", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/85/stat", O_RDONLY)         = 4
+read(4, "85 (ecryptfs-kthrea) S 2 0 0 0 -"..., 1024) = 159
+close(4)                                = 0
+open("/proc/85/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/125", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/125/stat", O_RDONLY)        = 4
+read(4, "125 (kthrotld) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/125/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/126", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/126/stat", O_RDONLY)        = 4
+read(4, "126 (acpi_thermal_pm) S 2 0 0 0 "..., 1024) = 162
+close(4)                                = 0
+open("/proc/126/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/127", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/127/stat", O_RDONLY)        = 4
+read(4, "127 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/127/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/128", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/128/stat", O_RDONLY)        = 4
+read(4, "128 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/128/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/129", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/129/stat", O_RDONLY)        = 4
+read(4, "129 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/129/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/130", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/130/stat", O_RDONLY)        = 4
+read(4, "130 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/130/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/131", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/131/stat", O_RDONLY)        = 4
+read(4, "131 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/131/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/132", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/132/stat", O_RDONLY)        = 4
+read(4, "132 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/132/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+brk(0x55e4b537f000)                     = 0x55e4b537f000
+stat("/proc/133", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/133/stat", O_RDONLY)        = 4
+read(4, "133 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/133/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/134", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/134/stat", O_RDONLY)        = 4
+read(4, "134 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/134/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/138", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/138/stat", O_RDONLY)        = 4
+read(4, "138 (ipv6_addrconf) S 2 0 0 0 -1"..., 1024) = 160
+close(4)                                = 0
+open("/proc/138/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/159", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/159/stat", O_RDONLY)        = 4
+read(4, "159 (charger_manager) S 2 0 0 0 "..., 1024) = 162
+close(4)                                = 0
+open("/proc/159/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/207", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/207/stat", O_RDONLY)        = 4
+read(4, "207 (ttm_swap) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/207/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/208", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/208/stat", O_RDONLY)        = 4
+read(4, "208 (scsi_eh_0) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/208/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/209", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/209/stat", O_RDONLY)        = 4
+read(4, "209 (scsi_tmf_0) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/209/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/210", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/210/stat", O_RDONLY)        = 4
+read(4, "210 (scsi_eh_1) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/210/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/211", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/211/stat", O_RDONLY)        = 4
+read(4, "211 (scsi_tmf_1) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/211/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/212", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/212/stat", O_RDONLY)        = 4
+read(4, "212 (scsi_eh_2) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/212/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/213", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/213/stat", O_RDONLY)        = 4
+read(4, "213 (scsi_tmf_2) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/213/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/214", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/214/stat", O_RDONLY)        = 4
+read(4, "214 (scsi_eh_3) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/214/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/215", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/215/stat", O_RDONLY)        = 4
+read(4, "215 (scsi_tmf_3) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/215/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/216", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/216/stat", O_RDONLY)        = 4
+read(4, "216 (scsi_eh_4) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/216/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/217", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/217/stat", O_RDONLY)        = 4
+read(4, "217 (scsi_tmf_4) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/217/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/218", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/218/stat", O_RDONLY)        = 4
+read(4, "218 (scsi_eh_5) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/218/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/219", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/219/stat", O_RDONLY)        = 4
+read(4, "219 (scsi_tmf_5) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/219/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/227", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/227/stat", O_RDONLY)        = 4
+read(4, "227 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/227/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/228", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/228/stat", O_RDONLY)        = 4
+read(4, "228 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/228/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/233", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/233/stat", O_RDONLY)        = 4
+read(4, "233 (kworker/0:1H) S 2 0 0 0 -1 "..., 1024) = 162
+close(4)                                = 0
+open("/proc/233/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/234", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/234/stat", O_RDONLY)        = 4
+read(4, "234 (kworker/7:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/234/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/235", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/235/stat", O_RDONLY)        = 4
+read(4, "235 (kworker/3:1H) S 2 0 0 0 -1 "..., 1024) = 160
+close(4)                                = 0
+open("/proc/235/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/236", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/236/stat", O_RDONLY)        = 4
+read(4, "236 (kworker/4:1H) S 2 0 0 0 -1 "..., 1024) = 160
+close(4)                                = 0
+open("/proc/236/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/237", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/237/stat", O_RDONLY)        = 4
+read(4, "237 (kworker/2:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/237/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/238", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/238/stat", O_RDONLY)        = 4
+read(4, "238 (kworker/1:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/238/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/240", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/240/stat", O_RDONLY)        = 4
+read(4, "240 (kworker/5:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/240/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/241", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/241/stat", O_RDONLY)        = 4
+read(4, "241 (kworker/6:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/241/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/243", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/243/stat", O_RDONLY)        = 4
+read(4, "243 (kdmflush) S 2 0 0 0 -1 6923"..., 1024) = 156
+close(4)                                = 0
+open("/proc/243/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/244", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/244/stat", O_RDONLY)        = 4
+read(4, "244 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/244/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/247", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/247/stat", O_RDONLY)        = 4
+read(4, "247 (kdmflush) S 2 0 0 0 -1 6923"..., 1024) = 156
+close(4)                                = 0
+open("/proc/247/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/248", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/248/stat", O_RDONLY)        = 4
+read(4, "248 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/248/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/281", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/281/stat", O_RDONLY)        = 4
+read(4, "281 (jbd2/dm-0-8) S 2 0 0 0 -1 2"..., 1024) = 164
+close(4)                                = 0
+open("/proc/281/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/282", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/282/stat", O_RDONLY)        = 4
+read(4, "282 (ext4-rsv-conver) S 2 0 0 0 "..., 1024) = 163
+close(4)                                = 0
+open("/proc/282/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/315", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/315/stat", O_RDONLY)        = 4
+read(4, "315 (systemd-journal) S 1 315 31"..., 1024) = 187
+close(4)                                = 0
+open("/proc/315/cmdline", O_RDONLY)     = 4
+read(4, "/lib/systemd/systemd-journald\0", 2047) = 30
+close(4)                                = 0
+stat("/proc/327", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/327/stat", O_RDONLY)        = 4
+read(4, "327 (unbound) S 1 327 327 0 -1 4"..., 1024) = 172
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f2b9303e000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303e000, 1526)            = 0
+close(4)                                = 0
+open("/proc/327/cmdline", O_RDONLY)     = 4
+read(4, "unbound\0-c\0/usr/local/etc/unboun"..., 2047) = 47
+close(4)                                = 0
+stat("/proc/338", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/338/stat", O_RDONLY)        = 4
+read(4, "338 (kworker/1:0) S 2 0 0 0 -1 6"..., 1024) = 166
+close(4)                                = 0
+open("/proc/338/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/353", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/353/stat", O_RDONLY)        = 4
+read(4, "353 (lvmetad) S 1 353 353 0 -1 4"..., 1024) = 167
+close(4)                                = 0
+open("/proc/353/cmdline", O_RDONLY)     = 4
+read(4, "/sbin/lvmetad\0-f\0", 2047)    = 17
+close(4)                                = 0
+stat("/proc/372", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/372/stat", O_RDONLY)        = 4
+read(4, "372 (systemd-udevd) S 1 372 372 "..., 1024) = 183
+close(4)                                = 0
+open("/proc/372/cmdline", O_RDONLY)     = 4
+read(4, "/lib/systemd/systemd-udevd\0", 2047) = 27
+close(4)                                = 0
+stat("/proc/457", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/457/stat", O_RDONLY)        = 4
+read(4, "457 (edac-poller) S 2 0 0 0 -1 6"..., 1024) = 159
+close(4)                                = 0
+open("/proc/457/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/646", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/646/stat", O_RDONLY)        = 4
+read(4, "646 (accounts-daemon) S 1 646 64"..., 1024) = 183
+close(4)                                = 0
+open("/proc/646/cmdline", O_RDONLY)     = 4
+read(4, "/usr/lib/accountsservice/account"..., 2047) = 41
+close(4)                                = 0
+stat("/proc/647", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/647/stat", O_RDONLY)        = 4
+read(4, "647 (systemd-logind) S 1 647 647"..., 1024) = 172
+close(4)                                = 0
+open("/proc/647/cmdline", O_RDONLY)     = 4
+read(4, "/lib/systemd/systemd-logind\0", 2047) = 28
+close(4)                                = 0
+stat("/proc/649", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/649/stat", O_RDONLY)        = 4
+read(4, "649 (dbus-daemon) S 1 649 649 0 "..., 1024) = 172
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f2b9303e000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303e000, 1526)            = 0
+close(4)                                = 0
+open("/proc/649/cmdline", O_RDONLY)     = 4
+read(4, "/usr/bin/dbus-daemon\0--system\0--"..., 2047) = 91
+close(4)                                = 0
+stat("/proc/652", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/652/stat", O_RDONLY)        = 4
+read(4, "652 (cron) S 1 652 652 0 -1 1077"..., 1024) = 174
+close(4)                                = 0
+open("/proc/652/cmdline", O_RDONLY)     = 4
+read(4, "/usr/sbin/cron\0-f\0", 2047)   = 18
+close(4)                                = 0
+stat("/proc/653", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/653/stat", O_RDONLY)        = 4
+read(4, "653 (rsyslogd) S 1 653 653 0 -1 "..., 1024) = 181
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f2b9303e000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303e000, 1526)            = 0
+close(4)                                = 0
+open("/proc/653/cmdline", O_RDONLY)     = 4
+read(4, "/usr/sbin/rsyslogd\0-n\0", 2047) = 22
+close(4)                                = 0
+stat("/proc/803", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/803/stat", O_RDONLY)        = 4
+read(4, "803 (sshd) S 1 803 803 0 -1 4194"..., 1024) = 189
+close(4)                                = 0
+open("/proc/803/cmdline", O_RDONLY)     = 4
+read(4, "/usr/sbin/sshd\0-D\0", 2047)   = 18
+close(4)                                = 0
+stat("/proc/806", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/806/stat", O_RDONLY)        = 4
+read(4, "806 (agetty) S 1 806 806 1025 80"..., 1024) = 163
+close(4)                                = 0
+open("/proc/806/cmdline", O_RDONLY)     = 4
+read(4, "/sbin/agetty\0--noclear\0tty1\0linu"..., 2047) = 34
+close(4)                                = 0
+stat("/proc/2604", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/2604/stat", O_RDONLY)       = 4
+read(4, "2604 (kworker/3:1) S 2 0 0 0 -1 "..., 1024) = 165
+close(4)                                = 0
+open("/proc/2604/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/2751", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/2751/stat", O_RDONLY)       = 4
+read(4, "2751 (kworker/3:3) S 2 0 0 0 -1 "..., 1024) = 164
+close(4)                                = 0
+open("/proc/2751/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/5550", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/5550/stat", O_RDONLY)       = 4
+read(4, "5550 (kworker/2:0) S 2 0 0 0 -1 "..., 1024) = 166
+close(4)                                = 0
+open("/proc/5550/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/5900", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/5900/stat", O_RDONLY)       = 4
+read(4, "5900 (kworker/0:2) S 2 0 0 0 -1 "..., 1024) = 166
+close(4)                                = 0
+open("/proc/5900/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/9849", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/9849/stat", O_RDONLY)       = 4
+read(4, "9849 (kworker/4:2) S 2 0 0 0 -1 "..., 1024) = 168
+close(4)                                = 0
+open("/proc/9849/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/11375", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/11375/stat", O_RDONLY)      = 4
+read(4, "11375 (kworker/7:2) S 2 0 0 0 -1"..., 1024) = 167
+close(4)                                = 0
+open("/proc/11375/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/16745", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/16745/stat", O_RDONLY)      = 4
+read(4, "16745 (kworker/4:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/16745/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/22793", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/22793/stat", O_RDONLY)      = 4
+read(4, "22793 (kworker/7:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/22793/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/23117", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/23117/stat", O_RDONLY)      = 4
+read(4, "23117 (kworker/1:1) S 2 0 0 0 -1"..., 1024) = 167
+close(4)                                = 0
+open("/proc/23117/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/23138", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/23138/stat", O_RDONLY)      = 4
+read(4, "23138 (kworker/2:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/23138/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/23185", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/23185/stat", O_RDONLY)      = 4
+read(4, "23185 (kworker/6:2) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/23185/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/24172", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24172/stat", O_RDONLY)      = 4
+read(4, "24172 (systemd) S 1 24172 24172 "..., 1024) = 318
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f2b9303e000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303e000, 1526)            = 0
+close(4)                                = 0
+open("/proc/24172/cmdline", O_RDONLY)   = 4
+read(4, "/lib/systemd/systemd\0--user\0", 2047) = 28
+close(4)                                = 0
+stat("/proc/24173", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24173/stat", O_RDONLY)      = 4
+read(4, "24173 ((sd-pam)) S 24172 24172 2"..., 1024) = 181
+close(4)                                = 0
+open("/proc/24173/cmdline", O_RDONLY)   = 4
+read(4, "(sd-pam)\0\0\0\0\0\0\0\0\0\0", 2047) = 18
+close(4)                                = 0
+stat("/proc/24229", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24229/stat", O_RDONLY)      = 4
+read(4, "24229 (ssh-agent) S 1 24229 2422"..., 1024) = 180
+close(4)                                = 0
+open("/proc/24229/cmdline", O_RDONLY)   = 4
+read(4, "ssh-agent\0-s\0", 2047)        = 13
+close(4)                                = 0
+stat("/proc/25431", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25431/stat", O_RDONLY)      = 4
+read(4, "25431 (kworker/6:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/25431/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25831", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25831/stat", O_RDONLY)      = 4
+read(4, "25831 (kworker/u16:1) S 2 0 0 0 "..., 1024) = 169
+close(4)                                = 0
+open("/proc/25831/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25908", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25908/stat", O_RDONLY)      = 4
+read(4, "25908 (kworker/u16:0) S 2 0 0 0 "..., 1024) = 169
+close(4)                                = 0
+open("/proc/25908/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25937", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25937/stat", O_RDONLY)      = 4
+read(4, "25937 (kworker/0:3) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/25937/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25940", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25940/stat", O_RDONLY)      = 4
+read(4, "25940 (sshd) S 803 25940 25940 0"..., 1024) = 186
+close(4)                                = 0
+open("/proc/25940/cmdline", O_RDONLY)   = 4
+read(4, "sshd: ablaauwgeers [priv]", 2047) = 25
+close(4)                                = 0
+stat("/proc/25965", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25965/stat", O_RDONLY)      = 4
+read(4, "25965 (sshd) S 25940 25940 25940"..., 1024) = 181
+close(4)                                = 0
+open("/proc/25965/cmdline", O_RDONLY)   = 4
+read(4, "sshd: ablaauwgeers@pts/0", 2047) = 24
+close(4)                                = 0
+stat("/proc/25966", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25966/stat", O_RDONLY)      = 4
+read(4, "25966 (bash) S 25965 25966 25966"..., 1024) = 306
+close(4)                                = 0
+open("/proc/25966/cmdline", O_RDONLY)   = 4
+read(4, "-bash\0", 2047)                = 6
+close(4)                                = 0
+stat("/proc/26049", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26049/stat", O_RDONLY)      = 4
+read(4, "26049 (ssh-agent) S 1 26049 2604"..., 1024) = 181
+close(4)                                = 0
+open("/proc/26049/cmdline", O_RDONLY)   = 4
+read(4, "ssh-agent\0-s\0", 2047)        = 13
+close(4)                                = 0
+stat("/proc/26056", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26056/stat", O_RDONLY)      = 4
+read(4, "26056 (kworker/u16:2) S 2 0 0 0 "..., 1024) = 168
+close(4)                                = 0
+open("/proc/26056/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/26067", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26067/stat", O_RDONLY)      = 4
+read(4, "26067 (strace) S 25966 26067 259"..., 1024) = 325
+close(4)                                = 0
+open("/proc/26067/cmdline", O_RDONLY)   = 4
+read(4, "strace\0zsh\0-c\0w\0", 2047)   = 16
+close(4)                                = 0
+stat("/proc/26069", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26069/stat", O_RDONLY)      = 4
+read(4, "26069 (w) R 26067 26067 25966 34"..., 1024) = 311
+close(4)                                = 0
+open("/proc/26069/cmdline", O_RDONLY)   = 4
+read(4, "w\0", 2047)                    = 2
+close(4)                                = 0
+stat("/proc/30159", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/30159/stat", O_RDONLY)      = 4
+read(4, "30159 (systemd-timesyn) S 1 3015"..., 1024) = 188
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f2b9303e000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303e000, 1526)            = 0
+close(4)                                = 0
+open("/proc/30159/cmdline", O_RDONLY)   = 4
+read(4, "/lib/systemd/systemd-timesyncd\0", 2047) = 31
+close(4)                                = 0
+stat("/proc/30161", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/30161/stat", O_RDONLY)      = 4
+read(4, "30161 (dhclient) S 1 30161 30161"..., 1024) = 178
+close(4)                                = 0
+open("/proc/30161/cmdline", O_RDONLY)   = 4
+read(4, "/sbin/dhclient\0-1\0-v\0-pf\0/run/dh"..., 2047) = 135
+close(4)                                = 0
+stat("/proc/31603", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/31603/stat", O_RDONLY)      = 4
+read(4, "31603 (kworker/5:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/31603/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/32376", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/32376/stat", O_RDONLY)      = 4
+read(4, "32376 (kworker/5:0) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/32376/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0\16\0\0\0\0"..., 4096) = 2949
+lseek(3, -1855, SEEK_CUR)               = 1094
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0\16\0\0\0\0"..., 4096) = 1855
+close(3)                                = 0
+open("/proc/uptime", O_RDONLY)          = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "1186006.15 9485181.27\n", 8191) = 22
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (No such file or directory)
+open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], 0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\1\0\0\0005\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\6\0\0\0&\3\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\7\0\0\0Te\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\10\0\0\0p*\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "", 384)                        = 0
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+close(4)                                = 0
+open("/proc/loadavg", O_RDONLY)         = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "0.00 0.00 0.00 1/155 26069\n", 8191) = 27
+fstat(1, {st_mode=S_IFREG|0664, st_size=119530, ...}) = 0
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+read(5, "# Locale name alias data base.\n#"..., 4096) = 2995
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+open("/usr/share/locale/en_GB/LC_MESSAGES/procps-ng.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/procps-ng.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_GB/LC_MESSAGES/procps-ng.mo", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=5292, ...}) = 0
+mmap(NULL, 5292, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f2b9303d000
+close(5)                                = 0
+open("/usr/share/locale-langpack/en/LC_MESSAGES/procps-ng.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (No such file or directory)
+open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 5
+lseek(5, 0, SEEK_SET)                   = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\1\0\0\0005\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\6\0\0\0&\3\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\7\0\0\0Te\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+lseek(6, 0, SEEK_CUR)                   = 0
+fstat(6, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 6, 0) = 0x7f2b9303c000
+lseek(6, 1526, SEEK_SET)                = 1526
+munmap(0x7f2b9303c000, 1526)            = 0
+close(6)                                = 0
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 6, 0) = 0x7f2b92f61000
+close(6)                                = 0
+futex(0x7f2b92bf48a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\10\0\0\0p*\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f2b92975f80, [], SA_RESTORER, 0x7f2b928677f0}, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "", 384)                        = 0
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f2b928677f0}, NULL, 8) = 0
+close(5)                                = 0
+write(1, " 09:23:26 up 13 days, 17:26,  1 "..., 218 09:23:26 up 13 days, 17:26,  1 user,  load average: 0.00, 0.00, 0.00
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-ablaauwg pts/0    62.140.137.157   09:15    0.00s  0.07s  0.03s strace zsh -c w
+ablaauwg pts/0    62.140.137.157   09:15    6.00s  0.12s  0.02s strace zsh -c w
+) = 218
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
