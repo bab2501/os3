@@ -1,599 +1,2364 @@
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
-  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
-  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
-  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
-
-
-
-  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-bedfc518345498ab3204d330c1727cde7e733526a09cd7df6867f6a231565091.css" media="all" rel="stylesheet" />
-  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-794ddde646dd1791582965df2f5d1936d07f155e9fb08f86df99a2043d48408a.css" media="all" rel="stylesheet" />
-  
-  
-  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-877643c520258c4fa15ac8d1664d84efd0e3db56f5e544ccac58da0e50489904.css" media="all" rel="stylesheet" />
-  
-
-  <meta name="viewport" content="width=device-width">
-  
-  <title>os3/straceW.txt at b2212b34a59374b5470e55c52c0371ae901d6ac1 · bab2501/os3 · GitHub</title>
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
-  <meta property="fb:app_id" content="1401488693436528">
-
-    
-    <meta content="https://avatars3.githubusercontent.com/u/10122441?v=4&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="bab2501/os3" property="og:title" /><meta content="https://github.com/bab2501/os3" property="og:url" /><meta content="os3 - This is a repro I use to prepare for my master intake exam. It is usefull to have it on git because I am able to log my progress" property="og:description" />
-
-  <link rel="assets" href="https://assets-cdn.github.com/">
-  
-  <meta name="pjax-timeout" content="1000">
-  
-  <meta name="request-id" content="9E30:1D100:14AF66A:21C5DF9:59C4BB50" data-pjax-transient>
-  
-
-  <meta name="selected-link" value="repo_source" data-pjax-transient>
-
-  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
-<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
-    <meta name="google-analytics" content="UA-3769691-2">
-
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="9E30:1D100:14AF66A:21C5DF9:59C4BB50" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" />
-<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
-
-
-
-
-  <meta class="js-ga-set" name="dimension1" content="Logged Out">
-
-
-  
-
-      <meta name="hostname" content="github.com">
-  <meta name="user-login" content="">
-
-      <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZTU2YzU4YTQxZWM2OWY0Yzg3NGUxZmI0ZWFlM2Y0ZDMxOWUxZjY4MThlMmRjNmY3OGRlZGUyYTA3YzMzYTQwOXx7InJlbW90ZV9hZGRyZXNzIjoiMTQ1LjEwMC4xMDQuMTE3IiwicmVxdWVzdF9pZCI6IjlFMzA6MUQxMDA6MTRBRjY2QToyMUM1REY5OjU5QzRCQjUwIiwidGltZXN0YW1wIjoxNTA2MDY1MjMyLCJob3N0IjoiZ2l0aHViLmNvbSJ9">
-
-
-  <meta name="html-safe-nonce" content="3acf6cc9f12d90bca0cb0fa889cdd1a0930cc90c">
-
-  <meta http-equiv="x-pjax-version" content="009d0caf64e3cc215190a05fa067d0ec">
-  
-
-      <link href="https://github.com/bab2501/os3/commits/b2212b34a59374b5470e55c52c0371ae901d6ac1.atom" rel="alternate" title="Recent Commits to os3:b2212b34a59374b5470e55c52c0371ae901d6ac1" type="application/atom+xml">
-
-  <meta name="description" content="os3 - This is a repro I use to prepare for my master intake exam. It is usefull to have it on git because I am able to log my progress">
-  <meta name="go-import" content="github.com/bab2501/os3 git https://github.com/bab2501/os3.git">
-
-  <meta content="10122441" name="octolytics-dimension-user_id" /><meta content="bab2501" name="octolytics-dimension-user_login" /><meta content="56602938" name="octolytics-dimension-repository_id" /><meta content="bab2501/os3" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="56602938" name="octolytics-dimension-repository_network_root_id" /><meta content="bab2501/os3" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
-
-
-    <link rel="canonical" href="https://github.com/bab2501/os3/blob/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" data-pjax-transient>
-
-
-  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
-
-  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
-
-  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
-  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-
-<meta name="theme-color" content="#1e2327">
-
-
-
-  </head>
-
-  <body class="logged-out env-production page-blob">
-    
-
-  <div class="position-relative js-header-wrapper ">
-    <a href="#start-of-content" tabindex="1" class="px-2 py-4 show-on-focus js-skip-to-content">Skip to content</a>
-    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
-
-    
-    
-    
-
-
-
-        <header class="Header header-logged-out  position-relative f4 py-3" role="banner">
-  <div class="container-lg d-flex px-3">
-    <div class="d-flex flex-justify-between flex-items-center">
-      <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
-        <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-      </a>
-
-    </div>
-
-    <div class="HeaderMenu HeaderMenu--bright d-flex flex-justify-between flex-auto">
-        <nav class="mt-0">
-          <ul class="d-flex list-style-none">
-              <li class="ml-2">
-                <a href="/features" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features">
-                  Features
-</a>              </li>
-              <li class="ml-4">
-                <a href="/business" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/security /business/customers /business">
-                  Business
-</a>              </li>
-
-              <li class="ml-4">
-                <a href="/explore" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore">
-                  Explore
-</a>              </li>
-
-              <li class="ml-4">
-                    <a href="/marketplace" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace" data-selected-links=" /marketplace">
-                      Marketplace
-</a>              </li>
-              <li class="ml-4">
-                <a href="/pricing" class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing">
-                  Pricing
-</a>              </li>
-          </ul>
-        </nav>
-
-      <div class="d-flex">
-          <div class="d-lg-flex flex-items-center mr-3">
-            <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/bab2501/os3/search" class="js-site-search-form" data-scoped-search-url="/bab2501/os3/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-    <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/bab2501/os3/blob/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" class="header-search-scope no-underline">This repository</a>
-      <input type="text"
-        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
-        data-hotkey="s"
-        name="q"
-        value=""
-        placeholder="Search"
-        aria-label="Search this repository"
-        data-unscoped-placeholder="Search GitHub"
-        data-scoped-placeholder="Search"
-        autocapitalize="off">
-        <input type="hidden" class="js-site-search-type-field" name="type" >
-    </label>
-</form></div>
-
-          </div>
-
-        <span class="d-inline-block">
-            <div class="HeaderNavlink px-0 py-2 m-0">
-              <a class="text-bold text-white no-underline" href="/login?return_to=%2Fbab2501%2Fos3%2Fblob%2Fb2212b34a59374b5470e55c52c0371ae901d6ac1%2Fcia%2Fa2%2FstraceW.txt" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
-                <span class="text-gray">or</span>
-                <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
-            </div>
-        </span>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-  </div>
-
-  <div id="start-of-content" class="show-on-focus"></div>
-
-    <div id="js-flash-container">
-</div>
-
-
-
-  <div role="main">
-        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
-    <div id="js-repo-pjax-container" data-pjax-container>
-      
-
-
-
-
-
-    <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
-      <div class="container repohead-details-container">
-
-        <ul class="pagehead-actions">
-  <li>
-      <a href="/login?return_to=%2Fbab2501%2Fos3"
-    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
-    aria-label="You must be signed in to watch a repository" rel="nofollow">
-    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
-    Watch
-  </a>
-  <a class="social-count" href="/bab2501/os3/watchers"
-     aria-label="1 user is watching this repository">
-    1
-  </a>
-
-  </li>
-
-  <li>
-      <a href="/login?return_to=%2Fbab2501%2Fos3"
-    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
-    aria-label="You must be signed in to star a repository" rel="nofollow">
-    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
-    Star
-  </a>
-
-    <a class="social-count js-social-count" href="/bab2501/os3/stargazers"
-      aria-label="0 users starred this repository">
-      0
-    </a>
-
-  </li>
-
-  <li>
-      <a href="/login?return_to=%2Fbab2501%2Fos3"
-        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
-        aria-label="You must be signed in to fork a repository" rel="nofollow">
-        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-        Fork
-      </a>
-
-    <a href="/bab2501/os3/network" class="social-count"
-       aria-label="0 users forked this repository">
-      0
-    </a>
-  </li>
-</ul>
-
-        <h1 class="public ">
-  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
-  <span class="author" itemprop="author"><a href="/bab2501" class="url fn" rel="author">bab2501</a></span><!--
---><span class="path-divider">/</span><!--
---><strong itemprop="name"><a href="/bab2501/os3" data-pjax="#js-repo-pjax-container">os3</a></strong>
-
-</h1>
-
-      </div>
-      <div class="container">
-        
-<nav class="reponav js-repo-nav js-sidenav-container-pjax"
-     itemscope
-     itemtype="http://schema.org/BreadcrumbList"
-     role="navigation"
-     data-pjax="#js-repo-pjax-container">
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/bab2501/os3" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /bab2501/os3" itemprop="url">
-      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
-      <span itemprop="name">Code</span>
-      <meta itemprop="position" content="1">
-</a>  </span>
-
-    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-      <a href="/bab2501/os3/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /bab2501/os3/issues" itemprop="url">
-        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
-        <span itemprop="name">Issues</span>
-        <span class="Counter">0</span>
-        <meta itemprop="position" content="2">
-</a>    </span>
-
-  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
-    <a href="/bab2501/os3/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /bab2501/os3/pulls" itemprop="url">
-      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
-      <span itemprop="name">Pull requests</span>
-      <span class="Counter">0</span>
-      <meta itemprop="position" content="3">
-</a>  </span>
-
-    <a href="/bab2501/os3/projects" class="js-selected-navigation-item reponav-item" data-hotkey="g b" data-selected-links="repo_projects new_repo_project repo_project /bab2501/os3/projects">
-      <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
-      Projects
-      <span class="Counter" >0</span>
-</a>
-
-
-    <div class="reponav-dropdown js-menu-container">
-      <button type="button" class="btn-link reponav-item reponav-dropdown js-menu-target " data-no-toggle aria-expanded="false" aria-haspopup="true">
-        Insights
-        <svg aria-hidden="true" class="octicon octicon-triangle-down v-align-middle text-gray" height="11" version="1.1" viewBox="0 0 12 16" width="8"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"/></svg>
-      </button>
-      <div class="dropdown-menu-content js-menu-content">
-        <div class="dropdown-menu dropdown-menu-sw">
-          <a class="dropdown-item" href="/bab2501/os3/pulse" data-skip-pjax>
-            <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
-            Pulse
-          </a>
-          <a class="dropdown-item" href="/bab2501/os3/graphs" data-skip-pjax>
-            <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
-            Graphs
-          </a>
-        </div>
-      </div>
-    </div>
-</nav>
-
-      </div>
-    </div>
-
-<div class="container new-discussion-timeline experiment-repo-nav">
-  <div class="repository-content">
-
-    
-  <a href="/bab2501/os3/blob/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
-
-  <!-- blob contrib key: blob_contributors:v21:66228c417d158eba7be098b7f148bcd3 -->
-
-  <div class="file-navigation js-zeroclipboard-container">
-    
-<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
-  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
-    
-    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
-      <i>Tree:</i>
-      <span class="js-select-button css-truncate-target">b2212b34a5</span>
-  </button>
-
-  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
-
-    <div class="select-menu-modal">
-      <div class="select-menu-header">
-        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
-        <span class="select-menu-title">Switch branches/tags</span>
-      </div>
-
-      <div class="select-menu-filters">
-        <div class="select-menu-text-filter">
-          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
-        </div>
-        <div class="select-menu-tabs">
-          <ul>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
-            </li>
-            <li class="select-menu-tab">
-              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
-
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/bab2501/os3/blob/gh-pages/cia/a2/straceW.txt"
-               data-name="gh-pages"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
-                gh-pages
-              </span>
-            </a>
-            <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/bab2501/os3/blob/master/cia/a2/straceW.txt"
-               data-name="master"
-               data-skip-pjax="true"
-               rel="nofollow">
-              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
-              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
-                master
-              </span>
-            </a>
-        </div>
-
-          <div class="select-menu-no-results">Nothing to show</div>
-      </div>
-
-      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
-        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
-
-
-        </div>
-
-        <div class="select-menu-no-results">Nothing to show</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-    <div class="BtnGroup float-right">
-      <a href="/bab2501/os3/find/b2212b34a59374b5470e55c52c0371ae901d6ac1"
-            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
-            data-pjax
-            data-hotkey="t">
-        Find file
-      </a>
-      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
-    </div>
-    <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/bab2501/os3/tree/b2212b34a59374b5470e55c52c0371ae901d6ac1"><span>os3</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/bab2501/os3/tree/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia"><span>cia</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/bab2501/os3/tree/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2"><span>a2</span></a></span><span class="separator">/</span><strong class="final-path">straceW.txt</strong>
-    </div>
-  </div>
-
-
-  
-  <div class="commit-tease">
-      <span class="float-right">
-        <a class="commit-tease-sha" href="/bab2501/os3/commit/b2212b34a59374b5470e55c52c0371ae901d6ac1" data-pjax>
-          b2212b3
-        </a>
-        <relative-time datetime="2017-09-22T07:20:00Z">Sep 22, 2017</relative-time>
-      </span>
-      <div>
-        <img alt="" class="avatar" data-canonical-src="https://1.gravatar.com/avatar/b2ef21a39fd4c6625e7b52e254fc216d?d=https%3A%2F%2Fassets-cdn.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png&amp;r=x&amp;s=140" height="20" src="https://camo.githubusercontent.com/57a9d0e651b68ac53ef4bd685a44371f16830513/68747470733a2f2f312e67726176617461722e636f6d2f6176617461722f62326566323161333966643463363632356537623532653235346663323136643f643d68747470732533412532462532466173736574732d63646e2e6769746875622e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d7826733d313430" width="20" />
-        <span class="user-mention">ablaauwgeers</span>
-          <a href="/bab2501/os3/commit/b2212b34a59374b5470e55c52c0371ae901d6ac1" class="message" data-pjax="true" title="straceW">straceW</a>
-      </div>
-
-    <div class="commit-tease-contributors">
-      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
-        <strong>0</strong>
-         contributors
-      </button>
-      
-    </div>
-
-    <div id="blob_contributors_box" style="display:none">
-      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
-      <ul class="facebox-user-list" data-facebox-id="facebox-description">
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="file">
-    <div class="file-header">
-  <div class="file-actions">
-
-    <div class="BtnGroup">
-      <a href="/bab2501/os3/raw/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/bab2501/os3/blame/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/bab2501/os3/commits/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
-    </div>
-
-
-        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
-          aria-label="You must be signed in to make or propose changes">
-          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
-        </button>
-        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
-          aria-label="You must be signed in to make or propose changes">
-          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
-        </button>
-  </div>
-
-  <div class="file-info">
-      4 lines (3 sloc)
-      <span class="file-info-divider"></span>
-    218 Bytes
-  </div>
-</div>
-
-    
-
-  <div itemprop="text" class="blob-wrapper data type-text">
-      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
-      <tr>
-        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line"> 09:17:36 up 13 days, 17:20,  1 user,  load average: 0.00, 0.00, 0.00</td>
-      </tr>
-      <tr>
-        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line">USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT</td>
-      </tr>
-      <tr>
-        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line">ablaauwg pts/0    62.140.137.157   09:15    0.00s  0.07s  0.03s strace zsh -c w</td>
-      </tr>
-</table>
-
-  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
-    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
-      <svg aria-hidden="true" class="octicon" height="16" version="1.1" viewBox="0 0 13 4" width="14">
-        <g stroke="none" stroke-width="1" fill-rule="evenodd">
-            <g transform="translate(-1.000000, -6.000000)">
-                <path d="M2.5,9.5 C1.67157288,9.5 1,8.82842712 1,8 C1,7.17157288 1.67157288,6.5 2.5,6.5 C3.32842712,6.5 4,7.17157288 4,8 C4,8.82842712 3.32842712,9.5 2.5,9.5 Z M7.5,9.5 C6.67157288,9.5 6,8.82842712 6,8 C6,7.17157288 6.67157288,6.5 7.5,6.5 C8.32842712,6.5 9,7.17157288 9,8 C9,8.82842712 8.32842712,9.5 7.5,9.5 Z M12.5,9.5 C11.6715729,9.5 11,8.82842712 11,8 C11,7.17157288 11.6715729,6.5 12.5,6.5 C13.3284271,6.5 14,7.17157288 14,8 C14,8.82842712 13.3284271,9.5 12.5,9.5 Z"></path>
-            </g>
-        </g>
-      </svg>
-    </button>
-    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
-      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
-        <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
-        <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
-        <li><a href="/bab2501/os3/blame/b2212b34a59374b5470e55c52c0371ae901d6ac1/cia/a2/straceW.txt" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
-          <li><a href="/bab2501/os3/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
-      </ul>
-    </div>
-  </div>
-
-  </div>
-
-  </div>
-
-  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
-  <div id="jump-to-line" style="display:none">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
-      <button type="submit" class="btn">Go</button>
-</form>  </div>
-
-  </div>
-  <div class="modal-backdrop js-touch-events"></div>
-</div>
-
-    </div>
-  </div>
-
-  </div>
-
-      
-<div class="footer container-lg px-3" role="contentinfo">
-  <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
-    <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2017 <span title="0.19612s from unicorn-1561864385-wwvlc">GitHub</span>, Inc.</li>
-        <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
-        <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
-        <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
-        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
-        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
-    </ul>
-
-    <a href="https://github.com" aria-label="Homepage" class="footer-octicon" title="GitHub">
-      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-</a>
-    <ul class="list-style-none d-flex flex-wrap ">
-        <li class="mr-3"><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
-      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
-      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
-      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
-        <li class="mr-3"><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
-        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
-
-    </ul>
-  </div>
-</div>
-
-
-
-  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
-    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
-    <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
-      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
-    </button>
-    You can't perform that action at this time.
-  </div>
-
-
-    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/compat-91f98c37fc84eac24836eec2567e9912742094369a04c4eba6e3cd1fa18902d9.js"></script>
-    <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-0774b648d2fa46409c27660a35169a3f79dc46adc981c216cd16664e473791c5.js"></script>
-    
-    <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-fc89854760b04e12c3ba83d6ac526782a5d1f4d97e66c930fb54f9d69701ba23.js"></script>
-    
-    
-    
-    
-  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
-    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
-    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
-    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
-  </div>
-  <div class="facebox" id="facebox" style="display:none;">
-  <div class="facebox-popup">
-    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
-    </div>
-    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
-      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
-    </button>
-  </div>
-</div>
-
-
-  </body>
-</html>
-
+execve("/usr/bin/zsh", ["zsh", "-c", "w"], [/* 23 vars */]) = 0
+brk(NULL)                               = 0x55fb5db9e000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3254373000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f325436d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \30\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=22768, ...}) = 0
+mmap(NULL, 2117976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3253f4b000
+mprotect(0x7f3253f4f000, 2097152, PROT_NONE) = 0
+mmap(0x7f325414f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f325414f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3253d47000
+mprotect(0x7f3253d4a000, 2093056, PROT_NONE) = 0
+mmap(0x7f3253f49000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f3253f49000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\306\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=166680, ...}) = 0
+mmap(NULL, 2263840, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3253b1e000
+mprotect(0x7f3253b43000, 2093056, PROT_NONE) = 0
+mmap(0x7f3253d42000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f3253d42000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20W\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3253815000
+mprotect(0x7f325391d000, 2093056, PROT_NONE) = 0
+mmap(0x7f3253b1c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7f3253b1c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\5\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1856752, ...}) = 0
+mmap(NULL, 3959200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f325344e000
+mprotect(0x7f325360c000, 2093056, PROT_NONE) = 0
+mmap(0x7f325380b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f325380b000
+mmap(0x7f3253811000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3253811000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f325436b000
+arch_prctl(ARCH_SET_FS, 0x7f325436c440) = 0
+mprotect(0x7f325380b000, 16384, PROT_READ) = 0
+mprotect(0x7f3253b1c000, 4096, PROT_READ) = 0
+mprotect(0x7f3253d42000, 16384, PROT_READ) = 0
+mprotect(0x7f3253f49000, 4096, PROT_READ) = 0
+mprotect(0x7f325414f000, 4096, PROT_READ) = 0
+mprotect(0x55fb5db3e000, 8192, PROT_READ) = 0
+mprotect(0x7f3254376000, 4096, PROT_READ) = 0
+munmap(0x7f325436d000, 20611)           = 0
+brk(NULL)                               = 0x55fb5db9e000
+brk(0x55fb5dbbf000)                     = 0x55fb5dbbf000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2993552, ...}) = 0
+mmap(NULL, 2993552, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3253173000
+close(3)                                = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+readlink("/proc/self/fd/0", "/dev/pts/0", 4095) = 10
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+open("/dev/pts/0", O_RDWR|O_NOCTTY)     = 3
+fcntl(3, F_DUPFD, 10)                   = 10
+close(3)                                = 0
+fcntl(10, F_GETFD)                      = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+getpid()                                = 26125
+pipe([3, 4])                            = 0
+dup(0)                                  = 5
+dup(0)                                  = 6
+dup(0)                                  = 7
+dup(0)                                  = 8
+dup(0)                                  = 9
+getppid()                               = 26123
+getuid()                                = 1000
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11
+connect(11, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(11)                               = 0
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11
+connect(11, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(11)                               = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=497, ...}) = 0
+read(11, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 497
+read(11, "", 4096)                      = 0
+close(11)                               = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f325436d000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\22\0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=35688, ...}) = 0
+mmap(NULL, 2131040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f3252f6a000
+mprotect(0x7f3252f72000, 2093056, PROT_NONE) = 0
+mmap(0x7f3253171000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x7000) = 0x7f3253171000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320?\0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=93128, ...}) = 0
+mmap(NULL, 2198104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f3252d51000
+mprotect(0x7f3252d67000, 2093056, PROT_NONE) = 0
+mmap(0x7f3252f66000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x15000) = 0x7f3252f66000
+mmap(0x7f3252f68000, 6744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3252f68000
+close(11)                               = 0
+mprotect(0x7f3252f66000, 4096, PROT_READ) = 0
+mprotect(0x7f3253171000, 4096, PROT_READ) = 0
+munmap(0x7f325436d000, 20611)           = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f325436d000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340 \0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=47656, ...}) = 0
+mmap(NULL, 2143656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f3252b45000
+mprotect(0x7f3252b50000, 2093056, PROT_NONE) = 0
+mmap(0x7f3252d4f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0xa000) = 0x7f3252d4f000
+close(11)                               = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 11
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320!\0\0\0\0\0\0"..., 832) = 832
+fstat(11, {st_mode=S_IFREG|0644, st_size=47608, ...}) = 0
+mmap(NULL, 2168600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f3252933000
+mprotect(0x7f325293e000, 2093056, PROT_NONE) = 0
+mmap(0x7f3252b3d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0xa000) = 0x7f3252b3d000
+mmap(0x7f3252b3f000, 22296, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3252b3f000
+close(11)                               = 0
+mprotect(0x7f3252b3d000, 4096, PROT_READ) = 0
+mprotect(0x7f3252d4f000, 4096, PROT_READ) = 0
+munmap(0x7f325436d000, 20611)           = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 11
+lseek(11, 0, SEEK_CUR)                  = 0
+fstat(11, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 11, 0) = 0x7f3254372000
+lseek(11, 1526, SEEK_SET)               = 1526
+munmap(0x7f3254372000, 1526)            = 0
+close(11)                               = 0
+stat("/home/ablaauwgeers", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ablaauwgeers/os3/cia/a2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f325436f000
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 11
+fstat(11, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 11, 0) = 0x7f3254364000
+close(11)                               = 0
+uname({sysname="Linux", nodename="nevers", ...}) = 0
+open("/proc/self/loginuid", O_RDONLY)   = 11
+read(11, "1000", 12)                    = 4
+close(11)                               = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 11
+lseek(11, 0, SEEK_CUR)                  = 0
+fstat(11, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 11, 0) = 0x7f325436e000
+lseek(11, 1526, SEEK_SET)               = 1526
+munmap(0x7f325436e000, 1526)            = 0
+close(11)                               = 0
+uname({sysname="Linux", nodename="nevers", ...}) = 0
+ioctl(10, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+getrlimit(RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_NPROC, {rlim_cur=63851, rlim_max=63851}) = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+getrlimit(RLIMIT_MEMLOCK, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_LOCKS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrlimit(RLIMIT_SIGPENDING, {rlim_cur=63851, rlim_max=63851}) = 0
+getrlimit(RLIMIT_MSGQUEUE, {rlim_cur=800*1024, rlim_max=800*1024}) = 0
+getrlimit(RLIMIT_NICE, {rlim_cur=0, rlim_max=0}) = 0
+getrlimit(RLIMIT_RTPRIO, {rlim_cur=0, rlim_max=0}) = 0
+getrlimit(RLIMIT_RTTIME, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+close(3)                                = 0
+close(4)                                = 0
+close(5)                                = 0
+close(6)                                = 0
+close(7)                                = 0
+close(8)                                = 0
+close(9)                                = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [QUIT], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, {SIG_IGN, [HUP], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, {0x55fb5d9030b0, [], SA_RESTORER, 0x7f32534837f0}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x55fb5d9030b0, [], SA_RESTORER, 0x7f32534837f0}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {0x55fb5d9030b0, [], SA_RESTORER, 0x7f32534837f0}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+stat("/etc/zsh/zshenv.zwc", 0x7ffe153baf20) = -1 ENOENT (No such file or directory)
+stat("/etc/zsh/zshenv", {st_mode=S_IFREG|0644, st_size=623, ...}) = 0
+open("/etc/zsh/zshenv", O_RDONLY|O_NOCTTY) = 3
+fcntl(3, F_DUPFD, 10)                   = 11
+close(3)                                = 0
+fcntl(11, F_GETFL)                      = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+fstat(11, {st_mode=S_IFREG|0644, st_size=623, ...}) = 0
+read(11, "# /etc/zsh/zshenv: system-wide ."..., 4096) = 623
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [WINCH], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [CHLD], [CHLD WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+read(11, "", 4096)                      = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+close(11)                               = 0
+stat("/home/ablaauwgeers/.zshenv.zwc", 0x7ffe153baf20) = -1 ENOENT (No such file or directory)
+stat("/home/ablaauwgeers/.zshenv", 0x7ffe153bafb0) = -1 ENOENT (No such file or directory)
+open("/home/ablaauwgeers/.zshenv", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory)
+open("/dev/null", O_RDONLY|O_NOCTTY)    = 3
+fcntl(3, F_DUPFD, 10)                   = 11
+close(3)                                = 0
+fcntl(11, F_GETFL)                      = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+rt_sigprocmask(SIG_BLOCK, [CHLD], [WINCH], 8) = 0
+access("/usr/local/sbin/w", X_OK)       = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/w", X_OK)        = -1 ENOENT (No such file or directory)
+access("/usr/sbin/w", X_OK)             = -1 ENOENT (No such file or directory)
+access("/usr/bin/w", X_OK)              = 0
+stat("/usr/bin/w", {st_mode=S_IFREG|0755, st_size=18504, ...}) = 0
+rt_sigaction(SIGTTOU, {SIG_DFL, [TTOU], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTIN, {SIG_DFL, [TTIN], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_DFL, [TSTP], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [QUIT], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, {SIG_IGN, [QUIT], SA_RESTORER|SA_RESTART, 0x7f32534837f0}, 8) = 0
+getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+close(10)                               = 0
+close(11)                               = 0
+rt_sigprocmask(SIG_UNBLOCK, [CHLD], [CHLD WINCH], 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], [WINCH], 8) = 0
+execve("/usr/bin/w", ["w"], [/* 23 vars */]) = 0
+brk(NULL)                               = 0x55f69a547000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe9d4000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6dbe9ce000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libprocps.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320>\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=71712, ...}) = 0
+mmap(NULL, 2244440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbe58e000
+mprotect(0x7f6dbe59e000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbe79d000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f6dbe79d000
+mmap(0x7f6dbe7a0000, 73560, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe7a0000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\5\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1856752, ...}) = 0
+mmap(NULL, 3959200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbe1c7000
+mprotect(0x7f6dbe385000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbe584000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f6dbe584000
+mmap(0x7f6dbe58a000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe58a000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libsystemd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=549360, ...}) = 0
+mmap(NULL, 553617, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbe946000
+mmap(0x7f6dbe9c9000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x82000) = 0x7f6dbe9c9000
+mmap(0x7f6dbe9cd000, 657, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe9cd000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0pa\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=154904, ...}) = 0
+mmap(NULL, 2259152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbdf9f000
+mprotect(0x7f6dbdfc4000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbe1c3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f6dbe1c3000
+mmap(0x7f6dbe1c5000, 6352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe1c5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340 \0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=31712, ...}) = 0
+mmap(NULL, 2128832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbdd97000
+mprotect(0x7f6dbdd9e000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbdf9d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f6dbdf9d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340(\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=153984, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe944000
+mmap(NULL, 2248968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbdb71000
+mprotect(0x7f6dbdb95000, 2097152, PROT_NONE) = 0
+mmap(0x7f6dbdd95000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f6dbdd95000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/liblz4.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\36\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96360, ...}) = 0
+mmap(NULL, 2191456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbd959000
+mprotect(0x7f6dbd970000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbdb6f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f6dbdb6f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgcrypt.so.20", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\254\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1108088, ...}) = 0
+mmap(NULL, 3204352, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbd64a000
+mprotect(0x7f6dbd751000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbd950000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x106000) = 0x7f6dbd950000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=142400, ...}) = 0
+mmap(NULL, 2217000, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbd42c000
+mprotect(0x7f6dbd444000, 2097152, PROT_NONE) = 0
+mmap(0x7f6dbd644000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f6dbd644000
+mmap(0x7f6dbd646000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbd646000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340\24\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=468920, ...}) = 0
+mmap(NULL, 2564360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbd1b9000
+mprotect(0x7f6dbd22b000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbd42a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x71000) = 0x7f6dbd42a000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbcfb5000
+mprotect(0x7f6dbcfb8000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbd1b7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6dbd1b7000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgpg-error.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20(\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=79936, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe942000
+mmap(NULL, 2175160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6dbcda1000
+mprotect(0x7f6dbcdb4000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbcfb3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7f6dbcfb3000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe93f000
+arch_prctl(ARCH_SET_FS, 0x7f6dbe93f880) = 0
+mprotect(0x7f6dbe584000, 16384, PROT_READ) = 0
+mprotect(0x7f6dbcfb3000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbd1b7000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbd644000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbd42a000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbd950000, 8192, PROT_READ) = 0
+mprotect(0x7f6dbdb6f000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbdd95000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbdf9d000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbe1c3000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbe9c9000, 12288, PROT_READ) = 0
+mprotect(0x7f6dbe79d000, 8192, PROT_READ) = 0
+mprotect(0x55f699312000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbe9d7000, 4096, PROT_READ) = 0
+munmap(0x7f6dbe9ce000, 20611)           = 0
+set_tid_address(0x7f6dbe93fb50)         = 26125
+set_robust_list(0x7f6dbe93fb60, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7f6dbd431b40, [], SA_RESTORER|SA_SIGINFO, 0x7f6dbd43d670}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f6dbd431bd0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f6dbd43d670}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x55f69a547000
+brk(0x55f69a568000)                     = 0x55f69a568000
+statfs("/sys/fs/selinux", 0x7ffe0f100050) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7ffe0f100050)      = -1 ENOENT (No such file or directory)
+open("/proc/filesystems", O_RDONLY)     = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "nodev\tsysfs\nnodev\trootfs\nnodev\tr"..., 1024) = 358
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+access("/etc/selinux/config", F_OK)     = -1 ENOENT (No such file or directory)
+open("/proc/sys/kernel/osrelease", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "4.10.0-33-generic\n", 1024)    = 18
+close(3)                                = 0
+open("/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+read(3, "0-7\n", 8192)                  = 4
+close(3)                                = 0
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2993552, ...}) = 0
+mmap(NULL, 2993552, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6dbcac6000
+close(3)                                = 0
+ioctl(1, TIOCGWINSZ, 0x7ffe0f1000b0)    = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/proc/self/task", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe91e000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6dbe8fd000
+getdents(3, /* 214 entries */, 32768)   = 5712
+stat("/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/1/stat", O_RDONLY)          = 4
+read(4, "1 (systemd) S 0 1 1 0 -1 4194560"..., 1024) = 191
+close(4)                                = 0
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+socket(AF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=497, ...}) = 0
+read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 497
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f6dbe9ce000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\22\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=35688, ...}) = 0
+mmap(NULL, 2131040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6dbc8bd000
+mprotect(0x7f6dbc8c5000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbcac4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x7000) = 0x7f6dbcac4000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320?\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=93128, ...}) = 0
+mmap(NULL, 2198104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6dbc6a4000
+mprotect(0x7f6dbc6ba000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbc8b9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x15000) = 0x7f6dbc8b9000
+mmap(0x7f6dbc8bb000, 6744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbc8bb000
+close(4)                                = 0
+mprotect(0x7f6dbc8b9000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbcac4000, 4096, PROT_READ) = 0
+munmap(0x7f6dbe9ce000, 20611)           = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=20611, ...}) = 0
+mmap(NULL, 20611, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f6dbe9ce000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340 \0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=47656, ...}) = 0
+mmap(NULL, 2143656, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6dbc498000
+mprotect(0x7f6dbc4a3000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbc6a2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f6dbc6a2000
+close(4)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320!\0\0\0\0\0\0"..., 832) = 832
+fstat(4, {st_mode=S_IFREG|0644, st_size=47608, ...}) = 0
+mmap(NULL, 2168600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6dbc286000
+mprotect(0x7f6dbc291000, 2093056, PROT_NONE) = 0
+mmap(0x7f6dbc490000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f6dbc490000
+mmap(0x7f6dbc492000, 22296, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6dbc492000
+close(4)                                = 0
+mprotect(0x7f6dbc490000, 4096, PROT_READ) = 0
+mprotect(0x7f6dbc6a2000, 4096, PROT_READ) = 0
+munmap(0x7f6dbe9ce000, 20611)           = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6dbe9d3000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d3000, 1526)            = 0
+close(4)                                = 0
+open("/proc/1/cmdline", O_RDONLY)       = 4
+read(4, "/sbin/init\0splash\0", 2047)   = 18
+close(4)                                = 0
+stat("/proc/2", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/2/stat", O_RDONLY)          = 4
+read(4, "2 (kthreadd) S 0 0 0 0 -1 212998"..., 1024) = 149
+close(4)                                = 0
+open("/proc/2/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/4", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/4/stat", O_RDONLY)          = 4
+read(4, "4 (kworker/0:0H) S 2 0 0 0 -1 69"..., 1024) = 156
+close(4)                                = 0
+open("/proc/4/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/6", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/6/stat", O_RDONLY)          = 4
+read(4, "6 (ksoftirqd/0) S 2 0 0 0 -1 692"..., 1024) = 156
+close(4)                                = 0
+open("/proc/6/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/7", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/7/stat", O_RDONLY)          = 4
+read(4, "7 (rcu_sched) S 2 0 0 0 -1 21299"..., 1024) = 155
+close(4)                                = 0
+open("/proc/7/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/8", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/8/stat", O_RDONLY)          = 4
+read(4, "8 (rcu_bh) S 2 0 0 0 -1 2129984 "..., 1024) = 148
+close(4)                                = 0
+open("/proc/8/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/9", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/9/stat", O_RDONLY)          = 4
+read(4, "9 (migration/0) S 2 0 0 0 -1 692"..., 1024) = 157
+close(4)                                = 0
+open("/proc/9/cmdline", O_RDONLY)       = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/10", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/10/stat", O_RDONLY)         = 4
+read(4, "10 (lru-add-drain) S 2 0 0 0 -1 "..., 1024) = 158
+close(4)                                = 0
+open("/proc/10/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/11", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/11/stat", O_RDONLY)         = 4
+read(4, "11 (watchdog/0) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/11/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/12", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/12/stat", O_RDONLY)         = 4
+read(4, "12 (cpuhp/0) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/12/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/13", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/13/stat", O_RDONLY)         = 4
+read(4, "13 (cpuhp/1) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/13/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/14", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/14/stat", O_RDONLY)         = 4
+read(4, "14 (watchdog/1) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/14/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/15", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/15/stat", O_RDONLY)         = 4
+read(4, "15 (migration/1) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/15/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/16", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/16/stat", O_RDONLY)         = 4
+read(4, "16 (ksoftirqd/1) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/16/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/18", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/18/stat", O_RDONLY)         = 4
+read(4, "18 (kworker/1:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/18/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/19", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/19/stat", O_RDONLY)         = 4
+read(4, "19 (cpuhp/2) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/19/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/20", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/20/stat", O_RDONLY)         = 4
+read(4, "20 (watchdog/2) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/20/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/21", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/21/stat", O_RDONLY)         = 4
+read(4, "21 (migration/2) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/21/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/22", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/22/stat", O_RDONLY)         = 4
+read(4, "22 (ksoftirqd/2) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/22/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/24", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24/stat", O_RDONLY)         = 4
+read(4, "24 (kworker/2:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/24/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25/stat", O_RDONLY)         = 4
+read(4, "25 (cpuhp/3) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/25/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/26", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26/stat", O_RDONLY)         = 4
+read(4, "26 (watchdog/3) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/26/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/27", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/27/stat", O_RDONLY)         = 4
+read(4, "27 (migration/3) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/27/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/28", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/28/stat", O_RDONLY)         = 4
+read(4, "28 (ksoftirqd/3) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/28/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/30", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/30/stat", O_RDONLY)         = 4
+read(4, "30 (kworker/3:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/30/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/31", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/31/stat", O_RDONLY)         = 4
+read(4, "31 (cpuhp/4) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/31/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/32", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/32/stat", O_RDONLY)         = 4
+read(4, "32 (watchdog/4) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/32/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/33", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/33/stat", O_RDONLY)         = 4
+read(4, "33 (migration/4) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/33/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/34", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/34/stat", O_RDONLY)         = 4
+read(4, "34 (ksoftirqd/4) S 2 0 0 0 -1 69"..., 1024) = 156
+close(4)                                = 0
+open("/proc/34/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/36", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/36/stat", O_RDONLY)         = 4
+read(4, "36 (kworker/4:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/36/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/37", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/37/stat", O_RDONLY)         = 4
+read(4, "37 (cpuhp/5) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/37/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/38", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/38/stat", O_RDONLY)         = 4
+read(4, "38 (watchdog/5) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/38/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/39", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/39/stat", O_RDONLY)         = 4
+read(4, "39 (migration/5) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/39/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/40", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/40/stat", O_RDONLY)         = 4
+read(4, "40 (ksoftirqd/5) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/40/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/42", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/42/stat", O_RDONLY)         = 4
+read(4, "42 (kworker/5:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/42/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/43", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/43/stat", O_RDONLY)         = 4
+read(4, "43 (cpuhp/6) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/43/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/44", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/44/stat", O_RDONLY)         = 4
+read(4, "44 (watchdog/6) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/44/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/45", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/45/stat", O_RDONLY)         = 4
+read(4, "45 (migration/6) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/45/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/46", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/46/stat", O_RDONLY)         = 4
+read(4, "46 (ksoftirqd/6) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/46/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/48", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/48/stat", O_RDONLY)         = 4
+read(4, "48 (kworker/6:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/48/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/49", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/49/stat", O_RDONLY)         = 4
+read(4, "49 (cpuhp/7) S 2 0 0 0 -1 692388"..., 1024) = 151
+close(4)                                = 0
+open("/proc/49/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/50", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/50/stat", O_RDONLY)         = 4
+read(4, "50 (watchdog/7) S 2 0 0 0 -1 692"..., 1024) = 159
+close(4)                                = 0
+open("/proc/50/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/51", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/51/stat", O_RDONLY)         = 4
+read(4, "51 (migration/7) S 2 0 0 0 -1 69"..., 1024) = 158
+close(4)                                = 0
+open("/proc/51/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/52", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/52/stat", O_RDONLY)         = 4
+read(4, "52 (ksoftirqd/7) S 2 0 0 0 -1 69"..., 1024) = 155
+close(4)                                = 0
+open("/proc/52/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/54", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/54/stat", O_RDONLY)         = 4
+read(4, "54 (kworker/7:0H) S 2 0 0 0 -1 6"..., 1024) = 157
+close(4)                                = 0
+open("/proc/54/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/55", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/55/stat", O_RDONLY)         = 4
+read(4, "55 (kdevtmpfs) S 2 0 0 0 -1 2130"..., 1024) = 152
+close(4)                                = 0
+open("/proc/55/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/56", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/56/stat", O_RDONLY)         = 4
+read(4, "56 (netns) S 2 0 0 0 -1 69238880"..., 1024) = 150
+close(4)                                = 0
+open("/proc/56/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/58", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/58/stat", O_RDONLY)         = 4
+read(4, "58 (khungtaskd) S 2 0 0 0 -1 212"..., 1024) = 155
+close(4)                                = 0
+open("/proc/58/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/59", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/59/stat", O_RDONLY)         = 4
+read(4, "59 (oom_reaper) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/59/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/60", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/60/stat", O_RDONLY)         = 4
+read(4, "60 (writeback) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/60/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/61", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/61/stat", O_RDONLY)         = 4
+read(4, "61 (kcompactd0) S 2 0 0 0 -1 209"..., 1024) = 154
+close(4)                                = 0
+open("/proc/61/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/62", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/62/stat", O_RDONLY)         = 4
+read(4, "62 (ksmd) S 2 0 0 0 -1 2097216 0"..., 1024) = 148
+close(4)                                = 0
+open("/proc/62/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/63", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/63/stat", O_RDONLY)         = 4
+read(4, "63 (khugepaged) S 2 0 0 0 -1 209"..., 1024) = 157
+close(4)                                = 0
+open("/proc/63/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/64", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/64/stat", O_RDONLY)         = 4
+read(4, "64 (crypto) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/64/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/65", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/65/stat", O_RDONLY)         = 4
+read(4, "65 (kintegrityd) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/65/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/66", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/66/stat", O_RDONLY)         = 4
+read(4, "66 (bioset) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/66/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/67", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/67/stat", O_RDONLY)         = 4
+read(4, "67 (kblockd) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/67/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/75", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/75/stat", O_RDONLY)         = 4
+read(4, "75 (ata_sff) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/75/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/76", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/76/stat", O_RDONLY)         = 4
+read(4, "76 (md) S 2 0 0 0 -1 69238880 0 "..., 1024) = 148
+close(4)                                = 0
+open("/proc/76/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/77", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/77/stat", O_RDONLY)         = 4
+read(4, "77 (devfreq_wq) S 2 0 0 0 -1 692"..., 1024) = 156
+close(4)                                = 0
+open("/proc/77/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/78", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/78/stat", O_RDONLY)         = 4
+read(4, "78 (watchdogd) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/78/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/81", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/81/stat", O_RDONLY)         = 4
+read(4, "81 (kauditd) S 2 0 0 0 -1 209721"..., 1024) = 151
+close(4)                                = 0
+open("/proc/81/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/82", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/82/stat", O_RDONLY)         = 4
+read(4, "82 (kswapd0) S 2 0 0 0 -1 107500"..., 1024) = 152
+close(4)                                = 0
+open("/proc/82/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/83", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/83/stat", O_RDONLY)         = 4
+read(4, "83 (vmstat) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/83/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/84", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/84/stat", O_RDONLY)         = 4
+read(4, "84 (bioset) S 2 0 0 0 -1 6923888"..., 1024) = 152
+close(4)                                = 0
+open("/proc/84/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/85", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/85/stat", O_RDONLY)         = 4
+read(4, "85 (ecryptfs-kthrea) S 2 0 0 0 -"..., 1024) = 159
+close(4)                                = 0
+open("/proc/85/cmdline", O_RDONLY)      = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/125", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/125/stat", O_RDONLY)        = 4
+read(4, "125 (kthrotld) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/125/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/126", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/126/stat", O_RDONLY)        = 4
+read(4, "126 (acpi_thermal_pm) S 2 0 0 0 "..., 1024) = 162
+close(4)                                = 0
+open("/proc/126/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/127", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/127/stat", O_RDONLY)        = 4
+read(4, "127 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/127/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/128", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/128/stat", O_RDONLY)        = 4
+read(4, "128 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/128/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/129", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/129/stat", O_RDONLY)        = 4
+read(4, "129 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/129/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/130", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/130/stat", O_RDONLY)        = 4
+read(4, "130 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/130/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/131", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/131/stat", O_RDONLY)        = 4
+read(4, "131 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/131/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/132", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/132/stat", O_RDONLY)        = 4
+read(4, "132 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/132/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+brk(0x55f69a589000)                     = 0x55f69a589000
+stat("/proc/133", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/133/stat", O_RDONLY)        = 4
+read(4, "133 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/133/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/134", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/134/stat", O_RDONLY)        = 4
+read(4, "134 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 153
+close(4)                                = 0
+open("/proc/134/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/138", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/138/stat", O_RDONLY)        = 4
+read(4, "138 (ipv6_addrconf) S 2 0 0 0 -1"..., 1024) = 160
+close(4)                                = 0
+open("/proc/138/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/159", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/159/stat", O_RDONLY)        = 4
+read(4, "159 (charger_manager) S 2 0 0 0 "..., 1024) = 162
+close(4)                                = 0
+open("/proc/159/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/207", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/207/stat", O_RDONLY)        = 4
+read(4, "207 (ttm_swap) S 2 0 0 0 -1 6923"..., 1024) = 155
+close(4)                                = 0
+open("/proc/207/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/208", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/208/stat", O_RDONLY)        = 4
+read(4, "208 (scsi_eh_0) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/208/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/209", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/209/stat", O_RDONLY)        = 4
+read(4, "209 (scsi_tmf_0) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/209/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/210", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/210/stat", O_RDONLY)        = 4
+read(4, "210 (scsi_eh_1) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/210/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/211", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/211/stat", O_RDONLY)        = 4
+read(4, "211 (scsi_tmf_1) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/211/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/212", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/212/stat", O_RDONLY)        = 4
+read(4, "212 (scsi_eh_2) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/212/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/213", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/213/stat", O_RDONLY)        = 4
+read(4, "213 (scsi_tmf_2) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/213/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/214", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/214/stat", O_RDONLY)        = 4
+read(4, "214 (scsi_eh_3) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/214/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/215", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/215/stat", O_RDONLY)        = 4
+read(4, "215 (scsi_tmf_3) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/215/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/216", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/216/stat", O_RDONLY)        = 4
+read(4, "216 (scsi_eh_4) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/216/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/217", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/217/stat", O_RDONLY)        = 4
+read(4, "217 (scsi_tmf_4) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/217/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/218", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/218/stat", O_RDONLY)        = 4
+read(4, "218 (scsi_eh_5) S 2 0 0 0 -1 212"..., 1024) = 154
+close(4)                                = 0
+open("/proc/218/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/219", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/219/stat", O_RDONLY)        = 4
+read(4, "219 (scsi_tmf_5) S 2 0 0 0 -1 69"..., 1024) = 157
+close(4)                                = 0
+open("/proc/219/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/227", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/227/stat", O_RDONLY)        = 4
+read(4, "227 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/227/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/228", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/228/stat", O_RDONLY)        = 4
+read(4, "228 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/228/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/233", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/233/stat", O_RDONLY)        = 4
+read(4, "233 (kworker/0:1H) S 2 0 0 0 -1 "..., 1024) = 162
+close(4)                                = 0
+open("/proc/233/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/234", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/234/stat", O_RDONLY)        = 4
+read(4, "234 (kworker/7:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/234/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/235", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/235/stat", O_RDONLY)        = 4
+read(4, "235 (kworker/3:1H) S 2 0 0 0 -1 "..., 1024) = 160
+close(4)                                = 0
+open("/proc/235/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/236", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/236/stat", O_RDONLY)        = 4
+read(4, "236 (kworker/4:1H) S 2 0 0 0 -1 "..., 1024) = 160
+close(4)                                = 0
+open("/proc/236/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/237", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/237/stat", O_RDONLY)        = 4
+read(4, "237 (kworker/2:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/237/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/238", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/238/stat", O_RDONLY)        = 4
+read(4, "238 (kworker/1:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/238/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/240", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/240/stat", O_RDONLY)        = 4
+read(4, "240 (kworker/5:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/240/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/241", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/241/stat", O_RDONLY)        = 4
+read(4, "241 (kworker/6:1H) S 2 0 0 0 -1 "..., 1024) = 161
+close(4)                                = 0
+open("/proc/241/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/243", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/243/stat", O_RDONLY)        = 4
+read(4, "243 (kdmflush) S 2 0 0 0 -1 6923"..., 1024) = 156
+close(4)                                = 0
+open("/proc/243/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/244", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/244/stat", O_RDONLY)        = 4
+read(4, "244 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/244/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/247", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/247/stat", O_RDONLY)        = 4
+read(4, "247 (kdmflush) S 2 0 0 0 -1 6923"..., 1024) = 156
+close(4)                                = 0
+open("/proc/247/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/248", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/248/stat", O_RDONLY)        = 4
+read(4, "248 (bioset) S 2 0 0 0 -1 692388"..., 1024) = 154
+close(4)                                = 0
+open("/proc/248/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/281", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/281/stat", O_RDONLY)        = 4
+read(4, "281 (jbd2/dm-0-8) S 2 0 0 0 -1 2"..., 1024) = 164
+close(4)                                = 0
+open("/proc/281/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/282", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/282/stat", O_RDONLY)        = 4
+read(4, "282 (ext4-rsv-conver) S 2 0 0 0 "..., 1024) = 163
+close(4)                                = 0
+open("/proc/282/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/315", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/315/stat", O_RDONLY)        = 4
+read(4, "315 (systemd-journal) S 1 315 31"..., 1024) = 187
+close(4)                                = 0
+open("/proc/315/cmdline", O_RDONLY)     = 4
+read(4, "/lib/systemd/systemd-journald\0", 2047) = 30
+close(4)                                = 0
+stat("/proc/327", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/327/stat", O_RDONLY)        = 4
+read(4, "327 (unbound) S 1 327 327 0 -1 4"..., 1024) = 172
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6dbe9d3000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d3000, 1526)            = 0
+close(4)                                = 0
+open("/proc/327/cmdline", O_RDONLY)     = 4
+read(4, "unbound\0-c\0/usr/local/etc/unboun"..., 2047) = 47
+close(4)                                = 0
+stat("/proc/338", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/338/stat", O_RDONLY)        = 4
+read(4, "338 (kworker/1:0) S 2 0 0 0 -1 6"..., 1024) = 166
+close(4)                                = 0
+open("/proc/338/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/353", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/353/stat", O_RDONLY)        = 4
+read(4, "353 (lvmetad) S 1 353 353 0 -1 4"..., 1024) = 167
+close(4)                                = 0
+open("/proc/353/cmdline", O_RDONLY)     = 4
+read(4, "/sbin/lvmetad\0-f\0", 2047)    = 17
+close(4)                                = 0
+stat("/proc/372", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/372/stat", O_RDONLY)        = 4
+read(4, "372 (systemd-udevd) S 1 372 372 "..., 1024) = 183
+close(4)                                = 0
+open("/proc/372/cmdline", O_RDONLY)     = 4
+read(4, "/lib/systemd/systemd-udevd\0", 2047) = 27
+close(4)                                = 0
+stat("/proc/457", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/457/stat", O_RDONLY)        = 4
+read(4, "457 (edac-poller) S 2 0 0 0 -1 6"..., 1024) = 159
+close(4)                                = 0
+open("/proc/457/cmdline", O_RDONLY)     = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/646", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/646/stat", O_RDONLY)        = 4
+read(4, "646 (accounts-daemon) S 1 646 64"..., 1024) = 183
+close(4)                                = 0
+open("/proc/646/cmdline", O_RDONLY)     = 4
+read(4, "/usr/lib/accountsservice/account"..., 2047) = 41
+close(4)                                = 0
+stat("/proc/647", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/647/stat", O_RDONLY)        = 4
+read(4, "647 (systemd-logind) S 1 647 647"..., 1024) = 172
+close(4)                                = 0
+open("/proc/647/cmdline", O_RDONLY)     = 4
+read(4, "/lib/systemd/systemd-logind\0", 2047) = 28
+close(4)                                = 0
+stat("/proc/649", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/649/stat", O_RDONLY)        = 4
+read(4, "649 (dbus-daemon) S 1 649 649 0 "..., 1024) = 172
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6dbe9d3000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d3000, 1526)            = 0
+close(4)                                = 0
+open("/proc/649/cmdline", O_RDONLY)     = 4
+read(4, "/usr/bin/dbus-daemon\0--system\0--"..., 2047) = 91
+close(4)                                = 0
+stat("/proc/652", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/652/stat", O_RDONLY)        = 4
+read(4, "652 (cron) S 1 652 652 0 -1 1077"..., 1024) = 174
+close(4)                                = 0
+open("/proc/652/cmdline", O_RDONLY)     = 4
+read(4, "/usr/sbin/cron\0-f\0", 2047)   = 18
+close(4)                                = 0
+stat("/proc/653", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/653/stat", O_RDONLY)        = 4
+read(4, "653 (rsyslogd) S 1 653 653 0 -1 "..., 1024) = 181
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6dbe9d3000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d3000, 1526)            = 0
+close(4)                                = 0
+open("/proc/653/cmdline", O_RDONLY)     = 4
+read(4, "/usr/sbin/rsyslogd\0-n\0", 2047) = 22
+close(4)                                = 0
+stat("/proc/803", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/803/stat", O_RDONLY)        = 4
+read(4, "803 (sshd) S 1 803 803 0 -1 4194"..., 1024) = 189
+close(4)                                = 0
+open("/proc/803/cmdline", O_RDONLY)     = 4
+read(4, "/usr/sbin/sshd\0-D\0", 2047)   = 18
+close(4)                                = 0
+stat("/proc/806", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/806/stat", O_RDONLY)        = 4
+read(4, "806 (agetty) S 1 806 806 1025 80"..., 1024) = 163
+close(4)                                = 0
+open("/proc/806/cmdline", O_RDONLY)     = 4
+read(4, "/sbin/agetty\0--noclear\0tty1\0linu"..., 2047) = 34
+close(4)                                = 0
+stat("/proc/2604", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/2604/stat", O_RDONLY)       = 4
+read(4, "2604 (kworker/3:1) S 2 0 0 0 -1 "..., 1024) = 165
+close(4)                                = 0
+open("/proc/2604/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/2751", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/2751/stat", O_RDONLY)       = 4
+read(4, "2751 (kworker/3:3) S 2 0 0 0 -1 "..., 1024) = 164
+close(4)                                = 0
+open("/proc/2751/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/5550", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/5550/stat", O_RDONLY)       = 4
+read(4, "5550 (kworker/2:0) S 2 0 0 0 -1 "..., 1024) = 166
+close(4)                                = 0
+open("/proc/5550/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/5900", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/5900/stat", O_RDONLY)       = 4
+read(4, "5900 (kworker/0:2) S 2 0 0 0 -1 "..., 1024) = 166
+close(4)                                = 0
+open("/proc/5900/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/9849", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/9849/stat", O_RDONLY)       = 4
+read(4, "9849 (kworker/4:2) S 2 0 0 0 -1 "..., 1024) = 168
+close(4)                                = 0
+open("/proc/9849/cmdline", O_RDONLY)    = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/11375", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/11375/stat", O_RDONLY)      = 4
+read(4, "11375 (kworker/7:2) S 2 0 0 0 -1"..., 1024) = 167
+close(4)                                = 0
+open("/proc/11375/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/16745", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/16745/stat", O_RDONLY)      = 4
+read(4, "16745 (kworker/4:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/16745/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/22793", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/22793/stat", O_RDONLY)      = 4
+read(4, "22793 (kworker/7:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/22793/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/23117", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/23117/stat", O_RDONLY)      = 4
+read(4, "23117 (kworker/1:1) S 2 0 0 0 -1"..., 1024) = 167
+close(4)                                = 0
+open("/proc/23117/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/23138", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/23138/stat", O_RDONLY)      = 4
+read(4, "23138 (kworker/2:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/23138/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/23185", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/23185/stat", O_RDONLY)      = 4
+read(4, "23185 (kworker/6:2) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/23185/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/24172", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24172/stat", O_RDONLY)      = 4
+read(4, "24172 (systemd) S 1 24172 24172 "..., 1024) = 318
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6dbe9d3000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d3000, 1526)            = 0
+close(4)                                = 0
+open("/proc/24172/cmdline", O_RDONLY)   = 4
+read(4, "/lib/systemd/systemd\0--user\0", 2047) = 28
+close(4)                                = 0
+stat("/proc/24173", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24173/stat", O_RDONLY)      = 4
+read(4, "24173 ((sd-pam)) S 24172 24172 2"..., 1024) = 181
+close(4)                                = 0
+open("/proc/24173/cmdline", O_RDONLY)   = 4
+read(4, "(sd-pam)\0\0\0\0\0\0\0\0\0\0", 2047) = 18
+close(4)                                = 0
+stat("/proc/24229", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/24229/stat", O_RDONLY)      = 4
+read(4, "24229 (ssh-agent) S 1 24229 2422"..., 1024) = 180
+close(4)                                = 0
+open("/proc/24229/cmdline", O_RDONLY)   = 4
+read(4, "ssh-agent\0-s\0", 2047)        = 13
+close(4)                                = 0
+stat("/proc/25431", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25431/stat", O_RDONLY)      = 4
+read(4, "25431 (kworker/6:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/25431/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25831", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25831/stat", O_RDONLY)      = 4
+read(4, "25831 (kworker/u16:1) S 2 0 0 0 "..., 1024) = 169
+close(4)                                = 0
+open("/proc/25831/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25908", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25908/stat", O_RDONLY)      = 4
+read(4, "25908 (kworker/u16:0) S 2 0 0 0 "..., 1024) = 169
+close(4)                                = 0
+open("/proc/25908/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25937", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25937/stat", O_RDONLY)      = 4
+read(4, "25937 (kworker/0:3) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/25937/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/25940", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25940/stat", O_RDONLY)      = 4
+read(4, "25940 (sshd) S 803 25940 25940 0"..., 1024) = 186
+close(4)                                = 0
+open("/proc/25940/cmdline", O_RDONLY)   = 4
+read(4, "sshd: ablaauwgeers [priv]", 2047) = 25
+close(4)                                = 0
+stat("/proc/25965", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25965/stat", O_RDONLY)      = 4
+read(4, "25965 (sshd) S 25940 25940 25940"..., 1024) = 183
+close(4)                                = 0
+open("/proc/25965/cmdline", O_RDONLY)   = 4
+read(4, "sshd: ablaauwgeers@pts/0", 2047) = 24
+close(4)                                = 0
+stat("/proc/25966", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/25966/stat", O_RDONLY)      = 4
+read(4, "25966 (bash) S 25965 25966 25966"..., 1024) = 307
+close(4)                                = 0
+open("/proc/25966/cmdline", O_RDONLY)   = 4
+read(4, "-bash\0", 2047)                = 6
+close(4)                                = 0
+stat("/proc/26049", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26049/stat", O_RDONLY)      = 4
+read(4, "26049 (ssh-agent) S 1 26049 2604"..., 1024) = 181
+close(4)                                = 0
+open("/proc/26049/cmdline", O_RDONLY)   = 4
+read(4, "ssh-agent\0-s\0", 2047)        = 13
+close(4)                                = 0
+stat("/proc/26056", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26056/stat", O_RDONLY)      = 4
+read(4, "26056 (kworker/u16:2) S 2 0 0 0 "..., 1024) = 168
+close(4)                                = 0
+open("/proc/26056/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/26089", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26089/stat", O_RDONLY)      = 4
+read(4, "26089 (ssh-agent) S 1 26089 2608"..., 1024) = 181
+close(4)                                = 0
+open("/proc/26089/cmdline", O_RDONLY)   = 4
+read(4, "ssh-agent\0-s\0", 2047)        = 13
+close(4)                                = 0
+stat("/proc/26095", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26095/stat", O_RDONLY)      = 4
+read(4, "26095 (ssh-agent) S 1 26095 2609"..., 1024) = 181
+close(4)                                = 0
+open("/proc/26095/cmdline", O_RDONLY)   = 4
+read(4, "ssh-agent\0-s\0", 2047)        = 13
+close(4)                                = 0
+stat("/proc/26123", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26123/stat", O_RDONLY)      = 4
+read(4, "26123 (strace) S 25966 26123 259"..., 1024) = 325
+close(4)                                = 0
+open("/proc/26123/cmdline", O_RDONLY)   = 4
+read(4, "strace\0zsh\0-c\0w\0", 2047)   = 16
+close(4)                                = 0
+stat("/proc/26125", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/26125/stat", O_RDONLY)      = 4
+read(4, "26125 (w) R 26123 26123 25966 34"..., 1024) = 311
+close(4)                                = 0
+open("/proc/26125/cmdline", O_RDONLY)   = 4
+read(4, "w\0", 2047)                    = 2
+close(4)                                = 0
+stat("/proc/30159", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/30159/stat", O_RDONLY)      = 4
+read(4, "30159 (systemd-timesyn) S 1 3015"..., 1024) = 188
+close(4)                                = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6dbe9d3000
+lseek(4, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d3000, 1526)            = 0
+close(4)                                = 0
+open("/proc/30159/cmdline", O_RDONLY)   = 4
+read(4, "/lib/systemd/systemd-timesyncd\0", 2047) = 31
+close(4)                                = 0
+stat("/proc/30161", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/30161/stat", O_RDONLY)      = 4
+read(4, "30161 (dhclient) S 1 30161 30161"..., 1024) = 178
+close(4)                                = 0
+open("/proc/30161/cmdline", O_RDONLY)   = 4
+read(4, "/sbin/dhclient\0-1\0-v\0-pf\0/run/dh"..., 2047) = 135
+close(4)                                = 0
+stat("/proc/31603", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/31603/stat", O_RDONLY)      = 4
+read(4, "31603 (kworker/5:1) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/31603/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+stat("/proc/32376", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+open("/proc/32376/stat", O_RDONLY)      = 4
+read(4, "32376 (kworker/5:0) S 2 0 0 0 -1"..., 1024) = 166
+close(4)                                = 0
+open("/proc/32376/cmdline", O_RDONLY)   = 4
+read(4, "", 2047)                       = 0
+close(4)                                = 0
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0\16\0\0\0\0"..., 4096) = 2949
+lseek(3, -1855, SEEK_CUR)               = 1094
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0\16\0\0\0\0"..., 4096) = 1855
+close(3)                                = 0
+open("/proc/uptime", O_RDONLY)          = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "1186264.33 9487247.44\n", 8191) = 22
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (No such file or directory)
+open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_SET)                   = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], 0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\1\0\0\0005\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\6\0\0\0&\3\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\7\0\0\0Te\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "\10\0\0\0p*\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(4, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(4, "", 384)                        = 0
+fcntl(4, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+close(4)                                = 0
+open("/proc/loadavg", O_RDONLY)         = 4
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "0.00 0.00 0.00 1/157 26125\n", 8191) = 27
+fstat(1, {st_mode=S_IFREG|0664, st_size=120218, ...}) = 0
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+read(5, "# Locale name alias data base.\n#"..., 4096) = 2995
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+open("/usr/share/locale/en_GB/LC_MESSAGES/procps-ng.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale/en/LC_MESSAGES/procps-ng.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/en_GB/LC_MESSAGES/procps-ng.mo", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=5292, ...}) = 0
+mmap(NULL, 5292, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f6dbe9d2000
+close(5)                                = 0
+open("/usr/share/locale-langpack/en/LC_MESSAGES/procps-ng.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (No such file or directory)
+open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 5
+lseek(5, 0, SEEK_SET)                   = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\1\0\0\0005\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\6\0\0\0&\3\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\7\0\0\0Te\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+lseek(6, 0, SEEK_CUR)                   = 0
+fstat(6, {st_mode=S_IFREG|0644, st_size=1526, ...}) = 0
+mmap(NULL, 1526, PROT_READ, MAP_SHARED, 6, 0) = 0x7f6dbe9d1000
+lseek(6, 1526, SEEK_SET)                = 1526
+munmap(0x7f6dbe9d1000, 1526)            = 0
+close(6)                                = 0
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2949, ...}) = 0
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 6
+fstat(6, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 6, 0) = 0x7f6dbe8f6000
+close(6)                                = 0
+futex(0x7f6dbe5898a8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "\10\0\0\0p*\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 384) = 384
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+alarm(0)                                = 0
+rt_sigaction(SIGALRM, {0x7f6dbe30af80, [], SA_RESTORER, 0x7f6dbe1fc7f0}, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, 8) = 0
+alarm(10)                               = 0
+fcntl(5, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+read(5, "", 384)                        = 0
+fcntl(5, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+alarm(0)                                = 10
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6dbe1fc7f0}, NULL, 8) = 0
+close(5)                                = 0
+write(1, " 09:27:45 up 13 days, 17:31,  1 "..., 204 09:27:45 up 13 days, 17:31,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ablaauwg pts/0    62.140.137.157   09:15    1.00s  0.20s  0.01s w
+) = 204
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
