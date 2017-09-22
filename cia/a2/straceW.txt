@@ -1,0 +1,3 @@
+ 09:17:36 up 13 days, 17:20,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ablaauwg pts/0    62.140.137.157   09:15    0.00s  0.07s  0.03s strace zsh -c w
