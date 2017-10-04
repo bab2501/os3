@@ -123,4 +123,4 @@ tmtagsHistory
 *.mc
 *.cf
 OpenBSD
-cia/a5/sendmail-8.15.2/libsm/Makefile
+sendmail-8.15.2/libsm/Makefile
