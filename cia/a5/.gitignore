@@ -118,8 +118,9 @@ tmtagsHistory
 *.sublime-workspace
 
 #
-# Problem with mc
+# Problem with git
 ############
 *.mc
 *.cf
 OpenBSD
+cia/a5/sendmail-8.15.2/libsm/Makefile
