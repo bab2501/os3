@@ -1,0 +1,1 @@
+../../libsm/fscanf.c

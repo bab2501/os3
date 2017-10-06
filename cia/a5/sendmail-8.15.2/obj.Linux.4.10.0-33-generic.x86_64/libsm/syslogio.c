@@ -1,0 +1,1 @@
+../../libsm/syslogio.c

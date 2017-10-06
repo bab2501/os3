@@ -1,0 +1,1 @@
+../../libsm/t-scanf.c

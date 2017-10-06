@@ -1,0 +1,1 @@
+../../libsm/niprop.c

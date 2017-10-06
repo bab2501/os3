@@ -1,0 +1,1 @@
+../../sendmail/sm_resolve.h
