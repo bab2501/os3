@@ -1,0 +1,30 @@
+BODY, FRAME, FRAMESET {
+ 	margin: 0px 0px 0px 0px;
+ 	padding: 0px 0px 0px 0px;
+	font-size: 14pt;
+}
+DIV.container {
+	position: relative;
+	margin: 0px auto;
+	width: 750px;
+}
+DIV.page {
+	width: 750px;
+}
+A {
+	text-decoration: none;
+	font-weight: bold;
+}
+.lhs {
+	text-align: left;
+}
+.rhs {
+	text-align: right;
+}
+.copyright {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.error {
+	color:#cc0000;
+}

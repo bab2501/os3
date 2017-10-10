@@ -1,0 +1,215 @@
+#
+# @package_copyright@
+#
+# @configure_input@
+#
+
+.POSIX :
+
+.SUFFIXES :
+A = .@LIBEXT@
+O = .@OBJEXT@
+E = @EXEEXT@
+.SUFFIXES : .c .i $O $A
+
+prefix		:= @prefix@
+exec_prefix	:= @exec_prefix@
+bindir		:= @bindir@
+
+VPATH		:= @srcdir@
+srcdir		:= @srcdir@
+top_srcdir	:= @top_srcdir@
+abs_srcdir	:= @abs_srcdir@
+
+builddir	:= @builddir@
+top_builddir	:= @top_builddir@
+abs_builddir	:= @abs_builddir@
+
+SNERT_TARDIR	:= ${top_srcdir}/../../../..
+SNERT_INCDIR	:= ${top_srcdir}/../../include
+SNERT_LIBDIR	:= ${top_srcdir}/../../lib
+
+LIB		:= $(SNERT_LIBDIR)/@PACKAGE_TARNAME@$A
+BAK		:= $(SNERT_LIBDIR)/@PACKAGE_TARNAME@.bak
+TGZ		:= $(SNERT_TARDIR)/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tgz
+
+CC		:= @CC@
+CC_E		:= @CC_E@
+CC_O		:= @CC_O@
+CFLAGS		 = ${CFLAGS_PREFIX} @CFLAGS@
+LDFLAGS		 = ${LDFLAGS_PREFIX} @LDFLAGS@
+LIBS		 = ${LIBS_PREFIX} @LIBS@
+
+XARGSI		:= @XARGSI@
+RANLIB		:= @RANLIB@
+ARCHIVE		:= @ARCHIVE@
+COMPILE		:= @COMPILE@
+
+LIBSNERT 	= @LIBSNERT@
+LIB_RT		= @LIBS_RT@
+
+LIB_SEM		= @HAVE_LIB_SEM@
+LIB_WS2_32	= @HAVE_LIB_WS2_32@
+LIB_IPHLPAPI	= @HAVE_LIB_IPHLPAPI@
+NETWORK_LIBS	= @NETWORK_LIBS@
+
+LIB_DB		= @HAVE_LIB_DB@
+CFLAGS_DB	= @CFLAGS_DB@
+LDFLAGS_DB	= @LDFLAGS_DB@
+
+LIB_PTHREAD	= @HAVE_LIB_PTHREAD@
+CFLAGS_PTHREAD	= @CFLAGS_PTHREAD@
+LDFLAGS_PTHREAD	= @LDFLAGS_PTHREAD@
+
+LIB_SQLITE3	= @HAVE_LIB_SQLITE3@
+CFLAGS_SQLITE3	= @CFLAGS_SQLITE3@
+LDFLAGS_SQLITE3	= @LDFLAGS_SQLITE3@
+
+#######################################################################
+
+#%$O : %.c
+.c$O :
+	${CC} ${CFLAGS} -c $<
+
+#(%) : %
+#	$(ARCHIVE)$*
+
+#%$E : %.c
+.c$E :
+	$(CC) $(CFLAGS) $(LDFLAGS) $(CC_E)$*$E $< ${LIBSNERT} ${LIBS}
+
+#%$E : %$O
+$O$E :
+	$(LD) $(LDFLAGS) $(CC_E)$*$E $*$O ${LIBSNERT} ${LIBS}
+
+.c.i:
+	${CC} -E ${CFLAGS} $*.c >$*.i
+
+#######################################################################
+
+IDIR := ${top_srcdir}/include
+HDIR := ${IDIR}/type
+OBJS := Object$O Data$O Integer$O Decimal$O Hash$O Vector$O list$O hash2$O tree$O \
+	queue$O Text$O kvm$O mcc$O
+TEST := Object$E Data$E Integer$E Decimal$E Hash$E Vector$E hash2$E tree$E Text$E
+CLI  := kvmap$E kvmc$E kvmd$E mcc$E
+
+.MAIN : build
+
+all: build
+
+title :
+	@echo
+	@echo '***************************************************************'
+	@echo '==> '${abs_builddir}
+	@echo '***************************************************************'
+	@echo
+
+build: title $(LIB) add-lib
+
+build-test: ${TEST} ${CLI}
+
+build-cli: title ${CLI}
+
+$(LIB):	$(OBJS)
+
+add-lib:
+	@echo
+	ar rc ${LIB} ${OBJS}
+	$(RANLIB) $(LIB)
+	@echo
+
+clean : title
+	-rm -f *.o *.obj *.i *.map *.tds *.TR2 *.log *.stackdump core ${TEST}
+
+distclean: clean
+	-rm makefile
+
+install: build
+	-cp -p kvmap$E mcc$E ${bindir}
+
+debug : build
+
+lint: title
+	-splint -D_REENTRANT -I${SNERT_INCDIR} +posixlib +boolint *.c
+
+../util/DebugMalloc$O: ../io/Log$O ../sys/Mutex$O ../util/Memory$O ../util/DebugMalloc.c
+
+../util/Memory$O: ../util/Memory.c
+
+../io/Log$O: ../io/Log.c
+
+../util/Buf$O: ../util/Buf.c
+
+../util/Text$O: ../util/Buf$O ../util/Text.c
+
+../crc/crc32$O: ../crc/crc32.tbl
+	cd ../crc; ${MAKE} build; if test $$? -ne 0; then exit 1; fi
+
+list.c : ${HDIR}/list.h
+
+hash2.c : ${HDIR}/hash2.h
+
+hash2$E : hash2.c
+	${CC} -DTEST ${CFLAGS} ${LDFLAGS} ${CC_E}hash2$E hash2.c
+
+tree.c : ${HDIR}/tree.h
+
+tree$E : tree.c
+	${CC} -DTEST ${CFLAGS} ${LDFLAGS} ${CC_E}tree$E tree.c
+
+${HDIR}/queue.h : ${HDIR}/list.h
+
+queue.c : ${IDIR}/sys/pthread.h ${IDIR}/util/timer.h ${HDIR}/queue.h
+
+${HDIR}/kvm.h : ${IDIR}/sys/pthread.h
+
+kvm.c : ${IDIR}/io/socket2.h ${HDIR}/kvm.h
+
+kvm$O : kvm.c
+	${CC} $(CFLAGS) ${CFLAGS_DB} ${CFLAGS_SQLITE3} -c ${srcdir}/$*.c
+
+${HDIR}/mcc.h : ${IDIR}/io/socket2.h ${IDIR}/net/network.h ${IDIR}/sys/pthread.h ${HDIR}/Vector.h
+
+mcc.c : ${IDIR}/io/Log.h ${IDIR}/util/md5.h ${IDIR}/util/Text.h ${HDIR}/mcc.h
+
+mcc$O : mcc.c
+	${CC} $(CFLAGS) ${CFLAGS_SQLITE3} -c ${srcdir}/$*.c
+
+Vector.c : ${HDIR}/Vector.h
+
+Object$E: ../util/DebugMalloc$O Object.c
+	$(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)Object$E Object.c ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+Data$E: ../crc/crc32$O ../util/DebugMalloc$O Data.c
+	$(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)Data$E Data.c ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+Integer$E: ../util/DebugMalloc$O Integer.c
+	$(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)Integer$E Integer.c ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+Decimal$E: ../util/DebugMalloc$O Decimal.c
+	$(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)Decimal$E Decimal.c ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+Hash$E: ../util/DebugMalloc$O Hash.c
+	$(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)Hash$E Hash.c ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+Vector$E: Vector.c
+	$(CC) -DTEST -DTRACK $(CFLAGS) $(LDFLAGS) $(CC_E)Vector$E Vector.c ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+Text$E: ../util/DebugMalloc$O Vector$O ../util/Buf$O ../util/Text$O Text.c
+	$(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)Text$E Text.c ../util/Buf$O ../util/Text$O ${SUPPORT} ${LIBSNERT} ${LIBS}
+
+# This cannot be built until AFTER the lib/io routines have been built.
+kvmd$E : ../io/socket2$O kvm.c
+	${WRAPPER} $(CC) -DTEST_KVMD ${CFLAGS_PTHREAD} ${CFLAGS_DB} ${CFLAGS_SQLITE3} $(CFLAGS) ${LDFLAGS_PTHREAD} ${LDFLAGS_DB} ${LDFLAGS_SQLITE3} $(LDFLAGS) $(CC_E)kvmd$E ${srcdir}/kvm.c ${LIBSNERT} ${LIBS} ${LIB_DB} ${LIB_SQLITE3} ${LIB_PTHREAD} ${NETWORK_LIBS}
+
+# This cannot be built until AFTER the lib/io routines have been built.
+kvmc$E : ../io/socket2$O kvm$O kvmc.c
+	${WRAPPER} $(CC) ${CFLAGS_PTHREAD} ${CFLAGS_DB} ${CFLAGS_SQLITE3} $(CFLAGS) ${LDFLAGS_PTHREAD} ${LDFLAGS_DB} ${LDFLAGS_SQLITE3} $(LDFLAGS) $(CC_E)kvmc$E ${srcdir}/kvmc.c ${LIBSNERT} ${LIBS} ${LIB_DB} ${LIB_SQLITE3} ${LIB_PTHREAD} ${NETWORK_LIBS}
+
+kvmap$E : kvm$O kvmap.c
+	${WRAPPER} $(CC) ${CFLAGS_DB} ${CFLAGS_SQLITE3} $(CFLAGS) ${LDFLAGS_PTHREAD} ${LDFLAGS_DB} ${LDFLAGS_SQLITE3} $(LDFLAGS) $(CC_E)kvmap$E ${srcdir}/kvmap.c kvm$O ${LIBSNERT} ${LIBS} ${LIB_DB} ${LIB_SQLITE3} ${LIB_PTHREAD} ${NETWORK_LIBS}
+
+# This cannot be built until AFTER the lib/io routines have been built.
+mcc$E : ../io/socket2$O mcc.c
+	${WRAPPER} $(CC) -DTEST ${CFLAGS_PTHREAD} ${CFLAGS_SQLITE3} $(CFLAGS) ${LDFLAGS_PTHREAD} ${LDFLAGS_SQLITE3} $(LDFLAGS) $(CC_E)mcc$E ${srcdir}/mcc.c ${LIBSNERT} ${LIBS} ${LIB_SQLITE3} ${LIB_PTHREAD} ${NETWORK_LIBS}
