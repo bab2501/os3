@@ -1,0 +1,168 @@
+#
+# @package_copyright@
+#
+# @configure_input@
+#
+
+.POSIX :
+
+.SUFFIXES :
+A = .@LIBEXT@
+O = .@OBJEXT@
+E = @EXEEXT@
+.SUFFIXES : .c .h .i $O $A
+
+prefix		:= @prefix@
+exec_prefix	:= @exec_prefix@
+bindir		:= @bindir@
+
+VPATH		:= @srcdir@
+srcdir		:= @srcdir@
+top_srcdir	:= @top_srcdir@
+abs_srcdir	:= @abs_srcdir@
+
+builddir	:= @builddir@
+top_builddir	:= @top_builddir@
+abs_builddir	:= @abs_builddir@
+
+SNERT_TARDIR	:= ${top_srcdir}/../../../..
+SNERT_INCDIR	:= ${top_srcdir}/../../include
+SNERT_LIBDIR	:= ${top_srcdir}/../../lib
+
+LIB		:= $(SNERT_LIBDIR)/@PACKAGE_TARNAME@$A
+BAK		:= $(SNERT_LIBDIR)/@PACKAGE_TARNAME@.bak
+TGZ		:= $(SNERT_TARDIR)/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tgz
+
+CC		:= @CC@
+CC_E		:= @CC_E@
+CC_O		:= @CC_O@
+CFLAGS		 = ${CFLAGS_PREFIX} @CFLAGS@
+CPPFLAGS	 = ${CPPFLAGS_PREFIX} @CPPFLAGS@
+LDFLAGS		 = ${LDFLAGS_PREFIX} @LDFLAGS@
+LIBS		 = ${LIBS_PREFIX} @LIBS@
+
+XARGSI		:= @XARGSI@
+RANLIB		:= @RANLIB@
+ARCHIVE		:= @ARCHIVE@
+COMPILE		:= @COMPILE@
+
+LIBSNERT 	= @LIBSNERT@
+LIB_PAM		= @HAVE_LIB_PAM@
+LIB_RT 		= @LIBS_RT@
+
+LIB_SEM		= @HAVE_LIB_SEM@
+LIB_WS2_32	= @HAVE_LIB_WS2_32@
+LIB_IPHLPAPI	= @HAVE_LIB_IPHLPAPI@
+NETWORK_LIBS	= @NETWORK_LIBS@
+
+LIB_PTHREAD	= @HAVE_LIB_PTHREAD@
+CFLAGS_PTHREAD	= @CFLAGS_PTHREAD@
+LDFLAGS_PTHREAD	= @LDFLAGS_PTHREAD@
+
+LIB_SQLITE3	= @LIBS_SQLITE3@
+CFLAGS_SQLITE3	= @CFLAGS_SQLITE3@
+LDFLAGS_SQLITE3	= @LDFLAGS_SQLITE3@
+
+LIB_LIBEV	= @LIBS_LIBEV@
+CFLAGS_LIBEV	= @CFLAGS_LIBEV@
+LDFLAGS_LIBEV	= @LDFLAGS_LIBEV@
+
+LIB_LUA		= @LIBS_LUA@
+CFLAGS_LUA	= @CFLAGS_LUA@
+LDFLAGS_LUA	= @LDFLAGS_LUA@
+
+#######################################################################
+
+#%$O : %.c
+.c$O :
+	${CC} ${CFLAGS} -c $<
+
+#(%) : %
+#	$(ARCHIVE)$*
+
+#%$E : %.c
+.c$E :
+	$(CC) $(CFLAGS) $(LDFLAGS) $(CC_E)$*$E $< $(LIBSNERT) $(LIBS)
+
+#%$E : %$O
+$O$E :
+	$(LD) $(LDFLAGS) $(CC_E)$*$E $*$O $(LIBSNERT) $(LIBS)
+
+.c.i:
+	${CC} -E ${CFLAGS} $*.c >$*.i
+
+#######################################################################
+
+REPLACED = URI$O
+
+IDIR := ${top_srcdir}/include
+HDIR := ${IDIR}/io
+OBJS =	Error$O Log$O mkpath$O socketTimeoutIO$O socketAddress$O \
+	socketAddressIsLocal$O socket2$O socket3$O socket3_tls$O \
+	events$O flock$O file$O utf8$O
+
+.MAIN : build
+
+all: build
+
+title :
+	@echo
+	@echo '***************************************************************'
+	@echo '==> '${abs_builddir}
+	@echo '***************************************************************'
+	@echo
+
+build : title $(LIB) add-lib
+
+$(LIB):	$(OBJS)
+
+add-lib:
+	@echo
+	ar rc ${LIB} ${OBJS}
+	$(RANLIB) $(LIB)
+	@echo
+
+clean : title
+	-rm -f *.o *.obj *.i *.map *.tds *.TR2 *.stackdump core *.core core.* *.log
+	-rm -f output*.dat Dns$E socketAddressIsLocal$E socket2$E utf8$E
+
+distclean: clean
+	-rm -f makefile
+
+install: build
+
+debug : build
+
+lint: title
+#	-splint -D_REENTRANT -I${SNERT_INCDIR} +posixlib +boolint *.c
+
+${HDIR}/socket3.h : ${IDIR}/version.h ${IDIR}/net/network.h ${HDIR}/socketAddress.h
+
+socket3.c : ${HDIR}/socket3.h
+
+socket3$O : socket3.c
+
+socket3_tls.c : ${HDIR}/socket3.h socket3$O
+
+socket3_tls$O : socket3_tls.c
+	$(CC) ${CFLAGS} ${CFLAGS_SSL} -c ${srcdir}/$*.c
+
+events.c : ${IDIR}/type/list.h ${HDIR}/events.h
+
+events$O : events.c
+
+socket2$E : socketAddress$O socket2.c
+	${WRAPPER} $(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)socket2$E socket2.c $(LIBSNERT) $(LIBS) ${NETWORK_LIBS}
+
+socketAddressIsLocal$E : socketAddress$O socket2$O socketAddressIsLocal.c
+	${WRAPPER} $(CC) -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)socketAddressIsLocal$E socketAddressIsLocal.c socketAddress$O socket2$O $(LIBSNERT) $(LIBS) ${NETWORK_LIBS}
+
+smtpe$E : socketAddress$O socket3$O events$O smtpe.c
+	${WRAPPER} $(CC) ${CFLAGS_LUA} ${CFLAGS_PTHREAD} ${CFLAGS} ${LDFLAGS_LUA} ${LDFLAGS_PTHREAD} ${LDFLAGS} $(CC_E)smtpe$E smtpe.c ${LIB_LUA} $(LIBSNERT) $(LIBS) ${LIB_PTHREAD} ${NETWORK_LIBS}
+
+smtpe.i : smtpe.c
+	$(CC) -E ${CFLAGS_LUA} $(CFLAGS) -I/usr/local/include -o smtpe.i smtpe.c
+
+utf8$E : utf8.c
+	$(CC) -std=c99 -DTEST $(CFLAGS) $(LDFLAGS) $(CC_E)utf8$E utf8.c
+

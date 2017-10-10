@@ -1,0 +1,291 @@
+#
+# @package_copyright@
+#
+# @configure_input@
+#
+
+.POSIX :
+
+.SUFFIXES :
+A = .@LIBEXT@
+O = .@OBJEXT@
+E = @EXEEXT@
+.SUFFIXES : .c .i $O $A
+
+PACKAGE		:= @PACKAGE_TARNAME@
+VERSION		:= @PACKAGE_VERSION@.${BUILD}
+
+VPATH		:= @srcdir@
+srcdir		:= @srcdir@
+top_srcdir	:= @top_srcdir@
+abs_srcdir	:= @abs_srcdir@
+
+builddir	:= @builddir@
+top_builddir	:= @top_builddir@
+abs_builddir	:= @abs_builddir@
+
+SNERT_TARDIR	:= ${top_srcdir}/../../../..
+SNERT_INCDIR	:= ${top_srcdir}/../../include
+SNERT_LIBDIR	:= ${top_srcdir}/../../lib
+
+TOPDIR	 	:= @abs_top_srcdir@
+
+LIB		:= $(SNERT_LIBDIR)/${PACKAGE}$A
+BAK		:= $(SNERT_LIBDIR)/${PACKAGE}.bak
+TARFILE		:= ${PACKAGE}-${VERSION}.tar.gz
+TGZ		:= $(SNERT_TARDIR)/${TARFILE}
+
+TAR_I		:= @TAR_I@
+BUILD		:= `cat ${abs_srcdir}/BUILD_ID.TXT`
+DEFINES 	:= -DLIBSNERT_BUILD=${BUILD} -DLIBSNERT_BUILD_STRING='"'${BUILD}'"'
+
+LIBSNERT_SHARE	:= @datarootdir@/${PACAKGE}
+LIBSNERT_SQLITE3_DIR := @LIBSNERT_SQLITE3_DIR@
+LIBSNERT_SQLITE3_VERSION := @LIBSNERT_SQLITE3_VERSION@
+
+CC		:= @CC@
+CC_E		:= @CC_E@
+CC_O		:= @CC_O@
+CFLAGS		 = ${CFLAGS_PREFIX} @CFLAGS@
+CPPFLAGS	 = ${CPPFLAGS_PREFIX} @CPPFLAGS@
+LDFLAGS		 = ${LDFLAGS_PREFIX} @LDFLAGS@
+LIBS		 = ${LIBS_PREFIX} @LIBS@
+
+XARGSI		:= @XARGSI@
+RANLIB		:= @RANLIB@
+ARCHIVE		:= @ARCHIVE@
+COMPILE		:= @COMPILE@
+MD5SUM		:= @MD5SUM@
+AUTOCONF	:= @AUTOCONF@
+
+LIBSNERT	:= @LIBSNERT@
+LIB_RT		:= @LIBS_RT@
+
+LIB_SEM		:= @HAVE_LIB_SEM@
+LIB_WS2_32	:= @HAVE_LIB_WS2_32@
+LIB_IPHLPAPI	:= @HAVE_LIB_IPHLPAPI@
+NETWORK_LIBS	:= @NETWORK_LIBS@
+
+LIB_DB		:= @HAVE_LIB_DB@
+CFLAGS_DB	:= @CFLAGS_DB@
+LDFLAGS_DB	:= @LDFLAGS_DB@
+
+LIB_LUA		:= @LIBS_LUA@
+CFLAGS_LUA	:= @CFLAGS_LUA@
+LDFLAGS_LUA	:= @LDFLAGS_LUA@
+
+LIB_LIBEV	:= @LIBS_LIBEV@
+CFLAGS_LIBEV	:= @CFLAGS_LIBEV@
+LDFLAGS_LIBEV	:= @LDFLAGS_LIBEV@
+
+LIB_PTHREAD	:= @HAVE_LIB_PTHREAD@
+CFLAGS_PTHREAD	:= @CFLAGS_PTHREAD@
+LDFLAGS_PTHREAD	:= @LDFLAGS_PTHREAD@
+
+LIB_SSL		:= @LIBS_SSL@
+CFLAGS_SSL	:= @CFLAGS_SSL@
+LDFLAGS_SSL	:= @LDFLAGS_SSL@
+
+LIB_SQLITE3	:= @LIBS_SQLITE3@
+CFLAGS_SQLITE3	:= @CFLAGS_SQLITE3@
+LDFLAGS_SQLITE3	:= @LDFLAGS_SQLITE3@
+
+#######################################################################
+
+#%$O : %.c
+.c$O :
+	${CC} ${CFLAGS} -c $<
+
+#(%) : %
+#	$(ARCHIVE)$*
+
+#%$E : %.c
+.c$E :
+	$(CC) $(CFLAGS) $(LDFLAGS) $(CC_E)$*$E $< $(LIBSNERT) $(LIBS)
+
+#%$E : %$O
+$O$E :
+	$(LD) $(LDFLAGS) $(CC_E)$*$E $*$O $(LIBSNERT) $(LIBS)
+
+.c.i:
+	${CC} -E ${CFLAGS} $*.c >$*.i
+
+#######################################################################
+
+OBJS 	= LibSnert$O
+
+EARLY	= util sys
+SUBDIRS = crc type util io net mail sys tools
+
+.MAIN : all
+
+all: build-tools
+
+title :
+	@echo
+	@echo '***************************************************************'
+	@echo '==> '${abs_builddir}
+	@echo '***************************************************************'
+	@echo
+
+build: title add-lib
+	@for i in $(EARLY); do cd $$i && ${MAKE} ${MAKEFLAGS} early && cd .. ; done
+	@for i in $(SUBDIRS); do cd $$i && ${MAKE} ${MAKEFLAGS} build && cd .. ; done
+	@echo
+	@echo '***************************************************************'
+	@echo @package_string@ DONE
+	@echo '***************************************************************'
+	@echo
+
+build-tools: build
+	@echo
+	@echo '***************************************************************'
+	@echo '==> building CLI test / tool variants'
+	@echo '***************************************************************'
+	@echo
+	cd tools; ${MAKE} ${MFLAGS} build
+	cd type; ${MAKE} ${MFLAGS} build-cli
+	cd mail; ${MAKE} ${MFLAGS} build-cli
+	cd net;  ${MAKE} ${MFLAGS} build-cli
+	cd util; ${MAKE} ${MFLAGS} build-cli
+	@echo
+	@echo '***************************************************************'
+	@echo @package_string@ tools DONE
+	@echo '***************************************************************'
+	@echo
+
+DEBUG_C := CFLAGS_PREFIX='-DDEBUG_MALLOC ${CFLAGS_PTHREAD}'
+DEBUG_LD := LDFLAGS_PREFIX='${LDFLAGS_PTHREAD}'
+DEBUG_LIBS := LIBS_PREFIX='${LIBS_PTHREAD}'
+
+debug: title add-lib
+	@echo
+	@echo '***************************************************************'
+	@echo '==> Build threaded DebugMalloc$O'
+	@echo '***************************************************************'
+	@echo
+	cd util && ${MAKE} ${MFLAGS} ${DEBUG_C} ${DEBUG_LD} ${DEBUG_LIBS} dmalloct$O && cd ..
+	ar rc ${LIB} util/dmalloct$O
+	${RANLIB} ${LIB}
+	@for i in $(SUBDIRS); do cd $$i && ${MAKE} ${MFLAGS} ${DEBUG_C} ${DEBUG_LD} ${DEBUG_LIBS} $@ && cd .. ; done
+	cd tools; ${MAKE} ${MFLAGS} $@
+	cd type; ${MAKE} ${MFLAGS} ${DEBUG_C} ${DEBUG_LD} ${DEBUG_LIBS} build-cli
+	cd mail; ${MAKE} ${MFLAGS} ${DEBUG_C} ${DEBUG_LD} ${DEBUG_LIBS} build-cli
+	cd net;  ${MAKE} ${MFLAGS} ${DEBUG_C} ${DEBUG_LD} ${DEBUG_LIBS} build-cli
+	cd util; ${MAKE} ${MFLAGS} ${DEBUG_C} ${DEBUG_LD} ${DEBUG_LIBS} build-cli
+	@echo
+	@echo '***************************************************************'
+	@echo @package_string@ -DDEBUG_MALLOC DONE
+	@echo '***************************************************************'
+	@echo
+
+lint: title
+	-splint -D_REENTRANT -I$(SNERT_INCDIR) *.c
+	@for i in $(SUBDIRS); do cd $$i && ${MAKE} ${MFLAGS} $@ && cd .. ; done
+	@echo
+	@echo '***************************************************************'
+	@echo @package_string@  DONE
+	@echo '***************************************************************'
+	@echo
+
+strip: build
+
+install: build-tools
+	@for i in $(SUBDIRS); do cd $$i && ${MAKE} ${MFLAGS} $@ && cd .. ; done
+	@echo
+	@echo '***************************************************************'
+	@echo @package_string@  DONE
+	@echo '***************************************************************'
+	@echo
+
+next-id:
+	expr `cat ${top_srcdir}/BUILD_ID.TXT` + 1 >${top_srcdir}/BUILD_ID.TXT
+	sed -e 's/LIBSNERT_BUILD [0-9]*/LIBSNERT_BUILD '`cat ${top_srcdir}/BUILD_ID.TXT`'/' $(SNERT_INCDIR)/com/snert/lib/version.h >$(SNERT_INCDIR)/com/snert/lib/version.h.new
+	sed -e 's/\(LIBSNERT_VERSION.*\.\)[0-9]*"/\1'`cat ${top_srcdir}/BUILD_ID.TXT`'"/' $(SNERT_INCDIR)/com/snert/lib/version.h.new >$(SNERT_INCDIR)/com/snert/lib/version.h
+	rm -f $(SNERT_INCDIR)/com/snert/lib/version.h.new
+
+add-lib: ${OBJS}
+	@echo
+	rm -f ${LIB}
+	ar rc ${LIB} ${OBJS}
+	$(RANLIB) $(LIB)
+	@echo
+
+clean: title
+	-rm -f $(LIB) $(BAK) td32.TR2
+	-rm -rf autom4te.cache configure.lineno version.h.in
+	-rm -f *.o *.obj *.tds *.stackdump core *.core core.*
+	if test -f "${LIBSNERT_SQLITE3_DIR}/include/sqlite3.h" ; then \
+		cd ${LIBSNERT_SQLITE3_DIR}/${LIBSNERT_SQLITE3_VERSION}; ${MAKE} ${MFLAGS} $@ ; \
+	fi
+	@for i in $(SUBDIRS); do cd $$i && ${MAKE} ${MFLAGS} $@ && cd .. ; done
+	@echo
+	@echo '***************************************************************'
+	@echo Clean DONE
+	@echo '***************************************************************'
+	@echo
+
+distclean: title
+	-rm -f $(LIB) $(BAK) td32.TR2
+	-rm -rf autom4te.cache configure.lineno version.h.in
+	-rm -f *.log *.o *.obj *.tds *.stackdump core *.core core.*
+	-rm -f config.log config.status install.sh makefile version.sh
+	if test -f "${LIBSNERT_SQLITE3_DIR}/include/sqlite3.h" ; then \
+	    rm -rf ${LIBSNERT_SQLITE3_DIR}/bin ${LIBSNERT_SQLITE3_DIR}/include ${LIBSNERT_SQLITE3_DIR}/lib ; \
+	    cd ${LIBSNERT_SQLITE3_DIR}/${LIBSNERT_SQLITE3_VERSION} ; ${MAKE} ${MFLAGS} $@ ; \
+	fi
+	@for i in $(SUBDIRS); do cd $$i && ${MAKE} ${MFLAGS} $@ && cd .. ; done
+	@echo
+	@echo '***************************************************************'
+	@echo Distribution Clean DONE
+	@echo '***************************************************************'
+	@echo
+
+links:
+	cd ../.. ; mkdir -p lib include/org include/com/snert ; \
+	cd include/org ; ln -s ../../src/lib/include/valgrind . ; \
+	cd ../com/snert ; ln -s ../../../src/lib/include lib
+
+predefines:
+	gcc ${CPPFLAGS} -dM -E -xc /dev/null
+
+../tools/flip$E: ../tools/flip.c
+	cd ../tools; $(CC) $(CC_E)flip$E flip.c
+
+flipunix: ../tools/flip$E
+	-find ../.. -name "*.[ch]" -o -name "*.in" | $(XARGSI) -t ../tools/flip$E -u {}
+
+flipdos: ../tools/flip.exe
+	-find ../.. -name "*.[ch]" -o -name "*.in" | $(XARGSI) -t ../tools/flip$E -d {}
+
+${top_srcdir}/configure: ${top_srcdir}/BUILD_ID.TXT aclocal.m4 configure.in
+	cd ${top_srcdir}; ${AUTOCONF} -f
+
+config.status: configure
+	${top_srcdir}/configure
+
+../../include/com/snert/lib/version.h: config.status version.h.in.in
+	${top_srcdir}/config.status
+
+list:
+	tar -tvzf $(TGZ)
+
+tar: configure
+	echo '${VERSION}' >VERSION.TXT
+	echo '${PACKAGE}-${VERSION}.tar.gz' >FILE.TXT
+	tar -C ${SNERT_TARDIR} ${TAR_I} ${top_srcdir}/MANIFEST.TXT -zcf ${TGZ}
+	@echo
+	@echo '***************************************************************'
+	@cd ${SNERT_TARDIR}; ${MD5SUM} ${TARFILE}* | tee com/snert/src/lib/${PACKAGE}.md5
+	@echo '***************************************************************'
+	@cd ${SNERT_TARDIR}; wc -c ${TARFILE}
+	@echo '***************************************************************'
+	@echo
+
+# Create a distribution with ready made makefiles.
+pack: next-id tar
+
+fixperms:
+	cd ${SNERT_TARDIR}; \
+		find com -type f | xargs chmod 644; \
+		find com -type d | xargs chmod 755
