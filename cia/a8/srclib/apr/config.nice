@@ -1,0 +1,19 @@
+#! /bin/sh
+#
+# Created by configure
+
+"/home/ablaauwgeers/os3/cia/a8/httpd-2.4.28/srclib/apr/configure" \
+"--disable-option-checking" \
+"--enable-ssl" \
+"--enable-so" \
+"--with-included-apr" \
+"--cache-file=/dev/null" \
+"--srcdir=/home/ablaauwgeers/os3/cia/a8/httpd-2.4.28/srclib/apr" \
+"--prefix=/usr/local/apache/" \
+"--exec-prefix=/usr/local/apache/" \
+"--libdir=/usr/local/apache/lib" \
+"--includedir=/usr/local/apache//include" \
+"--bindir=/usr/local/apache/bin" \
+"--datadir=/usr/local/apache/" \
+"--with-installbuilddir=/usr/local/apache/build" \
+"$@"
