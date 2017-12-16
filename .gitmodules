@@ -1,0 +1,3 @@
+[submodule "ls/sne_ls_rp"]
+	path = ls/sne_ls_rp
+	url = git@github.com:bab2501/sne_ls_rp.git
