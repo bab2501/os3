@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="(new model)" id="1ff1f9af" version="3.1.1">
+  <folder name="Business" id="e19939b3" type="business"/>
+  <folder name="Application" id="df360f09" type="application">
+    <element xsi:type="archimate:ApplicationComponent" id="14640db3" name="Proxy"/>
+    <element xsi:type="archimate:ApplicationComponent" id="490bbc16" name="Web2"/>
+    <element xsi:type="archimate:ApplicationComponent" id="00e64285" name="Web1"/>
+    <element xsi:type="archimate:ApplicationComponent" id="cca7290f" name="DB1"/>
+    <element xsi:type="archimate:ApplicationComponent" id="bab23acb" name="Proxy (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="0755a11a" name="Web2 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="2597c21b" name="Web1"/>
+    <element xsi:type="archimate:ApplicationComponent" id="05b439c0" name="DB1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="9dca851f" name="Proxy (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="ae9f26e6" name="Web2 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="a8c9380a" name="Web1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="b9c0314e" name="DB1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="b55fd7ad" name="Proxy (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="d19492d7" name="Web2 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="76aeb438" name="Web1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="447f3194" name="DB1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="660955c8" name="Proxy (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="a609f5c0" name="Web2 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="789a9ff0" name="Web1"/>
+    <element xsi:type="archimate:ApplicationComponent" id="184c6099" name="DB1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="16e18a80" name="Proxy (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="c4c34e56" name="Web2 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="6b7e3505" name="Web2"/>
+    <element xsi:type="archimate:ApplicationComponent" id="27a9c0d8" name="DB1 (copy)"/>
+    <element xsi:type="archimate:ApplicationComponent" id="63ee658e" name="DB1"/>
+    <element xsi:type="archimate:ApplicationComponent" id="645eda42" name="Proxy"/>
+    <element xsi:type="archimate:ApplicationComponent" id="7c628b15" name="Proxy"/>
+    <element xsi:type="archimate:ApplicationComponent" id="2ae9b482" name="Web2"/>
+    <element xsi:type="archimate:ApplicationComponent" id="ed58cf34" name="DB1"/>
+  </folder>
+  <folder name="Technology" id="5cec15d2" type="technology">
+    <element xsi:type="archimate:Network" id="21f688e5" name="VM01"/>
+    <element xsi:type="archimate:Network" id="8d58daf5" name="Server0"/>
+    <element xsi:type="archimate:Network" id="cace91d8" name="Server0 (copy)"/>
+    <element xsi:type="archimate:Network" id="88dd3b2d" name="Server0 (copy)"/>
+    <element xsi:type="archimate:Network" id="ed7a0ad7" name="Server1"/>
+    <element xsi:type="archimate:Node" id="2685b951" name="Server01"/>
+    <element xsi:type="archimate:Network" id="37199059" name="VM02"/>
+    <element xsi:type="archimate:Network" id="99d68683" name="VM03"/>
+    <element xsi:type="archimate:Network" id="cbd6e3e2" name="VM04"/>
+    <element xsi:type="archimate:Network" id="7b9c912b" name="VM01"/>
+    <element xsi:type="archimate:Network" id="f6a08c39" name="Server3"/>
+    <element xsi:type="archimate:Network" id="bec74b7f" name="Server2"/>
+    <element xsi:type="archimate:Network" id="50b09d46" name="Server4"/>
+  </folder>
+  <folder name="Motivation" id="8a5a96e4" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="422e8275" type="implementation_migration"/>
+  <folder name="Connectors" id="92771d6e" type="connectors"/>
+  <folder name="Relations" id="7e244372" type="relations"/>
+  <folder name="Views" id="38c73e3d" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" id="765f19bc" name="Default View">
+      <child xsi:type="archimate:Group" id="134032ec" name="Setup A">
+        <bounds x="132" y="168" width="541" height="361"/>
+        <child xsi:type="archimate:DiagramObject" id="c25000bc" textAlignment="2" archimateElement="2685b951">
+          <bounds x="24" y="36" width="493" height="313"/>
+          <child xsi:type="archimate:DiagramObject" id="625296a9" textAlignment="2" fillColor="#ffff80" archimateElement="7b9c912b">
+            <bounds x="12" y="170" width="217" height="109"/>
+            <child xsi:type="archimate:DiagramObject" id="341a4800" textAlignment="2" archimateElement="645eda42">
+              <bounds x="24" y="36" width="120" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="09fcdd93" textAlignment="2" fillColor="#ffff80" archimateElement="99d68683">
+            <bounds x="240" y="50" width="217" height="109"/>
+            <child xsi:type="archimate:DiagramObject" id="c3a9625f" textAlignment="2" archimateElement="6b7e3505">
+              <bounds x="24" y="36" width="120" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="c9fddc19" textAlignment="2" fillColor="#ffff80" archimateElement="37199059">
+            <bounds x="12" y="50" width="217" height="109"/>
+            <child xsi:type="archimate:DiagramObject" id="fe139f64" textAlignment="2" archimateElement="2597c21b">
+              <bounds x="24" y="36" width="120" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="93ddd76d" textAlignment="2" fillColor="#ffff80" archimateElement="cbd6e3e2">
+            <bounds x="240" y="168" width="217" height="113"/>
+            <child xsi:type="archimate:DiagramObject" id="fc7c159b" textAlignment="2" archimateElement="63ee658e">
+              <bounds x="24" y="36" width="120" height="55"/>
+            </child>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="eb65ae6f" name="Setup B">
+        <bounds x="696" y="168" width="409" height="361"/>
+        <child xsi:type="archimate:DiagramObject" id="38ff0ddd" textAlignment="2" archimateElement="ed7a0ad7">
+          <bounds x="12" y="36" width="181" height="109"/>
+          <child xsi:type="archimate:DiagramObject" id="5a94ace4" textAlignment="2" archimateElement="789a9ff0">
+            <bounds x="36" y="36" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="a8b031ed" textAlignment="2" archimateElement="f6a08c39">
+          <bounds x="12" y="156" width="181" height="109"/>
+          <child xsi:type="archimate:DiagramObject" id="958f3653" textAlignment="2" archimateElement="7c628b15">
+            <bounds x="36" y="36" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="98eebba6" textAlignment="2" archimateElement="bec74b7f">
+          <bounds x="204" y="36" width="181" height="109"/>
+          <child xsi:type="archimate:DiagramObject" id="1f2479ad" textAlignment="2" archimateElement="2ae9b482">
+            <bounds x="36" y="36" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ec5120b3" textAlignment="2" archimateElement="50b09d46">
+          <bounds x="204" y="156" width="181" height="109"/>
+          <child xsi:type="archimate:DiagramObject" id="71615122" textAlignment="2" archimateElement="ed58cf34">
+            <bounds x="36" y="36" width="120" height="55"/>
+          </child>
+        </child>
+      </child>
+    </element>
+  </folder>
+</archimate:model>

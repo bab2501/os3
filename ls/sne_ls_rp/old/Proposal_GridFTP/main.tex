@@ -1,0 +1,72 @@
+\documentclass[a4paper, 12pt, one column]{article}
+
+%% Language and font encodings. This says how to do hyphenation on end of lines.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{aas_macros}
+\usepackage{multicol}
+
+
+%% Sets page size and margins. You can edit this to your liking
+\usepackage[top=1.3cm, bottom=2.0cm, outer=2.5cm, inner=2.5cm, heightrounded,
+marginparwidth=1.5cm, marginparsep=0.4cm, margin=2.5cm]{geometry}
+%% Useful packages
+\usepackage{graphicx} %allows you to use jpg or png images. PDF is still recommended
+\usepackage[colorlinks=False]{hyperref} % add links inside PDF files
+\usepackage{amsmath}  % Math fonts
+\usepackage{amsfonts} %
+\usepackage{amssymb}  %
+\usepackage[hypcap=false]{caption} % allow caption in two column mode
+\usepackage{hyperref}
+
+%% Citation package
+%\usepackage[authoryear]{natbib}
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={(},close={)}}
+
+\usepackage[style=numeric,natbib=true]{biblatex}
+\bibliography{refs.bib}
+
+\title{ Performance of GridFTP\\ in a Large System Environment  \\~\\
+\large Research Project Proposal for Large Systems
+\\Master System and Network Engineering @ University of Amsterdam\\~\\
+\textbf{Version:} 0.1\\~\\}
+\author{Blaauwgeers, Alexander \\ \texttt{alexander.blaauwgeers@os3.nl} \and Alachkar Kotaiba  \\ \texttt{kotaiba.alachkar@os3.nl}}
+
+\begin{document}
+\maketitle
+\clearpage
+%%\begin{multicols}{2}
+
+% Introduction
+\input{introduction.tex}
+
+% Research Question
+\input{question.tex}
+
+% Research Method
+\input{method.tex}
+
+% Research scope
+\input{scope.tex}
+
+% Planning
+\input{planning.tex}
+
+
+% Ethical Considerations
+\input{ethical.tex}
+
+
+
+% Related Work
+\input{related.tex}
+
+
+
+%%\end{multicols}
+
+\nocite{*}
+\printbibliography
+
+\end{document}

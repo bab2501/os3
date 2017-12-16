@@ -1,0 +1,32 @@
+\section{Introduction}
+\paragraph{}
+In the past people thought of “servers” as big, bulky machines installed in data centers. Now, “servers” more often mean cloud instances or VPSs. Although physical servers are still a favorite choice for many. However, research shows that dedicated server market grows by \$237 million each year \cite{c1}. 
+\par\indent
+There are several factors that determines which infrastructure is suitable for a given business but in this research we will focus only on the performance factor and specifically the performance loss of virtualization. The method used in our research is to implement a real environment setup using a virtual servers and an identical setup using four physical servers. Then, conduct an overall comparison between these two setups. We expect after this research is to have a clear view and a comprehensive understanding about virtualization in term of performance and identify how performance is affected by virtualization.
+\subsection{Research questions}
+\paragraph{}
+Our main research question is as follows: 
+
+\begin{center}\textbf{How do virtual servers compared to physical servers differ in term of performance?}\end{center}
+\paragraph{}
+\noindent
+This main research question is supported by two sub-research questions:
+\begin{itemize}
+	\item \textit{Will be there any performance loss of virtualization?}
+	\item \textit{Which is more suitable for a mid-size business infrastructure?}
+\end{itemize}
+
+\subsection{Related work}
+\paragraph{}
+There are two existing work related to the work presented in this research. The former work done by a group of researchers from Karlsruhe Institute of Technology, Germany. They conducted an experimental  state-of-the-art virtualization platforms, Citrix XenServer 5.5 and VMware ESX 4.0, as representatives of the two major hypervisor architectures. Based on the results, they propose a basic, generic performance prediction model for the two different types of hypervisor architectures. Their target was to predict the performance overhead for executing services on virtualized platforms \cite{rw1}. 
+\par\indent
+The latter work was about the impact of virtualization on network performance of amazon EC2 data center done by a group of reserarcher from Rice University, USA. They presented an empirical measurement study on the end-to-end networking performance of the commercial Amazon EC2 cloud service, which represents a typical large scale data center with machine virtualization. The focus of their study is to characterize the networking performance of virtual machine instances and understand the impact of virtualization on the network performance experienced by users \cite{rw2}.
+\par\indent
+We might also include an interview with Rich Uhlig, VMware Chief Platform Architect and Rich Uhlig, Intel Fellow as a related work, since they illustrated the advantages and disadvantages of using virtual servers instead of physical servers \cite{rw3}.
+
+
+\subsection{Research Scope}
+\paragraph{}
+This research will focus on performance loss of virtualization on virtual servers compared to physical servers. Furthermore, the starting point of our research is to keep it practical and simulate real environment infrastructure on both implementation and traffic wise. If possible we might expand our research to also include solutions to avoid any possible performance loss of virtualization. In addition to cost, time, and administrative management performance comparison between these two setups.   
+
+
