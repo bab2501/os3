@@ -1,0 +1,685 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2016.10.19.10.25.24;	author klaas;	state Exp;
+branches;
+next	;
+commitid	10058074A060C44B2E0;
+
+
+desc
+@@
+
+
+1.1
+log
+@Woops
+@
+text
+@<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<base href="http://telproxy001.prod.telnames.net"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Vary" content="User-Agent"/>
+<meta http-equiv="imagetoolbar" content="no"/>
+<meta name="description" content="Computer Network and Systems Engineer"/>
+<link rel="apple-touch-icon" href="https://d3799k1g9t5tc9.cloudfront.net/img/5lh4n39aje02hk6popg7o24mpdod31im.png"/>
+<link rel="openid2.provider" href="https://manage.telnames.com/openid"/>
+<meta name="geo.position" content="52.188205277777776;5.425955555555555"/>
+<meta name="geo.placename" content="Sterrebos 17,Hooglanderveen,NL-3829BE" />
+<meta name="geo.region" content="Utrecht,The Netherlands" />
+<title>Alexander Blaauwgeers</title>
+
+
+<link type="text/css" rel="stylesheet" media="all" href="/desktop/css/includes.css" />
+
+
+
+<link type="text/css" rel="stylesheet" media="all" href="/desktop/css/layout101.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/desktop/css/icons5.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/desktop/css/theme1-101.css" />
+
+        <!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" media="all" href="/desktop/css/ie8_telnames.css" />
+        <![endif]-->
+    <style type="text/css">
+        html {background: none repeat scroll 0 0 #000000;}
+    </style>
+
+
+    <style type="text/css">
+            html {background: none repeat scroll 0 0 #000000;}
+            div#bg-image-stretched {display: block;}
+            @@media screen and (orientation:portrait) {
+              html {
+                background: url("https://d3799k1g9t5tc9.cloudfront.net/img/biuo0egtgl5coggfbu9e30r6o3taebv3.jpg") no-repeat left top fixed #000000;
+                -webkit-background-size: auto 100%;
+                background-size: auto 100%;
+              }
+              div#bg-image-stretched {display: none;}
+            }
+            @@media screen and (orientation:landscape) {
+              html {
+                background: none repeat scroll 0 0 #000000;
+              }
+              div#bg-image-stretched {display: block;}
+            }
+
+          .bg-image {
+              left: 0;
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: -10;
+          }
+          div#header-left {background-image: url(https://d3799k1g9t5tc9.cloudfront.net/img/g1uthntuk7osaoai0vca4erj965e4434.png);}
+
+    </style>
+    <style type="text/css">
+        div.icon_left {background-color: #784e18;}
+    </style>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3378824-16']);
+      _gaq.push(['_setDomainName', 'none']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  <link rel="shortcut icon" href="http://telproxy001.prod.telnames.net/favicon.ico"/>
+</head>
+
+
+<body>
+
+<div id="bg-image-stretched">
+  <img class="bg-image" src="https://d3799k1g9t5tc9.cloudfront.net/img/biuo0egtgl5coggfbu9e30r6o3taebv3.jpg" alt="" />
+</div>
+
+<div class="vcard" id="wrapper">
+  <div class="fn" style="display:none;">Alexander Blaauwgeers</div>
+    <div class="note" style="display:none;">Computer Network and Systems Engineer</div>
+      <div style="display:none;" class="url">http://bab2501.tel</div>
+    <div class="note" style="display:none;">Alexander Blaauwgeers</div>
+  <div id="content-header"></div>
+
+  <div id="container">
+
+    <div id="topbar"></div>
+    <div id="titlebar"></div>
+  
+<div id="navigate">
+<div class='nav_links'>
+<div class='nav_link'><a class="nav" target="_blank" href="https://manage.telnames.com">Manage</a></div><div class='clear_both'></div>  </div>
+</div>
+<div id="header" class="open">
+  
+  <div id="header-left" class="left-column">
+    <div id="overlay">
+<div id="photo"><img class="photo" src="https://d3799k1g9t5tc9.cloudfront.net/img/5lh4n39aje02hk6popg7o24mpdod31im.png" />    </div>
+
+  <div class="info">
+<h1 class="word-wrap-header ">Alexander Blaauwgeers      </h1>
+      <h4 class="">bab2501.tel</h4>
+  </div>
+
+  <div class="show-content">View Content</div>
+  </div>
+
+</div> 
+<div id="header-right" class="right-column">
+
+  <form id="searchForm" action="/search_desktop.action" method="post">
+  <input type="hidden" name="domain" value="bab2501.tel" />
+  <input type="hidden" name="tunneled" value="true" />
+  <div id="search">
+<div class="search-input"><input class="search" name="searchTerm" id="searchterm" type="text" value="Search .tel" /></div>    <div id="search-button" class="search-button"></div>
+    <div class='search-options'>
+        <div class='search-option'>
+          <input type="radio" class="go" name="realm" value="bab2501.tel"/>
+          <span class="go">This .tel</span>
+        </div>
+        <div class='search-option'>
+           <input type="radio" class="go" name="realm" value="" checked="checked"/>
+           <span class="go">All .tels</span></div>
+        <div class='clear_both'></div>
+    </div>
+  </div>
+  </form>
+</div> </div> 
+    <div id="content">
+
+
+<div id="content-left" class="left-column">
+
+<div class="error" id="error">
+</div>
+
+  
+    <div id="contact">
+      <h3 class='word-wrap'>Computer Network and Systems Engineer</h3>
+    </div>
+
+
+
+    <div class="group-separator" id="group-separator-contact">
+      <h4>Contact Information</h4>
+    </div>
+
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left cssemail'></div>
+      <dl>
+<dt>Email              </dt>
+
+          <dd>
+<a class="data_a ga_name_Email ga_value_alexander@@blaauwgeers.eu" href="mailto:alexander@@blaauwgeers.eu"><div class="email">              <span style="display:none;" class="type">internet</span>
+<span class="word-wrap value">alexander@@blaauwgeers.eu</span>            </div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left mobile'></div>
+      <dl>
+<dt>Mobile              </dt>
+
+          <dd>
+<a class="data_a ga_name_Voice ga_value_+31627213111" href="callto:+31627213111"><div class="tel">                  <span style="display:none;" class="type">cell</span>
+<span class="value word-wrap">+31627213111</span>            </div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left phone'></div>
+      <dl>
+<dt>Telephone              </dt>
+
+          <dd>
+<a class="data_a ga_name_Voice ga_value_+31335100093" href="callto:+31335100093"><div class="tel"><span class="value word-wrap">+31335100093</span>            </div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink blaauwgeers'></div>
+      <dl>
+              <dt>Website               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_Alexander.Blaauwgeers.eu" target="_blank" href="http://Alexander.Blaauwgeers.eu">            <div class="word-wrap">Alexander.Blaauwgeers.eu</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink facebook'></div>
+      <dl>
+              <dt>facebook               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_facebook.com/bab2501" target="_blank" href="http://facebook.com/bab2501">            <div class="word-wrap">facebook.com/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink linkedin'></div>
+      <dl>
+              <dt>LinkedIn               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_nl.linkedin.com/in/bab2501" target="_blank" href="http://nl.linkedin.com/in/bab2501">            <div class="word-wrap">nl.linkedin.com/in/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink twitter'></div>
+      <dl>
+              <dt>Twitter               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_twitter.com/bab2501" target="_blank" href="http://twitter.com/bab2501">            <div class="word-wrap">twitter.com/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink telegram'></div>
+      <dl>
+              <dt>Telegram Messenger               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_telegram.me/bab2501" target="_blank" href="http://telegram.me/bab2501">            <div class="word-wrap">telegram.me/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink vk'></div>
+      <dl>
+              <dt>&#1042;&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1077; -&nbsp;VKontakte               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_vk.com/bab2501" target="_blank" href="http://vk.com/bab2501">            <div class="word-wrap">vk.com/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left skypevoice'></div>
+      <dl>
+<dt>Skype              </dt>
+
+          <dd>
+<a class="data_a ga_name_Im ga_value_bab2501" href="skype:bab2501?call">            <div class="word-wrap">bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink postcrossing'></div>
+      <dl>
+              <dt>Postcrossing               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_postcrossing.com/user/bab2501" target="_blank" href="http://postcrossing.com/user/bab2501">            <div class="word-wrap">postcrossing.com/user/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink tripadvisor'></div>
+      <dl>
+              <dt>TripAdvisor               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_tripadvisor.nl/members/bab2501" target="_blank" href="http://tripadvisor.nl/members/bab2501">            <div class="word-wrap">tripadvisor.nl/members/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink ebay'></div>
+      <dl>
+              <dt>eBay               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_ebay.nl/usr/nlbab2501" target="_blank" href="http://ebay.nl/usr/nlbab2501">            <div class="word-wrap">ebay.nl/usr/nlbab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink pokemon-gl'></div>
+      <dl>
+              <dt>Pok&eacute;mon Global Link               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_3ds.pokemon-gl.com/user/L-051-1968-J/" target="_blank" href="http://3ds.pokemon-gl.com/user/L-051-1968-J/">            <div class="word-wrap">3ds.pokemon-gl.com/user/L-051-1968-J/</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left weblink kiva'></div>
+      <dl>
+              <dt>Kiva Microfunds Participant               </dt>
+
+          <dd>
+<a class="data_a url ga_name_URL ga_value_www.kiva.org/lender/bab2501" target="_blank" href="http://www.kiva.org/lender/bab2501">            <div class="word-wrap">www.kiva.org/lender/bab2501</div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+
+    <div class="left-box">
+      <div class="databox-ctr databox">
+        <div class='icon_left more'></div>
+          <dl>
+                <dt>Go to</dt>
+              <dd>
+<a class="data_a" href="http://blaauwgeers.tel">                <div class="word-wrap-45">blaauwgeers.tel</div></a></dd>
+          </dl>
+      </div>
+    </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left mobile'></div>
+      <dl>
+              <dt>Zakelijk - Business Phone - HU               </dt>
+
+          <dd>
+<a class="data_a ga_name_Voice ga_value_+31623808072" href="callto:+31623808072"><div class="tel">                  <span style="display:none;" class="type">cell</span>
+<span class="value word-wrap">+31623808072</span>            </div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+  <div class="left-box">
+    <div class="databox-ctr databox">
+      <div class='icon_left cssemail'></div>
+      <dl>
+              <dt>Zakelijk - Business email - HU               </dt>
+
+          <dd>
+<a class="data_a ga_name_Email ga_value_alexander.blaauwgeers@@hu.nl" href="mailto:alexander.blaauwgeers@@hu.nl"><div class="email">              <span style="display:none;" class="type">internet</span>
+<span class="word-wrap value">alexander.blaauwgeers@@hu.nl</span>            </div>
+</a></dd>      </dl>
+    </div>
+  </div>
+  
+      <div class="geo robots-nocontent" style="display:none;">
+        <span class="latitude">52.188205277777776</span>
+        <span class="longitude">5.425955555555555</span>
+      </div>
+
+    <div class="left-box">
+<div id="19_http://telproxy001.prod.telnames.net/map.action?lat=52.188205277777776&amp;lng=5.425955555555555" 
+class="databox-ctr databox map-toggle show-map">        <div class='icon_left location'></div>
+        <dl>
+          <dt>Map</dt>
+          <dd>
+<a href="" class="map-toggle_19 delayed_activation">               View</a>
+          </dd>
+        </dl>
+      </div>
+      <div id ="map_19" class="databox-map">
+        <div id ="map_inner_19"></div>
+<a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=loc:52.188205+++5.425956&amp;layer=&amp;ie=UTF8&amp;z=12&amp;om=1" target="_blank" class="map-google-link">          View in Google Maps</a>
+      </div>
+    </div>
+
+
+
+    <div class="group-separator" id="group-separator-social">
+      <h4>Social & Messaging</h4>
+    </div>
+
+
+
+    <div class="left-box">
+      <div class="databox-top"></div>
+      <div class="databox-ctr">
+      <div class="icon_left business"></div>
+        <dl>
+          <dt>Address</dt>
+          <dd class="business-address">
+<span class="adr"><span style="display:none;" class="type">work</span>
+<span class="text street-address">Sterrebos 17</span><br /><span class="text locality">Hooglanderveen</span><br /><span class="text region">Utrecht</span><br /><span class="text postal-code">NL-3829BE</span><br /><span class="text country-name">The Netherlands</span><br />
+              </span></span>          </dd>
+        </dl>
+      </div>
+      <div class="databox-bot"></div>
+    </div>
+
+
+
+
+  <script type="text/javascript">
+    imgGalleryUrls = [10];
+    imgGalleryCaps = [10];
+    imgGallerySize = 0;
+      imgGalleryUrls [0] = "https://d3799k1g9t5tc9.cloudfront.net/img/q4m8nhhacg6d3838c7lhag6ium2mtfkn.png";
+      imgGalleryCaps [0] = "" + "Student";
+      imgGallerySize++;
+      imgGalleryUrls [1] = "https://d3799k1g9t5tc9.cloudfront.net/img/ds79pcq536nkf7u7f2h1bgll1i6r5vpu.png";
+      imgGalleryCaps [1] = "" + "Sumer 2014 - Lviv Ukraine";
+      imgGallerySize++;
+      imgGalleryUrls [2] = "https://d3799k1g9t5tc9.cloudfront.net/img/0772l3u5dprh3r53b436oo5apoem8iru.png";
+      imgGalleryCaps [2] = "" + "Sumer 2014 - Krakow Poland";
+      imgGallerySize++;
+      imgGalleryUrls [3] = "https://d3799k1g9t5tc9.cloudfront.net/img/81t78rs7iaiacfu0i9h945g8v2bgo68f.png";
+      imgGalleryCaps [3] = "" + "Meeting";
+      imgGallerySize++;
+  </script>
+
+    <div class="left-box">
+      <div class="databox-top"></div>
+      <div id="picgallery" class="databox-ctr databox show-picgallery">
+        <div class="icon_left picgallery"></div>
+        <dl>
+          <dt>Image Gallery</dt>
+          <dd class="gallery">
+<a href="" class="toggle-switch_picgallery-panel delayed_activation">               View </a>
+          </dd>
+        </dl>
+      </div>
+
+      <div id="picgallery-panel">
+        <div class="gallery-viewport">
+          <div class="swiper-container swiper-content swiper-no-swiping">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">                  <div class="gallery-img-container"><img class="swiper-pic slide0" src="https://d3799k1g9t5tc9.cloudfront.net/img/q4m8nhhacg6d3838c7lhag6ium2mtfkn.png"  alt="Student" /></div>
+                </div>
+                <div class="swiper-slide">                  <div class="gallery-img-container"><img class="swiper-pic slide1" src="http://telproxy001.prod.telnames.net/desktop/images/common/loading.gif" alt="Loading image..." /></div>
+                </div>
+                <div class="swiper-slide">                  <div class="gallery-img-container"><img class="swiper-pic slide2" src="http://telproxy001.prod.telnames.net/desktop/images/common/loading.gif" alt="Loading image..." /></div>
+                </div>
+                <div class="swiper-slide">                  <div class="gallery-img-container"><img class="swiper-pic slide3" src="http://telproxy001.prod.telnames.net/desktop/images/common/loading.gif" alt="Loading image..." /></div>
+                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div id="previous" class="backone"><em class="arrow-left"></em></div>
+          <div id="next" class="forwardone"><em class="arrow-right"></em></div>
+          <div class="cs-caption top">
+            <div id="caption-top" class="cs-caption-content">Student</div>
+          </div>
+          <div class="cs-caption bottom">
+            <div id="caption-bottom" class="cs-caption-content-bottom">&nbsp;</div>
+          </div>
+
+        </div>        
+      </div>
+      <div class="databox-bot"></div>
+    </div>
+
+
+    <div class="left-box">
+      <div class="databox-top"></div>
+      <div class="databox-ctr">
+      <div class="icon_left keywords"></div>
+        <dl>
+          <dt>Profile</dt>
+          <dd class="business-profile">
+<span class="hcard_prop">Products and Services<br />              </span>
+<span class="text">- IT Computer Network and Systems Engineering<br />- Webmaster and web-developing<br />              </span>
+
+                <img border="0" src="/desktop/images/layout100/databox_line_grey.png" class="line"
+                  alt="" />
+<span class="hcard_prop">Areas of Service<br />              </span>
+<span class="text">The Netherlands<br />              </span>
+
+                <img border="0" src="/desktop/images/layout100/databox_line_grey.png" class="line"
+                  alt="" />
+<span class="hcard_prop">Associations<br />              </span>
+<span class="text">Reizigersvereniging Rover - Bestuurslid Afd. Amersfoort<br />Gebruikersvereniging Hobby Computer Club - Gewoon lid<br />              </span>
+
+</span>          </dd>
+        </dl>
+      </div>
+      <div class="databox-bot"></div>
+    </div>
+
+    <div class="left-box">
+      <div class="databox-top"></div>
+      <div class="databox-ctr">
+        <div class="icon_left infoicon"></div>
+        <dl>
+          <dt>More Information</dt>
+          <dd class="keywords">
+                    <span class="customkeywordtitle">Nintendo 3DS Friendcode</span><br />
+                 <span class="text">3368-2964-5918</span>
+
+          </dd>
+        </dl>
+      </div>
+      <div class="databox-bot"></div>
+    </div>
+
+
+</div>
+
+
+      
+
+<div id="content-right" class="content-right right-column">
+
+
+      <div id="action-top" class="action-top"></div>
+
+  <div id="action-ctr" class="action-ctr">
+      <div id="action-print" class="action action-first">
+    <div class='float_action_icon_print_this'><a href="javascript:print();"></a></div>
+      <div class='float_action_link print_this'>
+        <a class="action" href="javascript:print();">Print this</a></div>
+      <div class='clear_both'></div>
+    </div>
+      <img border="0" src="/desktop/images/default/vert_line_grey.png" class="line" alt="" />
+      <div  id="action-vcard" class="action">
+        <div class='float_action_icon_download_vcard'><a href="/vcard.action?domain=bab2501.tel"></a></div>
+        <div class='float_action_link download_vcard'>
+        <a class="action" href="http://telproxy001.prod.telnames.net/vcard.action?domain=bab2501.tel">Download vCard</a></div>
+        <div class='clear_both'></div>
+       <a href="/vcard.action?domain=bab2501.tel"></a>
+      </div>
+  </div>
+
+  <div id="action-share">
+    <p>Share this .tel</p>
+    <a href="http://www.facebook.com/share.php?u=http://bab2501.tel" target="_blank" class="button facebook"></a>
+    <a href="http://twitter.com/home/?status=Please%20check%20out%20http://bab2501.tel" target="_blank" class="button twitter"></a>
+    <a href="mailto:?subject=bab2501.tel&body=Please%20check%20out%20http://bab2501.tel" class="button email"></a>
+    <div class="button google"><div class="plusone"><g:plusone count="false"></g:plusone></div></div>
+    <div class="clear_both"></div>
+        <p class="powered">powered by <a href="http://www.telnames.com" rel="nofollow">Telnames.com</a></p>
+  </div>
+
+      <div id="action-bot" class="action-bot"></div>
+
+
+
+
+
+          <a href="http://www.telnames.com" target="_blank" rel="nofollow">
+    <div id='poweredby-text'>Powered by:</div>
+    <div class='poweredby-dottel'></div>
+      </a>
+</div>       <div class="clear_both"></div>
+      <div class="back-to-top"><a href="#">Back to top</a><p></p></div>
+    </div> 
+
+	</div> 
+    
+  <div id="content-footer"><a href="/vcard.action?domain=bab2501.tel"     class="download-link">Download vCard</a></div>
+</div> 
+
+
+<script type="text/javascript">
+var loggingGA = 'UA-3378824-16';
+var nodeURL = "http://telproxy001.prod.telnames.net";
+var JSONActionsRoot = nodeURL + '/ajax';
+var serverRoot = nodeURL + '/desktop';
+var domain = "bab2501.tel";
+var apexDomain = "bab2501.tel";
+var apexDomainPunycode = "bab2501.tel";
+var tunneled = true;
+var tunneledLogin = false;
+var telPagesUrl = "";
+var searchRedirect = false;
+var adjustVisitedST = false;
+var loggingUrl = "https://s3-eu-west-1.amazonaws.com/telstats-production/img/blank.gif";
+var telStatsUrl = document.location.protocol + "//" + loggingUrl.replace(/https?:\/\//, '');
+var telStats = new Object;
+telStats['dn'] = "bab2501.tel";
+telStats['sp'] = "manage.telnames.com";
+telStats['d'] = "0";
+var layoutCssId = 101;
+var localizedStrings =
+{
+"text.friending.success":"Your friend request has been sent at {1}. You will see the private data for {0} as soon as your friend request is accepted.",
+"text.ajax.systemerror":"Unfortunately there has been an internal problem. Please contact Telnic support, if the problem occurs again.",
+"text.ajax.sessiontimeout":"Your session has timed out. Please log in and send your friend request again.",
+"text.ajax.unexceptederrorr":"Unfortunately there has been an internal problem. Please contact Telnic support, if the problem occurs again.",
+"text.friending.invite":"Hello,\r\nI would like to access your private data.\r\nPlease add me to your list of friends.",
+"text.map.view":"View",
+"text.map.hide":"Close",
+"text.offer.view":"View",
+"text.offer.hide":"Close",
+"text.offerterms.view":"Terms and conditions",
+"text.offerterms.hide":"Terms and conditions",
+"text.payment.view":"View",
+"text.payment.hide":"Close",
+"text.paymentterms.view":"Terms and conditions",
+"text.paymentterms.hide":"Terms and conditions",
+"text.movie.view":"View",
+"text.movie.hide":"Close",
+"text.picgallery.view":"View ",
+"text.picgallery.hide":"Close",
+"text.view":"View",
+"text.hide":"Close",
+"defaultlabel.web":"Web",
+"defaultlabel.web-ssl":"Secure Web",
+"defaultlabel.pdf":"PDF"};
+</script><script src="/desktop/js/global.js" type="text/javascript"></script>
+<script src="/desktop/js/ui/init.js" type="text/javascript"></script>
+<script src="/common/js/ui/util.js" type="text/javascript"></script>
+
+    <script src="https://apis.google.com/js/plusone.js" type="text/javascript" >{lang: 'en-GB'}</script>
+      <script src="/common/js/ui/idangerous.swiper.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	if(navigator.userAgent.indexOf('Mac') != -1)
+	{
+		document.write ('<link type="text/css" rel="stylesheet" media="all" href="/desktop/css/layout100-mac.css" />');
+	}
+</script>
+
+<!--[if IE 6]>
+  <script type="text/javascript">
+      $(document).ready (ui_fix_ie6_png ());
+      // fix_max_size (selector, maxWidth, maxHeight)
+      $(document).ready (fix_max_size ('div#imgads-right img', 250, 250));
+      $(document).ready (fix_max_size ('div#picgallery-panel div.main-image img', 345, 460));
+      $(document).ready (fix_max_size ('div#imgads-top img, div#imgads-bottom img', 468, 60));
+  </script>
+<![endif]-->
+</body>
+</html>
+@

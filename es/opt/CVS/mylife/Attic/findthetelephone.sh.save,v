@@ -1,0 +1,74 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2016.10.19.10.31.41;	author klaas;	state dead;
+branches;
+next	1.1;
+commitid	10058074B850D369CC8;
+
+1.1
+date	2016.10.19.10.25.24;	author klaas;	state Exp;
+branches;
+next	;
+commitid	10058074A060C44B2E0;
+
+
+desc
+@@
+
+
+1.2
+log
+@Ho
+@
+text
+@#!/bin/bash
+#Auteur: Dhr. ing. B.A. Blaauwgeers
+#Scriptname: Find a phonenumber from a file or webiste
+# The script is NON-recursive, it would not follow links inside the file or webpage.
+# (to test use eg. a consulting website)
+#Func: Print all lines that contain an URI from a remote source.
+
+opdr=$1
+if [ -z $opdr ]
+	then
+	echo "What your your information source? website or file?"
+	read opdr
+else
+
+case $opdr in
+	website)
+		echo "Enter the URL:"
+		read website		
+		wget --output-document="website.html" $website 
+		filename=website.html
+	;;
+	file)
+		echo "Enter the filename, with or without path:"
+		read filename
+	;;
+	*)
+		echo "Wrong command"
+		exit
+	;;
+esac
+echo The phonenumbers we found are:
+grep -o -E '[0|+][0-9][0-9][0-9][[0-9][0-9]' $filename 
+fi
+
+#| grep -v -E '[a-z|A-Z][a-z|A-Z][a-z|A-Z]+' | grep -o -E '[0|+][0-9,/s][0-9,/s][0-9,/s][0-9,/s][0-9,/s][0-9,/s][0-9,/s]+'
+@
+
+
+1.1
+log
+@Woops
+@
+text
+@@
+
