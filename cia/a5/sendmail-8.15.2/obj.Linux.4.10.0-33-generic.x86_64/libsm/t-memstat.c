@@ -1,1 +1,0 @@
-../../libsm/t-memstat.c

@@ -1,1 +1,0 @@
-../../libsm/snprintf.c

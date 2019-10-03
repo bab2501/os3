@@ -1,1 +1,0 @@
-../../libsm/b-strcmp.c

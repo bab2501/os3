@@ -1,1 +1,0 @@
-../../libsm/vasprintf.c

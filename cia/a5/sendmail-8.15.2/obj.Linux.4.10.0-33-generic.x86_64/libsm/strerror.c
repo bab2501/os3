@@ -1,1 +1,0 @@
-../../libsm/strerror.c

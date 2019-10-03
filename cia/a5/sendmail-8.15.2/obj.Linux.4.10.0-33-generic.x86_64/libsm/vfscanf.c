@@ -1,1 +1,0 @@
-../../libsm/vfscanf.c

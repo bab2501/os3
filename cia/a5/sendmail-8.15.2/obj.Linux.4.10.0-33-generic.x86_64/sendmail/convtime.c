@@ -1,1 +1,0 @@
-../../sendmail/convtime.c

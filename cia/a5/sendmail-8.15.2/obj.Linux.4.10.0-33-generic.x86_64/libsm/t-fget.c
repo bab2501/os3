@@ -1,1 +1,0 @@
-../../libsm/t-fget.c

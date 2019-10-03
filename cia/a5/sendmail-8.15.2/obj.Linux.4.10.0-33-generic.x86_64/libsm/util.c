@@ -1,1 +1,0 @@
-../../libsm/util.c

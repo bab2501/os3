@@ -1,1 +1,0 @@
-../../libsm/strio.c

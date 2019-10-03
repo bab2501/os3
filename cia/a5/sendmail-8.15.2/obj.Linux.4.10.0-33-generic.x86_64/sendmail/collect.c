@@ -1,1 +1,0 @@
-../../sendmail/collect.c
